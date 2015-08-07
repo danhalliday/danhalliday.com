@@ -1,0 +1,173 @@
+- title: "Dan Halliday"
+  subtitle: "Digital Design &amp; Engineering"
+  description: >
+
+    <p>I’m a designer and software engineer with over ten years’ experience. Below is a small
+    selection of my work &mdash; for more projects and information feel free to connect on <a
+    href="http://uk.linkedin.com/in/danhalliday"
+    data-print-link="uk.linkedin.com/in/danhalliday">LinkedIn</a> or <a
+    href="http://dribbble.com/danhalliday">Dribbble</a>.</p>
+
+    <p>If you want my help on a project, or just want to say hello, <a
+    href="mailto:hi@danhalliday.com" data-print-link="hi@danhalliday.com">email</a> is the best way
+    to get hold of me.</p>
+
+    <a class="contact" href="mailto:hi@danhalliday.com">Get in touch</a>
+
+  images:
+    - title: "Scattered Soundry Business Cards"
+      ident: "cover-image"
+      source: "cover-image.jpg"
+      caption: ""
+
+- title: "Soundry Co."
+  subtitle: "Complete Brand Identity"
+  description: >
+
+    <p><a href="http://soundry.co">Soundry Co</a>. make bespoke audio software. To set the company
+    apart from competitors and to reflect their focus on whole-product design and user experience,
+    I created a bright and bold visual identity underpinned by Suitcase Type Foundry's <a
+    href="https://www.suitcasetype.com/nudista/specimen">Nudista</a> &mdash; the perfect match for a
+    modern engineering outfit.</p>
+
+    <p>An array of brand artwork pieces gives context to the simple mono combination mark, and
+    luxury die-cut letterpress business cards show that quality is the company’s primary focus.</p>
+
+  images:
+    - title: "Soundry Colour Combination Mark"
+      ident: "soundry-logo"
+      source: "soundry-logo.jpg"
+      caption: ""
+    - title: "Soundry Business Cards"
+      ident: "soundry-business-cards-stacked"
+      source: "soundry-business-cards-stacked.jpg"
+      caption: ""
+      small: true
+    - title: "Soundry Business Cards Box"
+      ident: "soundry-business-card-box"
+      source: "soundry-business-cards-box.jpg"
+      caption: ""
+      small: true
+    - title: "Scattered Soundry Business Cards"
+      ident: "soundry-business-cards scattered"
+      source: "soundry-business-cards-scattered.jpg"
+      caption: ""
+    - title: "Soundry Brand Artwork"
+      ident: "soundry-art-1"
+      source: "soundry-art-1.jpg"
+      caption: ""
+      small: true
+    - title: "Soundry Brand Artwork"
+      ident: "soundry-art-2"
+      source: "soundry-art-2.jpg"
+      caption: ""
+      small: true
+
+- title: "Earsoft Audio"
+  subtitle: "App Design &amp; Coding"
+  description: >
+
+    <p>I designed and built a unique audio player app for Earsoft that tailors sound to the
+    listener’s environment and mood. The visuals are based around clean typography and strong
+    iconography, and the two-tone colour scheme is algorithmically generated based on a hue chosen
+    by the user.</p>
+
+    <p>The implementation had to be very low level to ensure good battery life while listening, so
+    I wrote a C library to do the audio processing, and connected it using iOS’s AudioUnit API and
+    Android’s NDK for playback.</p>
+
+  images:
+    - title: ""
+      ident: ""
+      source: "earsoft-app-9.jpg"
+      caption: ""
+    - title: ""
+      ident: ""
+      source: "earsoft-app-1a.jpg"
+      caption: ""
+      small: true
+    - title: ""
+      ident: ""
+      source: "earsoft-app-1b.jpg"
+      caption: ""
+      small: true
+    - title: ""
+      ident: ""
+      source: "earsoft-app-11.jpg"
+      caption: ""
+    - title: ""
+      ident: ""
+      source: "earsoft-app-2.jpg"
+      caption: ""
+      small: true
+    - title: ""
+      ident: ""
+      source: "earsoft-app-3.jpg"
+      caption: ""
+      small: true
+
+- title: "Cantare Ladies’ Choir"
+  subtitle: "Logo &amp; Colour Guide"
+  description: >
+
+    <p>Cantare needed a strong, bold logo to use on everything from posters and concert programmes
+    to bags and embroidered coats. They already had a strong black and pink colour scheme, so I
+    worked with the group on a combination mark that would tie their brand together.</p>
+
+    <p>After several prototypes and lots of feedback, we settled on a treble clef mark shaped to
+    depict a young woman. <a href="https://www.fontfont.com/fonts/schmalhans">FF Schmalhans</a> was
+    a natural fit for the lettering &mdash; the tall, angled characters are intended to mimic the
+    proud, singing women.</p>
+
+  images:
+    - title: "Cantare Ladies' Choir Combination Mark"
+      ident: "cantare-logo"
+      source: "cantare-logo.jpg"
+      caption: ""
+    - title: "Cantare Ladies' Choir Proof Detail"
+      ident: "cantare-client-detail"
+      source: "cantare-client-detail.jpg"
+      caption: ""
+      small: true
+    - title: "Cantare Ladies' Choir Proof Detail"
+      ident: "cantare-date-detail"
+      source: "cantare-date-detail.jpg"
+      caption: ""
+      small: true
+    - title: "Cantare Ladies' Choir Colour Sheet"
+      ident: "cantare-colour-detail"
+      source: "cantare-colour-sheet.jpg"
+      caption: ""
+    - title: "Cantare Ladies' Choir Jacket"
+      ident: "cantare-choir-jacket-1"
+      source: "cantare-coat-1.jpg"
+      caption: ""
+      small: true
+    - title: "Cantare Ladies' Choir Jacket"
+      ident: "cantare-choir-jacket-2"
+      source: "cantare-coat-2.jpg"
+      caption: ""
+      small: true
+
+- title: "A Happy Couple"
+  subtitle: "Wedding Stationery Pack"
+  description: >
+
+    <p>The couple wanted a modern, elegant stationery pack, with a few extras such as a map for the
+    day and a list of local attractions for guests to browse.</p>
+
+    <p>I decided on mostly black and white detail with some dark red to highlight key items. To
+    fulfil the stylistic brief I chose <a
+    href="http://en.wikipedia.org/wiki/Futura_(typeface)">Futura</a> for labels and <a
+    href="http://en.wikipedia.org/wiki/Minion_(typeface)">Minion</a> for prose, matching each
+    face's character by drawing diagrams with bold lines and dividing text with thin ones.</p>
+
+  images:
+    - title: "Wedding Invitation"
+      ident: "wedding-invitation"
+      source: "wedding-invitation.jpg"
+      caption: ""
+    - title: "Wedding Envelope"
+      ident: "wedding-envelope"
+      source: "wedding-envelope.jpg"
+      caption: ""

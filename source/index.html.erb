@@ -1,0 +1,103 @@
+---
+title: Dan Halliday ~ Digital Design &amp; Engineering
+---
+
+<main>
+
+  <% data.projects.each do |project| %>
+  <article class="item">
+
+    <header class="item-header">
+      <h1 class="item-title"><%= project.title %></h1>
+      <p class="item-subtitle"><%= project.subtitle %></p>
+    </header>
+
+    <section class="item-description">
+      <%= project.description %>
+    </section>
+
+    <section class="item-images">
+
+    <% project.images and project.images.each do |image| %>
+      <div class="item-image <%= 'small' if image.small %>" id="<%= image.ident %>">
+        <div class="item-sharing-links">
+          <% link_to("https://www.pinterest.com/pin/create/button/?url=http://danhalliday.com/#{asset_path(:images, "photos/#{image.source}")}&media=http://danhalliday.com/#{asset_path(:images, "photos/#{image.source}")}&description=#{ERB::Util.url_encode(image.title)}%20by%20Dan%20Halliday", {:target => '_blank'}) do |link| %>
+            <%= image_tag('pinterest-button.png') %>
+          <% end %>
+          </a>
+        </div>
+        <%= image_tag("photos/#{image.source}", alt: image.title) %>
+      </div>
+    <% end %>
+
+    </section>
+
+  </article>
+  <% end %>
+
+  <article class="item">
+
+    <header class="item-header">
+      <h1 class="item-title">Hire Me</h1>
+      <p class="item-subtitle"></p>
+    </header>
+
+    <section class="item-description">
+      <p>I’d love to design or engineer your next project! Send a short message to <a
+      href="mailto:hi@danhalliday.com">hi@danhalliday.com</a> and tell me a little about what you
+      want to do. I’ll let you know if looks like a good fit for my skill set, and we can discuss
+      timescales and rates from there.</p>
+
+      <a class="contact" href="mailto:hi@danhalliday.com">Get in touch</a>
+    </section>
+
+    <section class="item-addenda">
+
+      <ul class="skills">
+        Programming
+        <li>C</li>
+        <li>C++</li>
+        <li>Bash</li>
+        <li>JavaScript</li>
+        <li>CoffeeScript</li>
+        <li>S/CSS</li>
+        <li>HTML</li>
+        <li>Objective-C</li>
+        <li>Swift</li>
+        <li>Java</li>
+        <li>NDK</li>
+        <li>OpenGL</li>
+        <li>Git</li>
+      </ul>
+
+      <ul class="skills">
+        Design
+        <li>Logos</li>
+        <li>Typesetting</li>
+        <li>Diagramming</li>
+        <li>Photography</li>
+        <li>Brand Identity</li>
+        <li>Responsive</li>
+        <li>Mobile</li>
+        <li>Apps</li>
+      </ul>
+
+      <ul class="skills">
+        Music
+        <li>Drum Kit</li>
+        <li>Percussion</li>
+        <li>Bass Guitar</li>
+        <li>Recording</li>
+        <li>Mixing</li>
+        <li>Production</li>
+        <li>Composition</li>
+        <li>Arranging</li>
+      </ul>
+
+
+
+    </section>
+
+  </article>
+
+</main>

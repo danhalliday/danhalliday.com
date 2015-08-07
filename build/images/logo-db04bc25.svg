@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSArtboardGroup" stroke="#323033" stroke-width="3">
+            <path d="M49.0432076,51.151317 C58.6515039,48.5377932 61.998,40.3358988 61.998,32.006 C61.998,22.042 57.083,12.002 42.064,12.002 L26,12.002 M22.1334407,22.003 L37.086,22.003 C42.064,22.003 52.082,21.78 52.041,31.924" id="Stroke-2" sketch:type="MSShapeGroup"></path>
+            <path d="M12,12.002 L7.086,12.002 C4.336,12.002 2.002,14.331 2.002,17.081 L2.002,47.023 C2.002,49.773 4.336,52.008 7.086,52.008 L11.9969975,52.008" id="Path-2" sketch:type="MSShapeGroup"></path>
+            <path d="M22.002,42 L22.002,14.86 C22.002,13.21 23.275,12.002 24.93,12.002 L27.02,12.002 C27.238,12.002 27.448,12.007 27.661,12.011 C29.41,12.002 40.387,12.002 42.048,12.002 C44.677,12.002 46.991,12.315 49.029,12.877 C45.713,5.636 39.148,2 27.061,2 L16.992,2 C14.234,2 12.002,4.077 12.002,6.827 L12.002,27.591 L11.987,38.975 C11.987,40.626 13.502,42.008 15.018,42.006 L22.002,42 Z" id="Stroke-4" sketch:type="MSShapeGroup"></path>
+            <path d="M42.036,31.977 C42.036,46.893 36.9922425,52.0080007 27.0642425,52.0080007 C26.9712425,52.0080007 24.93,52.008 24.93,52.008 L12.002,52.008 L12.002,56.836 C12.002,59.586 14.197,62.008 16.908,62.008 L26.935,62.008 C46.987,62.008 52,51.894 52,32.006 C52,31.637 51.994,31.277 51.991,30.915 C51.531,24.053 46.036,22.473 41.2900009,22.1499996 C41.824,24.767 42.036,28.021 42.036,31.977 Z" id="Stroke-6" sketch:type="MSShapeGroup"></path>
+            <path d="M21.99581,42 L37.0288672,42 C37.0288672,42 40.11591,42.0489097 41.346663,41.0062723" id="Path-36" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

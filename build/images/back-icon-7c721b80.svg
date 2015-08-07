@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>back-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="back-icon" sketch:type="MSArtboardGroup" stroke="#323033" stroke-width="1.5" fill="#FFFFFF">
+            <path d="M30.6600713,7.18483455 C30.6600713,5.05571457 28.2580557,3.24621583 26.1082094,4.96752461 L3.90799129,21.7787622 C1.41006843,23.6703281 1.40907697,26.7633797 3.9415162,28.6602224 L26.0746845,45.2383657 C28.5570059,47.081665 30.6600713,45.1369401 30.6600713,43.0086708 L30.6600713,36.4314405 L46.0687358,36.4314405 C47.1369381,36.4314405 48,35.5835632 48,34.5376535 L48,15.6558519 C48,14.6230496 47.1353435,13.7620649 46.0687358,13.7620649 L30.6600713,13.7620649 L30.6600713,7.18483455 Z" id="Rectangle-10" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

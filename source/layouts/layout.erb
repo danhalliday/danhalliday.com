@@ -1,0 +1,35 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= current_page.data.title || "The Middleman" %></title>
+    <meta name="description" content="I'm a designer and software engineer based just outside of London. Here's a small selection of my design work">
+
+    <%= content_tag :style, sprockets.find_asset('all.css').to_s, type: 'text/css' %>
+
+    <script src="//use.typekit.net/ppj7jnf.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <header class="page-header">
+      <div class="page-logo"></div>
+      <ul class="page-links">
+        <li class="linkedin"><a href="http://uk.linkedin.com/in/danhalliday" title="Connect on LinkedIn"><span>linkedin.com/in/danhalliday</span></a></li>
+        <li class="dribbble"><a href="http://dribbble.com/danhalliday" title="Connect on Dribbble"><span>dribbble.com/danhalliday</span></a></li>
+        <li class="email"><a href="mailto:hi@danhalliday.com" title="Send me an email"><span>dan@danhalliday.com</span></a></li>
+      </ul>
+    </header>
+    <%= yield %>
+    <footer class="page-footer">
+      <p>Copyright &copy; <%= Date.today.year %> Dan Halliday</p>
+    </footer>
+    <%= content_tag :script, sprockets.find_asset('all.js'), type: 'text/javascript' %>
+  </body>
+</html>
