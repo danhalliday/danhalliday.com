@@ -1,0 +1,60 @@
+.page-outline-only {
+    // TODO: Try changing to an offscreen technique, as some sources seem to suggest display: none
+    // means the content doesn't render using some assistive technologies. Seems fine on Lynx.
+    display: none;
+}
+
+.page-projects-title {
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: $small-size;
+//    color: transparentize($dark-color, 0.9);
+
+    @include size(medium) {
+        padding: $medium-size;
+//        font-size: 1.25rem;
+    }
+
+    @include size(large) {
+        padding: $large-size;
+//        font-size: 1.5rem;
+    }
+
+    .page-projects-title-arrow {
+        display: block;
+        float: left;
+        position: relative;
+        top: 0.05em;
+        margin-right: 0.25em;
+        width: 1em; height: 1em;
+
+        svg {
+            width: 1em; height: 1em;
+            * { fill: $dark-color; }
+        }
+    }
+}
+
+//@keyframes spin-and-jump {
+//    0% { transform: translate(0, 0) rotate(0deg); }
+//    2% { transform: translate(0, 10%) rotate(0deg); }
+//    4% { transform: translate(0, -10%) rotate(0deg); }
+//    6% { transform: translate(0, 10%) rotate(0deg); }
+//    8% { transform: translate(0, 0) rotate(0deg); }
+//
+//    30% { transform: translate(0, 0) rotate(0deg); }
+//    35% { transform: translate(0, 0) rotate(360deg); }
+//
+//    40% { transform: translate(0, 0) rotate(360deg); }
+//    42% { transform: translate(0, 10%) rotate(360deg); }
+//    44% { transform: translate(0, -10%) rotate(360deg); }
+//    46% { transform: translate(0, 10%) rotate(360deg); }
+//    48% { transform: translate(0, -10%) rotate(360deg); }
+//    50% { transform: translate(0, 10%) rotate(360deg); }
+//    52% { transform: translate(0, 0) rotate(360deg); }
+//
+//    100% { transform: translate(0, 0) rotate(360deg); }
+//}

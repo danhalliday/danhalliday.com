@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title><%= current_page.data.title || "The Middleman" %></title>
@@ -18,14 +18,14 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="page-logo"></div>
       <ul class="page-links">
         <li class="linkedin"><a href="http://uk.linkedin.com/in/danhalliday" title="Connect on LinkedIn"><span>linkedin.com/in/danhalliday</span></a></li>
         <li class="dribbble"><a href="http://dribbble.com/danhalliday" title="Connect on Dribbble"><span>dribbble.com/danhalliday</span></a></li>
         <li class="email"><a href="mailto:hi@danhalliday.com" title="Send me an email"><span>dan@danhalliday.com</span></a></li>
       </ul>
-    </header>
+    </header> -->
     <%= yield %>
     <footer class="page-footer">
       <p>Copyright &copy; <%= Date.today.year %> Dan Halliday</p>

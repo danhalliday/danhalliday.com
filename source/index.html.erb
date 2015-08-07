@@ -4,100 +4,188 @@ title: Dan Halliday ~ Digital Design &amp; Engineering
 
 <main>
 
-  <% data.projects.each do |project| %>
-  <article class="item">
+  <!-- Title & About Me -->
+
+  <div class="item item-intro">
 
     <header class="item-header">
-      <h1 class="item-title"><%= project.title %></h1>
-      <p class="item-subtitle"><%= project.subtitle %></p>
+
+      <h1 class="item-title">Dan Halliday</h1>
+      <p class="item-subtitle">Digital Design &amp; Engineering</p>
+
     </header>
 
     <section class="item-description">
-      <%= project.description %>
+
+      <h2 class="page-outline-only">About Me</h2>
+
+      <p>I’m a designer and software engineer with over ten years’ experience. Below is a small
+      selection of my work &mdash; for more projects and information feel free to connect on
+      <a href="http://uk.linkedin.com/in/danhalliday" data-print-link="uk.linkedin.com/in/danhalliday">LinkedIn</a>
+      or <a href="http://dribbble.com/danhalliday">Dribbble</a>.</p>
+
+      <p>If you want my help on a project, or just want to say hello,
+      <a href="mailto:hi@danhalliday.com" data-print-link="hi@danhalliday.com">email</a> is the best
+      way to get hold of me.</p>
+
+      <!-- <a class="contact" href="mailto:hi@danhalliday.com">Get in touch</a> -->
+
     </section>
 
-    <section class="item-images">
+  </div>
 
-    <% project.images and project.images.each do |image| %>
-      <div class="item-image <%= 'small' if image.small %>" id="<%= image.ident %>">
-        <div class="item-sharing-links">
-          <% link_to("https://www.pinterest.com/pin/create/button/?url=http://danhalliday.com/#{asset_path(:images, "photos/#{image.source}")}&media=http://danhalliday.com/#{asset_path(:images, "photos/#{image.source}")}&description=#{ERB::Util.url_encode(image.title)}%20by%20Dan%20Halliday", {:target => '_blank'}) do |link| %>
-            <%= image_tag('pinterest-button.png') %>
-          <% end %>
-          </a>
+  <!-- Project Descriptions & Images -->
+
+  <section id="projects">
+
+    <h2 class="page-projects-title">
+      <span class="page-projects-title-arrow" hidden aria-hidden="true">
+        <%= sprockets.find_asset('arrow-down-icon.svg').to_s %> <!-- TODO: Add title to SVG -->
+      </span>
+      Projects
+    </h2>
+
+    <% data.projects.each do |project| %>
+    <article id="<%= project.title.parameterize %>" class="item item-count <%= project.title.parameterize %>">
+
+      <%= image_tag("photos/#{project.hero}", class: 'item-hero-image', alt: '', :'aria-hidden' => true, hidden: true) %>
+
+      <header class="item-header">
+
+        <h3 class="item-title"><%= project.title %></h3>
+        <p class="item-subtitle"><%= project.subtitle %></p>
+
+      </header>
+
+      <a href="<%= "##{project.title.parameterize}" %>"
+         class="item-link" aria-label="Link to this" aria-hidden="true">
+        <%= sprockets.find_asset('link-icon.svg').to_s %>
+      </a>
+
+      <section class="item-description">
+
+        <h4 class="page-outline-only">Description</h4>
+        <%= project.description %>
+
+      </section>
+
+      <section class="item-images">
+
+        <h4 class="page-outline-only">Images</h4>
+
+        <% project.images and project.images.each do |image| %>
+        <div class="item-image <%= 'small' if image.small %>" id="<%= image.title.parameterize %>">
+
+          <div class="item-image-links" aria-hidden="true">
+
+            <a href="<%= "##{image.title.parameterize}" %>" class="item-image-link">
+              <%= sprockets.find_asset('link-icon.svg').to_s %>
+            </a>
+
+            <%# link_to("https://www.pinterest.com/pin/create/button/?url=http://danhalliday.com/#{asset_path(:images, "photos/#{image.source}")}&media=http://danhalliday.com/#{asset_path(:images, "photos/#{image.source}")}&description=#{ERB::Util.url_encode(image.title)}%20by%20Dan%20Halliday", {:target => '_blank'}) do |link| %>
+              <%#= sprockets.find_asset('pinterest-icon.svg').to_s %>
+            <%# end %>
+
+          </div>
+
+          <%= image_tag("photos/#{image.source}", alt: image.title) %>
+
         </div>
-        <%= image_tag("photos/#{image.source}", alt: image.title) %>
-      </div>
+        <% end %>
+
+      </section>
+
+    </article>
     <% end %>
 
-    </section>
+  </section>
 
-  </article>
-  <% end %>
+  <!-- Hire Me & Skills -->
 
-  <article class="item">
+  <section class="item">
 
     <header class="item-header">
-      <h1 class="item-title">Hire Me</h1>
+
+      <h2 class="item-title">Hire Me</h2>
       <p class="item-subtitle"></p>
+
     </header>
 
     <section class="item-description">
+
+      <h3 class="page-outline-only">Contact</h3>
+
       <p>I’d love to design or engineer your next project! Send a short message to <a
       href="mailto:hi@danhalliday.com">hi@danhalliday.com</a> and tell me a little about what you
       want to do. I’ll let you know if looks like a good fit for my skill set, and we can discuss
       timescales and rates from there.</p>
 
       <a class="contact" href="mailto:hi@danhalliday.com">Get in touch</a>
+
     </section>
 
     <section class="item-addenda">
 
-      <ul class="skills">
-        Programming
-        <li>C</li>
-        <li>C++</li>
-        <li>Bash</li>
-        <li>JavaScript</li>
-        <li>CoffeeScript</li>
-        <li>S/CSS</li>
-        <li>HTML</li>
-        <li>Objective-C</li>
-        <li>Swift</li>
-        <li>Java</li>
-        <li>NDK</li>
-        <li>OpenGL</li>
-        <li>Git</li>
-      </ul>
+      <h3 class="page-outline-only">Skills</h3>
 
-      <ul class="skills">
-        Design
-        <li>Logos</li>
-        <li>Typesetting</li>
-        <li>Diagramming</li>
-        <li>Photography</li>
-        <li>Brand Identity</li>
-        <li>Responsive</li>
-        <li>Mobile</li>
-        <li>Apps</li>
-      </ul>
+      <section>
 
-      <ul class="skills">
-        Music
-        <li>Drum Kit</li>
-        <li>Percussion</li>
-        <li>Bass Guitar</li>
-        <li>Recording</li>
-        <li>Mixing</li>
-        <li>Production</li>
-        <li>Composition</li>
-        <li>Arranging</li>
-      </ul>
+        <h4 class="skills-title">Programming</h4>
 
+        <ul class="skills-list">
+          <li>C</li>
+          <li>C++</li>
+          <li>Bash</li>
+          <li>JavaScript</li>
+          <li>CoffeeScript</li>
+          <li>S/CSS</li>
+          <li>HTML</li>
+          <li>Objective-C</li>
+          <li>Swift</li>
+          <li>Java</li>
+          <li>NDK</li>
+          <li>OpenGL</li>
+          <li>Git</li>
+        </ul>
 
+      </section>
+
+      <section>
+
+        <h4 class="skills-title">Design</h4>
+
+        <ul class="skills-list">
+          <li>Logos</li>
+          <li>Typesetting</li>
+          <li>Diagramming</li>
+          <li>Photography</li>
+          <li>Brand Identity</li>
+          <li>Responsive</li>
+          <li>Mobile</li>
+          <li>Apps</li>
+        </ul>
+
+      </section>
+
+      <section>
+
+        <h4 class="skills-title">Music</h4>
+
+        <ul class="skills-list">
+          <li>Drum Kit</li>
+          <li>Percussion</li>
+          <li>Bass Guitar</li>
+          <li>Recording</li>
+          <li>Mixing</li>
+          <li>Production</li>
+          <li>Arranging</li>
+          <li>Composition</li>
+        </ul>
+
+      </section>
 
     </section>
 
-  </article>
+  </section>
 
 </main>
