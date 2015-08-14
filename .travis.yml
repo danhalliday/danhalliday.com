@@ -1,5 +1,7 @@
 language: ruby
 rvm: 1.9.3
+notifications:
+  email: false
 script:
   - bundle exec middleman build
 deploy:
