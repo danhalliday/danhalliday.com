@@ -178,12 +178,7 @@
 
         @include size(medium) {
             margin: 0 $medium-size $medium-size $medium-size;
-            -webkit-column-gap: $medium-size;
-            -moz-column-gap: $medium-size;
-            column-gap: $medium-size;
-            -webkit-columns: 2;
-            -moz-columns: 2;
-            columns: 2;
+            width: 50%;
         }
 
         @include size(large) {
@@ -191,6 +186,9 @@
             -webkit-column-gap: $large-size;
             -moz-column-gap: $large-size;
             column-gap: $large-size;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            columns: 2;
             width: 50%;
             max-width: 35em;
         }
