@@ -23,32 +23,6 @@ body {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-a.contact {
-    display: block;
-    text-align: center;
-    margin-top: 1em;
-    border-radius: 4px;
-    border: 2px solid $dark-color;
-    padding: 0.5em 0.75em;
-    text-decoration: none;
-    transition: all 0.5s;
-
-    @include size(medium) {
-        display: inline-block;
-        text-align: left;
-        margin-top: 0.8em;
-    }
-
-    &:after {
-        content: '\A0\A0\2192';
-    }
-
-    &:hover {
-        background-color: transparentize($dark-color, 0.85);
-        transition: all 0.5s;
-    }
-}
-
 p {
     margin-bottom: #{$line-height}em;
     // widows: 3; // Bugs all over webkit...
