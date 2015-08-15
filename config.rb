@@ -7,7 +7,7 @@
 #   config.output_style = :compact
 # end
 
-proxy "/googlecfca002f899d9032.html", "/verify.html", { layout: nil }
+proxy "/googlecfca002f899d9032.html", "/verify.html", { layout: nil, ignore: true, }
 
 ###
 # Page options, layouts, aliases and proxies
