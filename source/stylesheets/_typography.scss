@@ -3,11 +3,6 @@ html {
     background-color: #fff;
     font-size: $font-size;
 
-    @include print {
-        font-size: 11px;
-        background: none;
-    }
-
     @include size(small) {
         font-size: $font-size + 1;
     }
@@ -48,19 +43,8 @@ a.contact {
         content: '\A0\A0\2192';
     }
 
-    @include print {
-        white-space: nowrap;
-        background-color: transparent;
-        color: $dark-color;
-
-        &:after {
-            content: ': hi@danhalliday.com';
-        }
-    }
-
     &:hover {
         background-color: transparentize($dark-color, 0.85);
-//        border-color: red;
         transition: all 0.5s;
     }
 }
@@ -72,10 +56,6 @@ p {
 
     a {
         color: $dark-color;
-
-        @include print {
-            text-decoration: none;
-        }
     }
 
     &:last-of-type {
@@ -90,10 +70,5 @@ p {
         margin-left: ceil($font-size / 4);
         display: inline-block;
         border-radius: 1.5px;
-
-        @include print {
-            width: $font-size / 2;
-            height: $font-size / 2;
-        }
     }
 }

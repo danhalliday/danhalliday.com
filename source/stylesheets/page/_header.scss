@@ -21,15 +21,10 @@
             width: $large-size;
             margin: $large-size;
         }
-
-        @include print {
-            margin: 0 0 $large-size 0;
-        }
     }
 
     .page-links {
         float: right;
-        @include print { display: none; }
         li {
             float: left;
 
@@ -65,14 +60,12 @@
                 a { background-image: asset_data_uri('linkedin-icon.svg'); }
                 opacity: 0;
                 visibility: hidden;
-                @include print { display: none; }
             }
 
             &.dribbble {
                 a { background-image: asset_data_uri('dribbble-icon.svg'); }
                 opacity: 0;
                 visibility: hidden;
-                @include print { display: none; }
             }
 
             &.email {
@@ -88,11 +81,5 @@
                 transition: 1s opacity;
             }
         }
-
-        @include print {
-            position: relative;
-            top: -$large-size; right: -$large-size;
-        }
-
     }
 }

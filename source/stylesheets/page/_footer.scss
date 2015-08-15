@@ -22,19 +22,6 @@
         line-height: $large-size;
     }
 
-    @include print {
-        padding: 0;
-        position: fixed;
-        left: 0; bottom: 0; right: 0;
-        min-height: $small-size;
-        line-height: $small-size;
-
-        p {
-            font-family: "lft-etica", "Helvetica Neue", sans-serif;
-            font-size: 1rem;
-        }
-    }
-
     p:last-child::after { display: none; }
 
     &:before {
@@ -53,11 +40,6 @@
         @include size(large) {
             top: $large-size; left: $large-size;
             width: $large-size; height: $large-size;
-        }
-
-        @include print {
-            top: 0; left: 0;
-            width: $small-size; height: $small-size;
         }
     }
 }

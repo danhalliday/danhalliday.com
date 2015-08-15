@@ -74,10 +74,6 @@
             // letter-spacing: -0.02em;
         }
 
-        @include print {
-            margin: 0 0 $large-size 0;
-        }
-
         .item-title {
             position: relative;
             display: inline-block;
@@ -199,12 +195,6 @@
             max-width: 35em;
         }
 
-        @include print {
-            margin: 0 0 $large-size 0;
-            width: 50%;
-            max-width: initial;
-        }
-
         a {
             color: inherit;
             font-weight: 600;
@@ -221,10 +211,6 @@
 
         @include size(large) {
             margin: 0 $large-size $large-size $large-size;
-        }
-
-        @include print {
-            margin: 0 0 $large-size 0;
         }
 
         .skills-title {
@@ -271,21 +257,12 @@
             width: 100%;
             height: 80vh;
 
-            @include print {
-                height: initial;
-                margin-bottom: $large-size / 2;
-            }
-
             &.small {
                 width: 50%;
                 height: 25vw;
 
                 @include size(small) {
                     height: 40vw;
-                }
-
-                @include print {
-                    height: auto;
                 }
             }
 
