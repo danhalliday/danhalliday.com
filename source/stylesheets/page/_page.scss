@@ -1,6 +1,4 @@
 .page-outline-only {
-    // TODO: Try changing to an offscreen technique, as some sources seem to suggest display: none
-    // means the content doesn't render using some assistive technologies. Seems fine on Lynx.
     display: none;
 }
 
@@ -11,16 +9,13 @@
     font-size: 1rem;
     text-transform: uppercase;
     padding: $small-size;
-//    color: transparentize($dark-color, 0.9);
 
     @include size(medium) {
         padding: $medium-size;
-//        font-size: 1.25rem;
     }
 
     @include size(large) {
         padding: $large-size;
-//        font-size: 1.5rem;
     }
 
     .page-projects-title-arrow {
@@ -50,6 +45,8 @@
     background-size: $small-size * 2;
     background-position: center;
     margin-bottom: -$small-size;
+    margin-left: -0.1rem;
+    transition: transform 0.3s;
 
     @include size(medium) {
         float: right;
@@ -65,4 +62,8 @@
     }
 
     span { display: none; }
+
+    &:hover {
+      transform: scale(1.2);
+    }
 }

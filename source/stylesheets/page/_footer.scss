@@ -3,13 +3,11 @@
     text-align: right;
     font-size: 0.8rem;
     padding: $small-size;
-    padding-left: $small-size * 2.5;
     min-height: $small-size;
     line-height: $small-size;
 
     @include size(medium) {
         padding: $medium-size;
-        padding-left: $medium-size * 2.5;
         min-height: $medium-size;
         line-height: $medium-size;
         font-size: 1rem;
@@ -17,33 +15,63 @@
 
     @include size(large) {
         padding: $large-size;
-        padding-left: $large-size * 2.5;
         min-height: $large-size;
         line-height: $large-size;
     }
 
+    p {
+      float: right;
+    }
+
     p:last-child::after { display: none; }
 
-    &:before {
-        content: '';
-        position: absolute;
-        background-size: 100%;
+    .page-footer-contact {
+      float: left;
 
-        top: $small-size; left: $small-size;
-        width: $small-size; height: $small-size;
+      a {
+        display: block;
+        transition: transform 0.3s;
+        background-image: asset_data_uri("email-icon.svg");
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        width: $small-size * 1.2;
+        height: $small-size;
 
         @include size(medium) {
-            top: $medium-size; left: $medium-size;
-            width: $medium-size; height: $medium-size;
+          width: $medium-size * 1.2;
+          height: $medium-size;
         }
 
         @include size(large) {
-            top: $large-size; left: $large-size;
-            width: $large-size; height: $large-size;
+          width: $large-size * 1.2;
+          height: $large-size;
         }
-    }
-}
 
-.page-footer:before, .page-header .page-logo {
-    background-image: asset_data_uri("logo.svg");
+        span { display: none; }
+      }
+    }
+
+//    &:before {
+//        content: '';
+//        position: absolute;
+//        background-size: 0; // 100%;
+//
+//        top: $small-size; left: $small-size;
+//        width: $small-size; height: $small-size;
+//
+//        @include size(medium) {
+//            top: $medium-size; left: $medium-size;
+//            width: $medium-size; height: $medium-size;
+//        }
+//
+//        @include size(large) {
+//            top: $large-size; left: $large-size;
+//            width: $large-size; height: $large-size;
+//        }
+//    }
 }

@@ -15,16 +15,11 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <!-- <header class="page-header">
-      <div class="page-logo"></div>
-      <ul class="page-links">
-        <li class="linkedin"><a href="http://uk.linkedin.com/in/danhalliday" title="Connect on LinkedIn"><span>linkedin.com/in/danhalliday</span></a></li>
-        <li class="dribbble"><a href="http://dribbble.com/danhalliday" title="Connect on Dribbble"><span>dribbble.com/danhalliday</span></a></li>
-        <li class="email"><a href="mailto:hi@danhalliday.com" title="Send me an email"><span>dan@danhalliday.com</span></a></li>
-      </ul>
-    </header> -->
     <%= yield %>
     <footer class="page-footer">
+      <p class="page-footer-contact">
+        <a href="mailto:hi@danhalliday.com" title="Send me an email"><span>Contact me</span></a>
+      </p>
       <p>Copyright &copy; <%= Date.today.year %> Dan Halliday</p>
     </footer>
     <%= content_tag :script, sprockets.find_asset('all.js'), type: 'text/javascript' %>
