@@ -31,7 +31,11 @@ const homepage = async (context) => {
 }
 
 const images = async () => {
-  await fs.copy("images/", "build/images/")
+  await fs.copy("images", "build/images")
+}
+
+const general = async () => {
+  await fs.copy("general", "build")
 }
 
 const styles = async (production) => {
@@ -54,6 +58,7 @@ const build = async () => {
   await homepage(context)
   await images()
   await styles()
+  await general()
   console.timeEnd("build")
 }
 
