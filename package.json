@@ -1,0 +1,34 @@
+{
+  "name": "danhalliday.com",
+  "version": "1.0.0",
+  "description": "My homepage.",
+  "main": "build.js",
+  "scripts": {
+    "start": "node serve",
+    "build": "node build",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/danielhalliday/danhalliday.com.git"
+  },
+  "author": "Dan Halliday",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/danielhalliday/danhalliday.com#readme",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "cssnano": "^3.10.0",
+    "fs-extra": "^5.0.0",
+    "js-yaml": "^3.10.0",
+    "node-promisify": "^1.2.0",
+    "node-sass": "^4.7.2",
+    "postcss": "^6.0.16",
+    "reshape": "^0.4.2",
+    "reshape-standard": "^3.3.0",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "chokidar": "^2.0.0"
+  }
+}

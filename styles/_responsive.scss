@@ -1,0 +1,38 @@
+$small-screen: 500px;
+$medium-screen: 500px;
+$large-screen: 800px;
+$huge-screen: 1500px;
+
+$small-size: 24px;
+$medium-size: 32px;
+$large-size: 48px;
+
+@mixin size($size) {
+
+    @if $size == all {
+        @content;
+    }
+
+    @else if $size == small {
+        @media screen and (max-width: $small-screen) { @content; }
+    }
+
+    @else if $size == medium {
+        @media screen and (min-width: $medium-screen), print { @content; }
+    }
+
+    @else if $size == large {
+        @media screen and (min-width: $large-screen), print { @content; }
+    }
+
+    @else if $size == huge {
+        @media screen and (min-width: $huge-screen), print { @content; }
+    }
+
+}
+
+@mixin print {
+    @media print {
+        @content;
+    }
+}
