@@ -1,0 +1,41 @@
+.item {
+    &.soundry-co {
+        $color: rgba(239, 0, 6, 0.92);
+        background-color: $color;
+        color: $light-color;
+        .item-sharing-link { fill: $color; }
+        .item-sharing-link-inner { fill: $light-color; }
+        .item-image-link svg path { fill: $color; };
+        &:before { background-color: $color; }
+    }
+
+    &.earsoft-audio {
+        $color: rgba(255, 225, 0, 0.95);
+        background-color: $color;
+        color: $dark-color;
+        .item-sharing-link { fill: $dark-color; }
+        .item-sharing-link-inner { fill: $color; }
+        .item-image-link svg path { fill: $color; };
+        &:before { background-color: $color; }
+    }
+
+    &.cantare-ladies-choir {
+        $color: rgba(237, 0, 91, 0.95);
+        background-color: $color;
+        color: $light-color;
+        .item-sharing-link { fill: $color; }
+        .item-sharing-link-inner { fill: $light-color; }
+        .item-image-link svg path { fill: $color; };
+        &:before { background-color: $color; }
+    }
+
+    &.a-happy-couple {
+        $color: rgba(133, 27, 52, 0.95);
+        background: $color;
+        color: $light-color;
+        .item-sharing-link { fill: $color; }
+        .item-sharing-link-inner { fill: $light-color; }
+        .item-image-link svg path { fill: $color; };
+        &:before { background-color: $color; }
+    }
+}

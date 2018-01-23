@@ -1,0 +1,87 @@
+// TODO: Retire
+
+.page-header {
+    @extend %clearfix;
+    position: absolute;
+
+    .page-logo {
+        float: left;
+        background-size: 100%;
+
+        height: $small-size * 1.5;
+        width: $small-size * 1.5;
+        margin: $small-size;
+
+        @include size(medium) {
+            height: $medium-size;
+            width: $medium-size;
+            margin: $medium-size;
+        }
+
+        @include size(large) {
+            height: $large-size;
+            width: $large-size;
+            margin: $large-size;
+        }
+    }
+
+    .page-links {
+        float: right;
+        li {
+            float: left;
+
+            a {
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 1;
+
+                $icon-scale: 0.75;
+                height: $small-size * (2 + 1.5);
+                width: $small-size * (2 + $icon-scale);
+                background-size: $small-size * $icon-scale;
+
+                @include size(medium) {
+                    $icon-scale: 0.5;
+                    height: $medium-size * (2 + 1);
+                    width: $medium-size * (2 + $icon-scale);
+                    background-size: $medium-size * $icon-scale;
+                }
+
+                @include size(large) {
+                    $icon-scale: 0.5;
+                    height: $large-size * (2 + 1);
+                    width: $large-size * (2 + $icon-scale);
+                    background-size: $large-size * $icon-scale;
+                }
+
+                span { display: none; }
+            }
+
+            &.linkedin {
+                a { background-image: url('/images/linkedin-icon.svg'); }
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &.dribbble {
+                a { background-image: url('/images/dribbble-icon.svg'); }
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &.email {
+                a { background-image: url('/images/email-icon.svg'); }
+            }
+
+        }
+
+        @include size(medium) {
+            &:hover li {
+                opacity: 1;
+                visibility: visible;
+                transition: 1s opacity;
+            }
+        }
+    }
+}

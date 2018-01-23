@@ -1,3 +1,3 @@
-# My Personal Website
+# My Homepage
 
-[![Build Status](https://travis-ci.org/danhalliday/danhalliday.com.svg?branch=master)](https://travis-ci.org/danhalliday/danhalliday.com)
+A simple static site with a short hand-written [build script](./build.js).
