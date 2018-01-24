@@ -1,5 +1,6 @@
 const fs = require("fs-extra")
 const path = require("path")
+const glob = require("glob-promise")
 const reshape = require("reshape")
 const standard = require("reshape-standard")
 const yaml = require("js-yaml")
@@ -22,12 +23,25 @@ const projects = async () => {
   return yaml.load(data)
 }
 
-const homepage = async (context) => {
-  const input = await fs.readFile("pages/index.html")
-  const plugin = standard({ locals: context, parser: false, minify: true })
-  const template = await reshape(plugin).process(input)
-  await fs.ensureDir("build")
-  await fs.writeFile("build/index.html", template.output())
+const pages = async (context) => {
+  const pages = await glob("pages/**/*.html")
+
+  const tasks = pages.map(async (page) => {
+    const id = path.basename(page, path.extname(page))
+    const directory = path.relative("pages", path.dirname(page))
+    const file = (id == "index") ? "index.html" : `${id}/index.html`
+    const destination = path.join("build", path.join(directory, file))
+
+    const locals = Object.assign({ id }, context)
+    const input = await fs.readFile(page)
+    const plugin = standard({ locals, parser: false, minify: true })
+    const template = await reshape(plugin).process(input)
+
+    await fs.ensureDir(path.dirname(destination))
+    await fs.writeFile(destination, template.output())
+  })
+
+  await Promise.all(tasks)
 }
 
 const images = async () => {
@@ -55,7 +69,7 @@ const build = async () => {
   console.time("build")
   await clean()
   const context = { projects: await projects(), slug }
-  await homepage(context)
+  await pages(context)
   await images()
   await styles()
   await general()

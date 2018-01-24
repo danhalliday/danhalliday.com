@@ -19,6 +19,7 @@
     "autoprefixer": "^7.2.5",
     "cssnano": "^3.10.0",
     "fs-extra": "^5.0.0",
+    "glob-promise": "^3.3.0",
     "js-yaml": "^3.10.0",
     "node-promisify": "^1.2.0",
     "node-sass": "^4.7.2",

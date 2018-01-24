@@ -2,7 +2,6 @@
     @extend %clearfix;
     position: relative;
     margin-top: -1px;
-
     padding-top: $small-size;
 
     @include size(medium) {
@@ -74,24 +73,22 @@
             margin: 0 $large-size $large-size $large-size;
             font-size: 3.0rem;
             line-height: 1.2;
-            // letter-spacing: -0.02em;
         }
 
         .item-title {
             position: relative;
-            display: inline-block;
-            font-weight: 800;
-            letter-spacing: 0.01em;
+            // display: inline-block;
+            font-weight: 700;
+            letter-spacing: -0.01em;
         }
 
         .item-subtitle {
-            font-weight: 400;
-            letter-spacing: 0.1em;
             margin-top: .75em;
             line-height: 1.2;
-            font-size: .5em;
+            font-size: .4em;
             text-transform: uppercase;
             padding-bottom: 1em;
+            letter-spacing: 0.075em;
 
             @include size(medium) {
                 margin-top: 0.5em;
@@ -101,8 +98,9 @@
                 content: '';
                 position: absolute; bottom: 0; left: 0;
                 margin: 0;
+                opacity: 0.05;
                 background: currentColor;
-                width: 2em;
+                width: 3em;
                 height: 2px;
             }
         }
@@ -158,7 +156,6 @@
                 margin: -2px $large-size - 2px $large-size 0;
                 font-size: 3.0rem;
                 line-height: 1.2;
-                letter-spacing: -0.02em;
             }
 
         }
@@ -193,7 +190,7 @@
             -moz-columns: 2;
             columns: 2;
             width: 50%;
-            max-width: 35em;
+            max-width: 40em;
         }
 
         a {
