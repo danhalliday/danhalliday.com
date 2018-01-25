@@ -1,0 +1,43 @@
+.d-navigation {
+  @extend .d-text-bold;
+  padding: 1.5rem;
+  overflow-x: auto;
+  flex-shrink: 0;
+  order: -1;
+
+  @include size(medium) {
+    padding: 3rem;
+  }
+
+  .d-page-index & {
+    order: unset;
+    margin-top: auto;
+    padding-top: 0;
+
+    // @include size(medium) {
+    // }
+  }
+}
+
+.d-navigation-items {
+  display: flex;
+}
+
+.d-navigation-item {
+  text-decoration: none;
+  margin-left: 3rem;
+  flex: 0 0 auto;
+
+  .d-page-technology &.d-target-technology,
+  .d-page-design &.d-target-design,
+  .d-page-companies &.d-target-companies,
+  .d-page-index &.d-target-index, {
+    color: $d-colour-darkish;
+    pointer-events: none;
+  }
+
+  &:first-child {
+    margin-left: unset;
+    margin-right: auto;
+  }
+}

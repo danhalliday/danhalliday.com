@@ -1,14 +1,50 @@
 @import "reset";
 @import "utils";
 @import "responsive";
+@import "colour";
+@import "text";
 
-$font-size: 16px;
+@import "components/body";
+@import "components/navigation";
+@import "components/title";
+@import "components/subtitle";
+@import "components/description";
+@import "components/section";
+@import "components/list";
+
+@import "defaults";
+
+
+
+
+
+
+
+
+
+$font-size: 17px;
 $line-height: 1.5;
 
 $dark-color: hsl(280, 5, 20%);
 $light-color: hsl(0, 0, 100%);
 
-@import "typography";
+p {
+    // margin-bottom: #{$line-height}em;
+    //
+    // &:last-of-type {
+    //     margin-bottom: 0;
+    // }
+
+    // &:last-of-type::after {
+    //     content: "";
+    //     background: currentColor;
+    //     width: ceil($font-size / 2);
+    //     height: ceil($font-size / 2);
+    //     margin-left: ceil($font-size / 4);
+    //     display: inline-block;
+    //     border-radius: 1.5px;
+    // }
+}
 
 @import "page/page";
 @import "page/header";

@@ -1,0 +1,22 @@
+.d-list {
+  margin-bottom: -0.75rem;
+
+  grid-gap: 1.5rem;
+
+  > * {
+    @extend .d-list-item;
+  }
+}
+
+.d-list-item {
+  @extend .d-text-epsilon;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid rgba($d-colour-highlight, 0.15);
+  color: $d-colour-highlight;
+  border-radius: 1rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  white-space: nowrap;
+  line-height: 1;
+}

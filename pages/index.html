@@ -1,38 +1,22 @@
 <extends src="layouts/layout.html">
   <block name="main">
-    <!-- <a class="page-contact-link" href="mailto:hi@danhalliday.com" title="Send me an email">
-      <span>dan@danhalliday.com</span>
-    </a> -->
+    <div class="d-section d-tall">
+      <h1 class="d-title">
+        Dan Halliday
+      </h1>
 
-    <div class="item item-intro">
-      <header class="item-header">
-        <h1 class="item-title">
-          Dan Halliday
-        </h1>
-
-        <!-- <p class="item-subtitle">
-          Technology &amp; Design
-        </p> -->
-      </header>
-
-      <section class="item-description">
-        <h2 class="page-outline-only">
-          About Me
-        </h2>
-
+      <div class="d-description">
         <p>
           I’m a technologist and designer with over fifteen years’ experience. As founder of several active technology companies and technical director and consultant to many more, I like to keep my projects varied. From visual design and user experience all the way through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
         </p>
 
         <p mdi>
-          If you’re working on something good, I want to be the first to hear about it! Email me and [introduce yourself](dan@halliday.work).
+          If you’re working on something good, I want to be the first to hear about it! Email me and [introduce yourself](mailto:dan@halliday.work).
         </p>
-      </section>
-
-      <include src="includes/navigation.html"></include>
+      </div>
     </div>
 
-    <section id="projects">
+    <!-- <section id="projects">
       <h2 class="page-projects-title">
         <span class="page-projects-title-arrow" hidden>
           <img src="/images/arrow-down-icon.svg" alt="Projects icon">
@@ -55,7 +39,7 @@
           </header>
 
           <a href="#{{ project.id }}" class="item-link" aria-label="Link to this image" hidden>
-            <img src="/images/link-icon.svg" alt="Link to this image">
+            <img src="/images/d-link-icon.svg" alt="Link to this image">
           </a>
 
           <section class="item-description">
@@ -75,7 +59,7 @@
               <div class="item-image item-image-size-{{ image.size }}" id="{{ slug(image.title) }}">
                 <div class="item-image-links" hidden>
                   <a href="#{{ slug(image.title) }}" class="item-image-link">
-                    <img src="/images/link-icon.svg" alt="Link icon">
+                    <img src="/images/d-link-icon.svg" alt="Link icon">
                   </a>
                 </div>
 
@@ -162,7 +146,7 @@
           Psst! Here's a little side-project I’m working on from time to time. It's called <a href="https://webworkshop.ltd">Web Workshop</a>.
         </p>
       </section>
-    </section>
+    </section> -->
 
     <include src="includes/person.html"></include>
     <include src="includes/website.html"></include>

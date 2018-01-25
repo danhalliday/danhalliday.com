@@ -1,0 +1,18 @@
+.d-section {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    padding: 1.5rem;
+    margin-top: -1.5rem;
+
+    @include size(medium) {
+      padding: 3rem;
+      margin-top: -3rem;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -4,46 +4,80 @@
   </block>
 
   <block name="main">
-    <include src="includes/navigation.html"></include>
+    <div class="d-section">
+      <h1 class="d-title">
+        Design
+      </h1>
 
-    <!-- <a class="page-contact-link" href="mailto:hi@danhalliday.com" title="Send me an email">
-      <span>dan@danhalliday.com</span>
-    </a> -->
-
-    <div class="item">
-      <header class="item-header">
-        <h1 class="item-title">
-          Design
-        </h1>
-      </header>
-
-      <section class="item-description">
-        <h2 class="page-outline-only">
-          About Me
-        </h2>
-
+      <div class="d-description">
         <p>
           I’m a technologist and designer with over fifteen years’ experience. As founder of several active technology companies and technical director and consultant to many more, I like to keep my projects varied. From visual design and user experience all the way through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
         </p>
 
         <p mdi>
-          If you’re working on something good, I want to be the first to hear about it! Email me and [introduce yourself](dan@halliday.work).
+          If you’re working on something good, I want to be the first to hear about it! Email me and [introduce yourself](mailto:dan@halliday.work).
         </p>
-      </section>
+      </div>
 
-      <section class="item-addenda">
-        <ul class="skills-list">
-          <li>User Experience</li>
-          <li>Logos</li>
-          <li>Typesetting</li>
-          <li>Diagramming</li>
-          <li>Photography</li>
-          <li>Brand Identity</li>
-          <li>Responsive</li>
-          <li>Mobile</li>
-          <li>Apps</li>
-        </ul>
-      </section>
+      <ul class="d-list">
+        <li>User Experience</li>
+        <li>Logos</li>
+        <li>Typesetting</li>
+        <li>Diagramming</li>
+        <li>Photography</li>
+        <li>Brand Identity</li>
+        <li>Responsive</li>
+        <li>Mobile</li>
+        <li>Apps</li>
+      </ul>
     </div>
+
+    <section id="projects">
+      <each loop="project in projects">
+        <article id="{{ project.id }}" class="item item-count {{ project.id}}">
+          <img class="item-hero-image" src="/images/photos/{{ project.hero }}" alt="Project image" hidden>
+
+          <header class="item-header">
+            <h3 class="item-title">
+              {{ project.title }}
+            </h3>
+
+            <p class="item-subtitle">
+              {{ project.subtitle }}
+            </p>
+          </header>
+
+          <a href="#{{ project.id }}" class="item-link" aria-label="Link to this image" hidden>
+            <img src="/images/d-link-icon.svg" alt="Link to this image">
+          </a>
+
+          <section class="item-description">
+            <h4 class="page-outline-only">
+              Description
+            </h4>
+
+            <div md>{{ project.description }}</div>
+          </section>
+
+          <section class="item-images">
+            <h4 class="page-outline-only">
+              Images
+            </h4>
+
+            <each loop="image in project.images">
+              <div class="item-image item-image-size-{{ image.size }}" id="{{ slug(image.title) }}">
+                <div class="item-image-links" hidden>
+                  <a href="#{{ slug(image.title) }}" class="item-image-link">
+                    <img src="/images/d-link-icon.svg" alt="Link icon">
+                  </a>
+                </div>
+
+                <img src="/images/photos/{{ image.source }}" alt="{{ image.title }}">
+              </div>
+            </each>
+          </section>
+        </article>
+      </each>
+    </section>
   </block>
 </extends>

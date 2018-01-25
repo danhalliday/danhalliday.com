@@ -1,0 +1,23 @@
+:root {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  font-size: 17px;
+  background-color: $d-colour-dark;
+  background-image: linear-gradient(darken($d-colour-dark, 5%), $d-colour-dark);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  @extend .d-body;
+}
+
+a {
+  @extend .d-text-link;
+}
+
+main {
+  .d-page-index & {
+    margin-top: auto;
+  }
+}

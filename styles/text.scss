@@ -1,0 +1,55 @@
+.d-text {
+  font-family: "Lota Grotesque Alt 3", sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.0075em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  color: $d-colour-light;
+}
+
+.d-text-alpha {
+  @extend .d-text-bold;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  line-height: 1;
+
+  @include size(medium) {
+    font-size: 3rem;
+  }
+}
+
+.d-text-beta {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.d-text-gamma {
+  font-size: 1rem;
+}
+
+.d-text-epsilon {
+  font-size: 0.75rem;
+}
+
+.d-text-link {
+  @extend .d-text-bold;
+  transition: 0.25s color;
+  color: inherit;
+
+  &:active, &:hover:active {
+    color: $d-colour-darkish;
+    text-shadow: none;
+  }
+
+  @media (pointer:fine) {
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.d-text-bold {
+  font-weight: 600;
+}

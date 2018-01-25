@@ -78,7 +78,7 @@
         .item-title {
             position: relative;
             // display: inline-block;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: -0.01em;
         }
 
@@ -192,16 +192,10 @@
             width: 50%;
             max-width: 40em;
         }
-
-        a {
-            color: inherit;
-            font-weight: 600;
-        }
     }
 
     .item-addenda {
         margin: 0 $small-size $small-size $small-size;
-        color: lighten($dark-color, 5%);
 
         @include size(medium) {
             margin: 0 $medium-size $medium-size $medium-size;
@@ -220,14 +214,14 @@
             display: inline;
             list-style-type: circle;
             margin-bottom: 1em;
+            font-size: 0.8rem;
             line-height: $line-height;
 
             li {
                 display: inline-block;
-                border: 2px solid transparentize($dark-color, 0.9);
+                border: 2px solid lighten($d-colour-dark, 5%);
                 border-radius: 1em;
                 padding: 0.2em 0.7em;
-                color: $dark-color;
                 // min-width: 0em;
                 text-align: center;
                 margin: 0 0.5em 0.5em 0;
