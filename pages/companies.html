@@ -6,18 +6,26 @@
   <block name="main">
     <div class="d-section">
       <h1 class="d-title">
-        Companies
+        {{ companies.title }}
       </h1>
 
-      <div class="d-description">
-        <p>
-          I’m a technologist and designer with over fifteen years’ experience. As founder of several active technology companies and technical director and consultant to many more, I like to keep my projects varied. From visual design and user experience all the way through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
-        </p>
-
-        <p mdi>
-          If you’re working on something good, I want to be the first to hear about it! Email me and [introduce yourself](mailto:dan@halliday.work).
-        </p>
+      <div class="d-description" md>
+        {{ companies.description }}
       </div>
     </div>
+
+    <each loop="company of companies.list">
+      <section class="d-section" id="{{ company.id }}">
+        <h2 class="d-title">
+          {{ company.name }}
+        </h2>
+
+        <p class="d-subtitle">
+          {{ company.position }}
+        </p>
+
+        <div class="d-description" md>{{ company.description }}</div>
+      </section>
+    </each>
   </block>
 </extends>

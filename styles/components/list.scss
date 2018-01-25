@@ -1,10 +1,12 @@
 .d-list {
   margin-bottom: -0.75rem;
 
-  grid-gap: 1.5rem;
-
   > * {
     @extend .d-list-item;
+  }
+
+  &.d-highlight {
+    color: $d-colour-highlight;
   }
 }
 
@@ -12,11 +14,21 @@
   @extend .d-text-epsilon;
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  border: 2px solid rgba($d-colour-highlight, 0.15);
-  color: $d-colour-highlight;
-  border-radius: 1rem;
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
   white-space: nowrap;
   line-height: 1;
+  position: relative;
+  // color: $d-colour-highlight;
+
+  &:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    box-shadow: 0 0 0 2px currentColor;
+    border-radius: 5rem;
+    opacity: 0.15;
+  }
 }

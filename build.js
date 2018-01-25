@@ -18,9 +18,16 @@ const clean = async () => {
   await fs.remove("build")
 }
 
-const projects = async () => {
-  const data = await fs.readFile("data/projects.yml")
-  return yaml.load(data)
+const data = async () => {
+  const projects = await fs.readFile("data/projects.yml")
+  const technology = await fs.readFile("data/technology.yml")
+  const companies = await fs.readFile("data/companies.yml")
+
+  return {
+    projects: yaml.load(projects),
+    technology: yaml.load(technology),
+    companies: yaml.load(companies)
+  }
 }
 
 const pages = async (context) => {
@@ -68,7 +75,7 @@ const styles = async (production) => {
 const build = async () => {
   console.time("build")
   await clean()
-  const context = { projects: await projects(), slug }
+  const context = { ...await data(), slug }
   await pages(context)
   await images()
   await styles()

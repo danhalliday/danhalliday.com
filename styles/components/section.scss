@@ -15,4 +15,16 @@
       margin-top: 0;
     }
   }
+
+  &:nth-child(even) {
+    background-color: rgba(black, 0.15);
+  }
+
+  &.d-theme-soundry {
+    background-color: red;
+  }
+
+  &.d-theme-cantare-ladies-choir {
+    background-color: rgb(237, 0, 91);
+  }
 }
