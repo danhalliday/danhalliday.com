@@ -22,12 +22,14 @@
 
     <each loop="project of technology.projects">
       <section class="d-section" id="{{ project.id }}">
-        <h2 class="d-title">
-          {{ project.name }}
-        </h2>
+        <a class="d-title-link" href="#{{ project.id }}">
+          <h2 class="d-title">
+            {{ project.title }}
+          </h2>
+        </a>
 
         <p class="d-subtitle">
-          {{ project.client }}
+          {{ project.subtitle }}
         </p>
 
         <ul class="d-list">

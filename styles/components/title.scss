@@ -1,3 +1,20 @@
 .d-title {
   @extend .d-text-alpha;
+
+  :target & {
+    animation: d-title-target 2s;
+  }
+}
+
+.d-title-link {
+  text-decoration: none;
+
+  &:hover, &:active, &:hover:active {
+    color: unset;
+  }
+}
+
+@keyframes d-title-target {
+  0% { color: yellow; }
+  100% { color: unset; }
 }

@@ -5,7 +5,7 @@
   flex-shrink: 0;
   order: -1;
 
-  @include size(medium) {
+  @include d-screen-medium-up {
     padding: 3rem;
   }
 
@@ -13,9 +13,6 @@
     order: unset;
     margin-top: auto;
     padding-top: 0;
-
-    // @include size(medium) {
-    // }
   }
 }
 
@@ -27,6 +24,7 @@
   text-decoration: none;
   margin-left: 3rem;
   flex: 0 0 auto;
+  text-decoration: none;
 
   .d-page-technology &.d-target-technology,
   .d-page-design &.d-target-design,

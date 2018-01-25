@@ -6,110 +6,50 @@
   <block name="main">
     <div class="d-section">
       <h1 class="d-title">
-        Design
+        {{ design.title }}
       </h1>
 
-      <div class="d-description">
-        <p>
-          I’m a technologist and designer with over fifteen years’ experience. As founder of several active technology companies and technical director and consultant to many more, I like to keep my projects varied. From visual design and user experience all the way through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
-        </p>
-
-        <p mdi>
-          If you’re working on something good, I want to be the first to hear about it! Email me and [introduce yourself](mailto:dan@halliday.work).
-        </p>
+      <div class="d-description" md>
+        {{ design.description }}
       </div>
 
       <ul class="d-list d-highlight">
-        <li>User Experience</li>
-        <li>Logos</li>
-        <li>Typesetting</li>
-        <li>Diagramming</li>
-        <li>Photography</li>
-        <li>Brand Identity</li>
-        <li>Responsive</li>
-        <li>Mobile</li>
-        <li>Apps</li>
+        <each loop="skill of [...new Set([].concat(...design.projects.map(p => p.skills)))].sort()">
+          <li>{{ skill }}</li>
+        </each>
       </ul>
     </div>
 
-    <div class="d-section d-theme-soundry">
-      <h2 class="d-title">
-        Soundry Co
-      </h2>
+    <each loop="project of design.projects">
+      <section class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
+        <a class="d-title-link" href="#{{ project.id }}">
+          <h2 class="d-title">
+            {{ project.title }}
+          </h2>
+        </a>
 
-      <p class="d-subtitle">
-        Complete brand identity
-      </p>
-
-      <ul class="d-list">
-        <li>Foo</li>
-        <li>Bar</li>
-        <li>Baz Qux</li>
-      </ul>
-    </div>
-
-    <div class="d-section d-theme-cantare-ladies-choir">
-      <h2 class="d-title">
-        Cantare Ladies’ Choir
-      </h2>
-
-      <p class="d-subtitle">
-        Logo & Colour Guide
-      </p>
-
-      <div class="d-description">
-        <p>
-          I’m a technologist and designer with over fifteen years’ experience. As founder of several active technology companies and technical director and consultant to many more, I like to keep my projects varied. From visual design and user experience all the way through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
+        <p class="d-subtitle">
+          {{ project.subtitle }}
         </p>
-      </div>
-    </div>
 
-    <section id="projects">
-      <each loop="project in projects">
-        <article id="{{ project.id }}" class="item item-count {{ project.id}}">
-          <img class="item-hero-image" src="/images/photos/{{ project.hero }}" alt="Project image" hidden>
+        <ul class="d-list">
+          <each loop="skill in project.skills.sort()">
+            <li>{{ skill }}</li>
+          </each>
+        </ul>
 
-          <header class="item-header">
-            <h3 class="item-title">
-              {{ project.title }}
-            </h3>
+        <div class="d-description" md>{{ project.description }}</div>
 
-            <p class="item-subtitle">
-              {{ project.subtitle }}
+        <div class="d-images">
+          <each loop="image in project.images">
+            <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
+              <a href="#{{ slug(image.title) }}" class="d-image-link">
+                <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
+              </a>
             </p>
-          </header>
-
-          <a href="#{{ project.id }}" class="item-link" aria-label="Link to this image" hidden>
-            <img src="/images/d-link-icon.svg" alt="Link to this image">
-          </a>
-
-          <section class="item-description">
-            <h4 class="page-outline-only">
-              Description
-            </h4>
-
-            <div md>{{ project.description }}</div>
-          </section>
-
-          <section class="item-images">
-            <h4 class="page-outline-only">
-              Images
-            </h4>
-
-            <each loop="image in project.images">
-              <div class="item-image item-image-size-{{ image.size }}" id="{{ slug(image.title) }}">
-                <div class="item-image-links" hidden>
-                  <a href="#{{ slug(image.title) }}" class="item-image-link">
-                    <img src="/images/d-link-icon.svg" alt="Link icon">
-                  </a>
-                </div>
-
-                <img src="/images/photos/{{ image.source }}" alt="{{ image.title }}">
-              </div>
-            </each>
-          </section>
-        </article>
-      </each>
-    </section>
+          </each>
+        </div>
+      </section>
+    </each>
   </block>
 </extends>

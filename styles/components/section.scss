@@ -6,7 +6,7 @@
     padding: 1.5rem;
     margin-top: -1.5rem;
 
-    @include size(medium) {
+    @include d-screen-medium-up {
       padding: 3rem;
       margin-top: -3rem;
     }
@@ -20,11 +20,20 @@
     background-color: rgba(black, 0.15);
   }
 
-  &.d-theme-soundry {
+  &.d-theme-soundry-co {
     background-color: red;
   }
 
   &.d-theme-cantare-ladies-choir {
     background-color: rgb(237, 0, 91);
+  }
+
+  &.d-theme-earsoft-audio {
+    background-color: rgb(255, 225, 0);
+    color: $d-colour-dark;
+  }
+
+  &.d-theme-a-happy-couple {
+    background-color: rgb(133, 27, 52);
   }
 }

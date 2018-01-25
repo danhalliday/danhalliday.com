@@ -1,4 +1,6 @@
 .d-description {
+  // text-decoration: underline;
+
   > * {
     margin-top: 1.5rem;
 
@@ -7,7 +9,7 @@
     }
   }
 
-  @include size(large) {
+  @include d-screen-large-up {
     column-count: 2;
     column-gap: 3rem;
     max-width: 40rem;
@@ -17,7 +19,7 @@
     content: "";
     display: inline-block;
     width: 1ex; height: 1ex;
-    background-color: $d-colour-light;
+    background-color: currentColor;
     margin-left: 1ex;
     border-radius: 0.1em;
   }

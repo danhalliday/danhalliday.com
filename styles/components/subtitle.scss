@@ -1,11 +1,7 @@
 .d-subtitle {
   @extend .d-text-beta;
 
-  .d-title + & {
+  .d-title + &, .d-title-link + & {
     padding-top: 0.5rem;
-
-    @include size(medium) {
-      padding-top: 1rem;
-    }
   }
 }

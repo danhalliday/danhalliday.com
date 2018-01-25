@@ -1,5 +1,4 @@
 @import "reset";
-@import "utils";
 @import "responsive";
 @import "colour";
 @import "text";
@@ -12,45 +11,6 @@
 @import "components/description";
 @import "components/section";
 @import "components/list";
+@import "components/image";
 
 @import "defaults";
-
-
-
-
-
-
-
-
-
-$font-size: 17px;
-$line-height: 1.5;
-
-$dark-color: hsl(280, 5, 20%);
-$light-color: hsl(0, 0, 100%);
-
-p {
-    // margin-bottom: #{$line-height}em;
-    //
-    // &:last-of-type {
-    //     margin-bottom: 0;
-    // }
-
-    // &:last-of-type::after {
-    //     content: "";
-    //     background: currentColor;
-    //     width: ceil($font-size / 2);
-    //     height: ceil($font-size / 2);
-    //     margin-left: ceil($font-size / 4);
-    //     display: inline-block;
-    //     border-radius: 1.5px;
-    // }
-}
-
-@import "page/page";
-@import "page/header";
-@import "page/footer";
-
-@import "item/item";
-@import "item/intro";
-@import "item/themes";

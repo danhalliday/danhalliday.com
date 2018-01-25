@@ -11,10 +11,10 @@
 .d-text-alpha {
   @extend .d-text-bold;
   font-size: 2rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   line-height: 1.2;
 
-  @include size(medium) {
+  @include d-screen-medium-up {
     font-size: 3rem;
   }
 }
@@ -24,7 +24,7 @@
   text-transform: uppercase;
   letter-spacing: 0.075em;
 
-  @include size(medium) {
+  @include d-screen-medium-up {
     font-size: 1.25rem;
   }
 }
@@ -41,6 +41,7 @@
   @extend .d-text-bold;
   transition: 0.25s color;
   color: inherit;
+  text-decoration: inherit;
 
   &:active, &:hover:active {
     color: $d-colour-darkish;

@@ -16,9 +16,11 @@
 
     <each loop="company of companies.list">
       <section class="d-section" id="{{ company.id }}">
-        <h2 class="d-title">
-          {{ company.name }}
-        </h2>
+        <a class="d-title-link" href="#{{ company.id }}">
+          <h2 class="d-title">
+            {{ company.name }}
+          </h2>
+        </a>
 
         <p class="d-subtitle">
           {{ company.position }}
