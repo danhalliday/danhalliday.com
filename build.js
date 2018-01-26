@@ -61,6 +61,10 @@ const general = async () => {
   await fs.copy("general", "build")
 }
 
+const fonts = async () => {
+  await fs.copy("fonts", "build/fonts")
+}
+
 const styles = async (production) => {
   const source = "styles/main.scss"
   const destination = "build/styles/main.css"
@@ -81,6 +85,7 @@ const build = async () => {
   await pages(context)
   await images()
   await styles()
+  await fonts()
   await general()
   console.timeEnd("build")
 }

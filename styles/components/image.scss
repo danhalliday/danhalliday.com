@@ -21,7 +21,7 @@
     width: 50%;
   }
 
-  &:last-child {
+  &:last-child, &.d-size-small:nth-last-child(2) {
     margin-bottom: -3rem;
   }
 }

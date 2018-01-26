@@ -41,7 +41,6 @@
   @extend .d-text-bold;
   transition: 0.25s color;
   color: inherit;
-  text-decoration: inherit;
 
   &:active, &:hover:active {
     color: $d-colour-darkish;
