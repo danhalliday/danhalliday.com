@@ -4,6 +4,8 @@
   overflow-x: auto;
   flex-shrink: 0;
   order: -1;
+  mask-image: linear-gradient(to left, transparent, white 1.5rem, white);
+  -webkit-overflow-scrolling: touch;
 
   @include d-screen-medium-up {
     padding: 3rem;
@@ -26,9 +28,14 @@
 
 .d-navigation-item {
   text-decoration: none;
-  margin-left: 3rem;
+  margin-left: 2rem;
   flex: 0 0 auto;
   text-decoration: none;
+  position: relative;
+
+  @include d-screen-medium-up {
+    margin-left: 3rem;
+  }
 
   .d-page-technology &.d-target-technology,
   .d-page-design &.d-target-design,
@@ -41,5 +48,14 @@
   &:first-child {
     margin-left: unset;
     margin-right: auto;
+  }
+
+  &:last-child:after {
+    content: "";
+    display: flex;
+    width: 1.5rem;
+    height: 1px;
+    position: absolute;
+    right: -1.5rem;
   }
 }
