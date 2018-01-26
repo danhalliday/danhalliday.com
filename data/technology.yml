@@ -11,11 +11,22 @@ projects:
     title: Wireless Audio Visualiser
     subtitle: DST Innovations
     description: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      I built an iOS app for [DST Innovations](http://www.dst-innovations.net) to serve as a controller for their prototype multimedia fashion product.
+
+      The product features a wireless peripheral driving a visualiser display, which reacts to live music. The iOS app is a music player which analyses the audio in real time and computes a frequency spectrum, which is sent wirelessly to the peripheral.
+
+      The main requirement was that the music and visuals played in lockstep, so I devised a clock synchronisation mechanism. The iOS app uses a very basic approximation to [Network Time Protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol) to establish a common clock with the peripheral — in the order of a few milliseconds’ accuracy. It then delays audio playout by a fixed period for safety, and sends each audio frame with a timestamp against the common clock so the peripheral knows exactly when each frame should be displayed.
+
+      I worked with iOS’s Audio Unit API to play and capture the audio data, and used a lock free circular buffer to pull samples out, running an FFT analysis on them on a separate thread and queueing them for transmission. Limitations on the data rate for Bluetooth LE meant packing the data fairly tightly, so I designed and documented a binary wire protocol, with a concise layout for _sync_ and _data_ packets.
+
+      To test the system end-to-end, I created a simple Node.js tool running on a desktop computer which prints Bluetooth session lifecycle events and statistics on the incoming packets, and could be left running for long periods. This was especially helpful with the clock synchronisation mechanism, which would have been wildly unstable without some timeout values and other insights pulled from extended real-world use.
     skills:
       - iOS
+      - C
       - Swift
-      - Objective-C
+      - Audio Units
+      - DSP
+      - Accelerate
       - Bluetooth
       - Node.js
 

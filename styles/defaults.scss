@@ -16,6 +16,10 @@ a {
   @extend .d-text-link;
 }
 
+em {
+  @extend .d-text-italic;
+}
+
 main {
   .d-page-index & {
     margin-top: auto;

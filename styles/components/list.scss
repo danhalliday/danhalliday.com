@@ -1,13 +1,20 @@
 .d-list {
   margin-bottom: -0.75rem;
   margin-left: -0.75rem;
+  color: $d-colour-highlight;
 
   > * {
     @extend .d-list-item;
   }
 
-  &.d-highlight {
-    color: $d-colour-highlight;
+  .d-theme-soundry-co &,
+  .d-theme-cantare-ladies-choir &,
+  .d-theme-a-happy-couple & {
+    color: $d-colour-light;
+  }
+
+  .d-theme-earsoft-audio & {
+    color: $d-colour-dark;
   }
 }
 

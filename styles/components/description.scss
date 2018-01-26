@@ -1,5 +1,5 @@
 .d-description {
-  // text-decoration: underline;
+  overflow-wrap: break-word;
 
   > * {
     margin-top: 1.5rem;
@@ -12,7 +12,7 @@
   @include d-screen-large-up {
     column-count: 2;
     column-gap: 3rem;
-    max-width: 40rem;
+    max-width: 42rem;
   }
 
   p:last-child:after {
@@ -22,5 +22,7 @@
     background-color: currentColor;
     margin-left: 1ex;
     border-radius: 0.1em;
+    position: relative;
+    top: -0.5px;
   }
 }
