@@ -11,13 +11,13 @@
       margin-top: -3rem;
     }
 
-    &:first-child {
+    &:first-child, &.d-a11y:first-child + * {
       margin-top: 0;
     }
   }
 
   &:nth-child(even) {
-    background-color: rgba(black, 0.15);
+    background-color: darken($d-colour-dark, 2%);
   }
 
   &.d-theme-soundry-co {

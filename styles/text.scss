@@ -1,7 +1,7 @@
 .d-text {
   font-family: "Lota Grotesque Alt 3", sans-serif;
   line-height: 1.5;
-  letter-spacing: -0.0075em;
+  letter-spacing: -0.005em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
@@ -20,9 +20,10 @@
 }
 
 .d-text-beta {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1.2;
 
   @include d-screen-medium-up {
     font-size: 1.25rem;
@@ -33,7 +34,7 @@
   font-size: 1rem;
 }
 
-.d-text-epsilon {
+.d-text-delta {
   font-size: 0.8rem;
 }
 

@@ -19,13 +19,14 @@
 }
 
 .d-list-item {
-  @extend .d-text-epsilon;
+  @extend .d-text-delta;
   display: inline-block;
+  vertical-align: middle;
   padding: 0.5rem 0.75rem;
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
-  white-space: nowrap;
   line-height: 1;
+  white-space: nowrap;
   position: relative;
 
   &:after {

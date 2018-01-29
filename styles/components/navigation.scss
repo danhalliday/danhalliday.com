@@ -1,11 +1,16 @@
 .d-navigation {
-  @extend .d-text-bold;
   padding: 1.5rem;
   overflow-x: auto;
   flex-shrink: 0;
   order: -1;
-  mask-image: linear-gradient(to left, transparent, white 1.5rem, white);
+  // mask-image: linear-gradient(to left, transparent, white 3rem, white);
   -webkit-overflow-scrolling: touch;
+  background-color: darken($d-colour-dark, 3%);
+  line-height: 1;
+
+  @include d-screen-small-up {
+    background-color: unset;
+  }
 
   @include d-screen-medium-up {
     padding: 3rem;
@@ -14,7 +19,6 @@
   .d-page-index & {
     order: unset;
     margin-top: auto;
-    padding-top: 0;
   }
 
   a {
@@ -27,6 +31,7 @@
 }
 
 .d-navigation-item {
+  @extend .d-text-delta;
   text-decoration: none;
   margin-left: 2rem;
   flex: 0 0 auto;
