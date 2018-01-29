@@ -23,12 +23,14 @@ const data = async () => {
   const technology = await fs.readFile("data/technology.yml")
   const design = await fs.readFile("data/design.yml")
   const companies = await fs.readFile("data/companies.yml")
+  const services = await fs.readFile("data/services.yml")
 
   return {
     about: yaml.load(about),
     technology: yaml.load(technology),
     design: yaml.load(design),
-    companies: yaml.load(companies)
+    companies: yaml.load(companies),
+    services: yaml.load(services)
   }
 }
 
