@@ -1,7 +1,10 @@
-title: Technology # Skills to add: Rails, SQL
+title: Technology
+
+# Skills to add:
+# - Rails
 
 description: |
-  I've worked with a wide range of technologies and platforms — from front-end web development to back-end, native, mobile, graphics and audio.
+  I've worked with a wide range of technologies, starting out in front and back end web development and moving on to desktop and mobile apps, graphics, and audio.
 
   Here are a few of my recent projects. To see some code, visit me on [GitHub](https://github.com/danhalliday). To get in touch about a project, just introduce yourself by [email](mailto:dan@halliday.work).
 
@@ -36,7 +39,7 @@ projects:
     description: |
       I wrote an iOS [SDK](https://en.wikipedia.org/wiki/Software_development_kit) for [SpeechKit](https://speechkit.io) to give their customers an easy way to add podcast content to their apps. The kit is distributed on [CocoaPods](https://cocoapods.org), and can be added to an app in minutes.
 
-      The implementation was fairly straightforward, being a relatively thin front end to a backend service which uses IBM’s [Watson](https://www.ibm.com/watson/) to perform text-to-speech synthesis and intelligently cache articles as apps request them.
+      The implementation was relatively straightforward, being a thin front end to a backend service which uses IBM’s [Watson](https://www.ibm.com/watson/) to perform text-to-speech synthesis and intelligently cache articles as apps request them.
 
       The emphasis was on ease of use and reliability for the developer, so I used iOS’s network and audio frameworks to avoid depending on lots of third party libraries, wrote extensive tests including testing the actual audio playback, and spent time writing readmes, API documentation, and code samples for both Objective-C and Swift.
 
