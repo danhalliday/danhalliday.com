@@ -39,6 +39,7 @@
     box-shadow: 0 0 0 2px currentColor;
     border-radius: 5rem;
     opacity: 0.05;
+    pointer-events: none;
 
     .d-theme-soundry-co & {
       opacity: 0.12;
