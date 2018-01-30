@@ -5,11 +5,11 @@
   order: -1;
   // mask-image: linear-gradient(to left, transparent, white 3rem, white);
   -webkit-overflow-scrolling: touch;
-  background-color: darken($d-colour-dark, 3%);
+  // background-color: darken($d-colour-dark, 3%);
   line-height: 1;
 
   @include d-screen-small-up {
-    background-color: unset;
+    // background-color: unset;
   }
 
   @include d-screen-medium-up {
