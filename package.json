@@ -1,7 +1,7 @@
 {
   "name": "dan.halliday.work",
   "version": "1.0.0",
-  "description": "My homepage.",
+  "description": "My work website.",
   "main": "build.js",
   "scripts": {
     "start": "node serve",
@@ -14,7 +14,7 @@
   },
   "author": "Dan Halliday",
   "license": "ISC",
-  "homepage": "https://github.com/danhalliday/danhalliday.com",
+  "homepage": "https://github.com/danhalliday/dan.halliday.work",
   "dependencies": {
     "autoprefixer": "^7.2.5",
     "cssnano": "^3.10.0",

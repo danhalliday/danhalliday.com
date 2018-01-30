@@ -1,7 +1,9 @@
 title: Technology # Skills to add: Rails, SQL
 
 description: |
-  I've worked with a wide range of technologies and platforms. Here are a few of my recent projects.
+  I've worked with a wide range of technologies and platforms — from front-end web development to back-end, native, mobile, graphics and audio.
+
+  Here are a few of my recent projects. For more, visit me on [GitHub](https://github.com/danhalliday).
 
 projects:
 
@@ -43,7 +45,7 @@ projects:
       - iOS
       - Swift
       - CocoaPods
-      - API Design
+      - API
       - Documentation
       - React Native
 
@@ -79,6 +81,7 @@ projects:
       - Node.js
       - JavaScript
       - CSS
+      - AWS
       - Angular
       - Web Components
       - MongoDB
