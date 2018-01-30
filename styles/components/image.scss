@@ -22,7 +22,11 @@
   }
 
   &:last-child, &.d-size-small:nth-last-child(2) {
-    margin-bottom: -3rem;
+    margin-bottom: -1.5rem;
+
+    @include d-screen-medium-up {
+      margin-bottom: -3rem;
+    }
   }
 }
 
