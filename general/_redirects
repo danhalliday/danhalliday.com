@@ -1,4 +1,6 @@
+https://danhalliday.netlify.com/* https://dan.halliday.work/:splat 301!
 https://danhalliday.com/* https://dan.halliday.work/:splat 301!
-https://halliday.work/ https://dan.halliday.work/ 302!
+
+https://halliday.work/* https://dan.halliday.work/ 302!
 
 /* /missing/index.html 404
