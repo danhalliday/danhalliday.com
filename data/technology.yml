@@ -29,14 +29,23 @@ projects:
       - Node.js
 
   - id: mobile-text-to-speech-library
-    title: Mobile Text to Speech Library
+    title: Mobile Text-to-Speech Library
     subtitle: SpeechKit
     description: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      I wrote an iOS [SDK](https://en.wikipedia.org/wiki/Software_development_kit) for [SpeechKit](https://speechkit.io) to give their customers an easy way to add podcast content to their apps. The kit is distributed on [CocoaPods](https://cocoapods.org), and can be added to an app in minutes.
+
+      The implementation was fairly straightforward, being a relatively thin front end to a backend service which uses IBM’s [Watson](https://www.ibm.com/watson/) to perform text-to-speech synthesis and intelligently cache articles as apps request them.
+
+      The emphasis was on ease of use and reliability for the developer, so I used iOS’s network and audio frameworks to avoid depending on lots of third party libraries, wrote extensive tests including testing the actual audio playback, and spent time writing readmes, API documentation, and code samples for both Objective-C and Swift.
+
+      To demonstrate the kit and help with real-world testing, I put together a [React Native](https://www.reactnative.com) app which lists recent news stories from a range of publications, and features a mini player which reads the stories as a playlist. The app was released on the App Store and its _native bridge_ code added to the documentation to make integration with React apps easier.
     skills:
       - iOS
       - Swift
       - CocoaPods
+      - API Design
+      - Documentation
+      - React Native
 
   - id: multichannel-streaming-server
     title: Multichannel Streaming Server
@@ -74,6 +83,7 @@ projects:
       - Web Components
       - MongoDB
       - DevOps
+      - React
 
   - id: audio-processing library
     title: Audio Processing Library
