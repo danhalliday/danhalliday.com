@@ -1,5 +1,5 @@
 {
-  "name": "danhalliday.com",
+  "name": "dan.halliday.work",
   "version": "1.0.0",
   "description": "My homepage.",
   "main": "build.js",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/danielhalliday/danhalliday.com.git"
+    "url": "git@github.com:danhalliday/dan.halliday.work.git"
   },
   "author": "Dan Halliday",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/danielhalliday/danhalliday.com#readme",
+  "homepage": "https://github.com/danhalliday/danhalliday.com",
   "dependencies": {
     "autoprefixer": "^7.2.5",
     "cssnano": "^3.10.0",
