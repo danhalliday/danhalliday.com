@@ -1,0 +1,6 @@
+.d-body {
+  @extend .d-text;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

@@ -1,0 +1,43 @@
+.d-section {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    padding: 1.5rem;
+    margin-top: -1.5rem;
+
+    @include d-screen-small-up {
+      padding: 3rem;
+      margin-top: -3rem;
+    }
+
+    &:first-child, &.d-a11y:first-child + * {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: darken($d-colour-dark, 2%);
+  }
+
+  &.d-theme-soundry-co {
+    background-color: red;
+  }
+
+  &.d-theme-cantare-ladies-choir {
+    background-color: rgb(237, 0, 91);
+  }
+
+  &.d-theme-earsoft-audio {
+    background-color: rgb(255, 225, 0);
+    color: $d-colour-dark;
+  }
+
+  &.d-theme-a-happy-couple {
+    background-color: rgb(133, 27, 52);
+  }
+
+  @media print {
+    background-color: unset !important;
+  }
+}

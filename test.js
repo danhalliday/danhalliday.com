@@ -4,6 +4,9 @@ const build = require("./build")
 
 const files = [
   "build/index.html",
+  "build/technology/index.html",
+  "build/design/index.html",
+  "build/companies/index.html",
   "build/styles/main.css"
 ]
 

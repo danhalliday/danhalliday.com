@@ -1,5 +1,6 @@
 const fs = require("fs-extra")
 const path = require("path")
+const glob = require("glob-promise")
 const reshape = require("reshape")
 const standard = require("reshape-standard")
 const yaml = require("js-yaml")
@@ -17,17 +18,41 @@ const clean = async () => {
   await fs.remove("build")
 }
 
-const projects = async () => {
-  const data = await fs.readFile("data/projects.yml")
-  return yaml.load(data)
+const data = async () => {
+  const about = await fs.readFile("data/about.yml")
+  const technology = await fs.readFile("data/technology.yml")
+  const design = await fs.readFile("data/design.yml")
+  const companies = await fs.readFile("data/companies.yml")
+  const services = await fs.readFile("data/services.yml")
+
+  return {
+    about: yaml.load(about),
+    technology: yaml.load(technology),
+    design: yaml.load(design),
+    companies: yaml.load(companies),
+    services: yaml.load(services)
+  }
 }
 
-const homepage = async (context) => {
-  const input = await fs.readFile("pages/index.html")
-  const plugin = standard({ locals: context, parser: false, minify: true })
-  const template = await reshape(plugin).process(input)
-  await fs.ensureDir("build")
-  await fs.writeFile("build/index.html", template.output())
+const pages = async (context) => {
+  const pages = await glob("pages/**/*.html")
+
+  const tasks = pages.map(async (page) => {
+    const id = path.basename(page, path.extname(page))
+    const directory = path.relative("pages", path.dirname(page))
+    const file = (id == "index") ? "index.html" : `${id}/index.html`
+    const destination = path.join("build", path.join(directory, file))
+
+    const locals = Object.assign({ id }, context)
+    const input = await fs.readFile(page)
+    const plugin = standard({ locals, parser: false, minify: true })
+    const template = await reshape(plugin).process(input)
+
+    await fs.ensureDir(path.dirname(destination))
+    await fs.writeFile(destination, template.output())
+  })
+
+  await Promise.all(tasks)
 }
 
 const images = async () => {
@@ -36,6 +61,10 @@ const images = async () => {
 
 const general = async () => {
   await fs.copy("general", "build")
+}
+
+const fonts = async () => {
+  await fs.copy("fonts", "build/fonts")
 }
 
 const styles = async (production) => {
@@ -54,10 +83,11 @@ const styles = async (production) => {
 const build = async () => {
   console.time("build")
   await clean()
-  const context = { projects: await projects(), slug }
-  await homepage(context)
+  const context = { ...await data(), slug }
+  await pages(context)
   await images()
   await styles()
+  await fonts()
   await general()
   console.timeEnd("build")
 }

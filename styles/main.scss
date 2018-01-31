@@ -1,19 +1,18 @@
 @import "reset";
-@import "utils";
 @import "responsive";
+@import "colour";
+@import "text";
+@import "a11y";
+@import "fonts";
 
-$font-size: 15px;
-$line-height: 1.5;
+@import "components/body";
+@import "components/navigation";
+@import "components/title";
+@import "components/subtitle";
+@import "components/lede";
+@import "components/description";
+@import "components/section";
+@import "components/list";
+@import "components/image";
 
-$dark-color: hsl(280, 5, 20%);
-$light-color: hsl(0, 0, 100%);
-
-@import "typography";
-
-@import "page/page";
-@import "page/header";
-@import "page/footer";
-
-@import "item/item";
-@import "item/intro";
-@import "item/themes";
+@import "defaults";

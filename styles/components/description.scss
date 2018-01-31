@@ -1,0 +1,29 @@
+.d-description {
+  overflow-wrap: break-word;
+
+  p {
+    margin: 1.5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @include d-screen-small-up {
+    column-count: 2;
+    column-gap: 3rem;
+    column-fill: balance;
+    max-width: 42rem;
+  }
+
+  p:last-child:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1ex; height: 1ex;
+    background-color: currentColor;
+    margin-left: 1ex;
+    border-radius: 0.1em;
+    position: relative;
+  }
+}

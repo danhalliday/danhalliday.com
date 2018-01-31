@@ -5,37 +5,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dan Halliday">
 
-    <title>Dan Halliday ~ Digital Design &amp; Engineering</title>
-    <meta name="description" content="I’m a designer and software engineer with over fifteen years’ experience. Here’s a small selection of my work.">
+    <block name="title">
+      <title>Dan Halliday · Technology &amp; Design</title>
+    </block>
 
+    <meta name="description" content="{{ about.meta }}">
     <link rel="stylesheet" href="/styles/main.css">
-
-    <script src="//use.typekit.net/ppj7jnf.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
   </head>
 
-  <body>
+  <body class="d-page-{{ id }}" ontouchstart>
     <main>
       <block name="main"></block>
     </main>
 
-    <footer class="page-footer">
-      <p class="page-footer-contact">
-        <a href="mailto:hi@danhalliday.com" title="Send me an email">
-          <span>Contact me</span>
-        </a>
-      </p>
+    <include src="includes/navigation.html"></include>
 
-      <p>Copyright &copy; {{ (new Date()).getFullYear() }} Dan Halliday</p>
-    </footer>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-611090-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ services.google.analytics.key }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag("js", new Date());
-      gtag("config", "UA-611090-1");
+      gtag("config", "{{ services.google.analytics.key }}");
     </script>
   </body>
 </html>

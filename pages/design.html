@@ -1,0 +1,55 @@
+<extends src="layouts/layout.html">
+  <block name="title">
+    <title>Design · Dan Halliday</title>
+  </block>
+
+  <block name="main">
+    <div class="d-section">
+      <h1 class="d-title d-a11y">
+        {{ design.title }}
+      </h1>
+
+      <div class="d-description" md>
+        {{ design.description }}
+      </div>
+
+      <ul class="d-list d-highlight">
+        <each loop="skill of [...new Set([].concat(...design.projects.map(p => p.skills)))].sort()">
+          <li>{{ skill }}</li>
+        </each>
+      </ul>
+    </div>
+
+    <each loop="project of design.projects">
+      <section class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
+        <a class="d-title-link" href="#{{ project.id }}">
+          <h2 class="d-title">
+            {{ project.title }}
+          </h2>
+        </a>
+
+        <p class="d-subtitle">
+          {{ project.subtitle }}
+        </p>
+
+        <ul class="d-list">
+          <each loop="skill in project.skills.sort()">
+            <li>{{ skill }}</li>
+          </each>
+        </ul>
+
+        <div class="d-description" md>{{ project.description }}</div>
+
+        <div class="d-images">
+          <each loop="image in project.images">
+            <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
+              <a href="#{{ slug(image.title) }}" class="d-image-link">
+                <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
+              </a>
+            </p>
+          </each>
+        </div>
+      </section>
+    </each>
+  </block>
+</extends>
