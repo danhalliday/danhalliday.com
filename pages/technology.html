@@ -20,7 +20,7 @@
       </ul>
     </div>
 
-    <each loop="project of technology.projects">
+    <each loop="project of technology.projects.filter(p => !p.draft)">
       <section class="d-section" id="{{ project.id }}">
         <a class="d-title-link" href="#{{ project.id }}">
           <h2 class="d-title">
