@@ -1,4 +1,6 @@
 .d-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: -0.75rem;
   margin-left: -0.75rem;
   color: $d-colour-highlight;
@@ -21,11 +23,15 @@
 .d-list-item {
   @extend .d-text-delta;
   display: inline-block;
-  vertical-align: middle;
-  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 0.75rem 0;
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
+  height: 1.75rem;
   line-height: 1;
+  // background: red;
   white-space: nowrap;
   position: relative;
 

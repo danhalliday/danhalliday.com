@@ -13,7 +13,7 @@
         {{ technology.description }}
       </div>
 
-      <ul class="d-list d-highlight">
+      <ul class="d-list d-highlight" hidden>
         <each loop="skill of [...new Set([].concat(...technology.projects.map(p => p.skills)))].sort()">
           <li>{{ skill }}</li>
         </each>

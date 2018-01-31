@@ -3,14 +3,8 @@
   overflow-x: auto;
   flex-shrink: 0;
   order: -1;
-  // mask-image: linear-gradient(to left, transparent, white 3rem, white);
-  -webkit-overflow-scrolling: touch;
-  // background-color: darken($d-colour-dark, 3%);
   line-height: 1;
-
-  @include d-screen-small-up {
-    // background-color: unset;
-  }
+  -webkit-overflow-scrolling: touch;
 
   @include d-screen-medium-up {
     padding: 3rem;
@@ -51,7 +45,7 @@
   }
 
   &:first-child {
-    margin-left: unset;
+    margin-left: 0;
     margin-right: auto;
   }
 
