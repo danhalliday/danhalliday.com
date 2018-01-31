@@ -9,7 +9,7 @@
     }
   }
 
-  @include d-screen-medium-up {
+  @include d-screen-small-up {
     column-count: 2;
     column-gap: 3rem;
     max-width: 42rem;

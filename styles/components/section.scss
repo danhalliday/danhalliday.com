@@ -6,7 +6,7 @@
     padding: 1.5rem;
     margin-top: -1.5rem;
 
-    @include d-screen-medium-up {
+    @include d-screen-small-up {
       padding: 3rem;
       margin-top: -3rem;
     }
