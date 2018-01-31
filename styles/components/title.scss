@@ -1,6 +1,6 @@
 .d-title {
   @extend .d-text-alpha;
-  margin-left: -0.05em;
+  margin-left: -0.025em;
 
   :target & {
     animation: d-title-target 2s;
@@ -9,13 +9,9 @@
 
 .d-title-link {
   text-decoration: none;
-
-  &:hover, &:active, &:hover:active {
-    color: unset;
-  }
 }
 
 @keyframes d-title-target {
-  0% { color: yellow; }
+  0% { color: $d-colour-flash; }
   100% { color: unset; }
 }

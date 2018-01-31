@@ -1,14 +1,18 @@
 :root {
   -webkit-tap-highlight-color: transparent;
   font-size: 18px;
-  color: $d-colour-light;
-  background-color: $d-colour-dark;
+  color: $d-colour-dark;
+  background-color: $d-colour-light;
   height: 100%;
 
   @media print {
     font-size: 12px;
     color: $d-colour-dark;
     background-color: unset;
+  }
+
+  @include d-screen-huge-up {
+    font-size: 20px;
   }
 }
 

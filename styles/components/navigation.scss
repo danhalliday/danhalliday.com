@@ -11,6 +11,10 @@
     padding: 3rem;
   }
 
+  @include d-screen-medium-up {
+    padding: 4.5rem;
+  }
+
   .d-page-index & {
     order: unset;
     margin-top: auto;
@@ -31,7 +35,7 @@
 }
 
 .d-navigation-item {
-  @extend .d-text-delta;
+  @extend .d-text-epsilon;
   text-decoration: none;
   margin-left: 2rem;
   flex: 0 0 auto;
@@ -46,7 +50,7 @@
   .d-page-design &.d-target-design,
   .d-page-companies &.d-target-companies,
   .d-page-index &.d-target-index, {
-    color: $d-colour-darkish;
+    opacity: 0.15;
     pointer-events: none;
   }
 

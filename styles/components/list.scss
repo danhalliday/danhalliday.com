@@ -2,7 +2,7 @@
   display: block;
   display: flex;
   flex-wrap: wrap;
-  color: $d-colour-highlight;
+  // color: $d-colour-medium;
   margin-left: -0.75rem;
   margin-top: -1.5rem;
   margin-bottom: -0.75rem - 1.5rem;
@@ -14,7 +14,7 @@
   .d-theme-soundry-co &,
   .d-theme-cantare-ladies-choir &,
   .d-theme-a-happy-couple & {
-    color: $d-colour-light;
+    color: $d-colour-white;
   }
 
   .d-theme-earsoft-audio & {
@@ -22,7 +22,7 @@
   }
 
   @media print {
-    color: $d-colour-darkish !important;
+    color: $d-colour-dark !important;
   }
 
   &:last-child {
@@ -31,7 +31,7 @@
 }
 
 .d-list-item {
-  @extend .d-text-delta;
+  @extend .d-text-epsilon;
   display: inline-block;
   display: flex;
   align-items: center;

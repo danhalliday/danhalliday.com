@@ -1,7 +1,7 @@
 .d-text {
   font-family: "Lota Grotesque Alt 3", "Helvetica Neue", sans-serif;
   line-height: 1.5;
-  letter-spacing: -0.0075em;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
@@ -11,7 +11,7 @@
 .d-text-alpha {
   @extend .d-text-bold;
   font-size: 2rem;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   line-height: 1.2;
 
   @include d-screen-medium-up {
@@ -19,10 +19,10 @@
   }
 }
 
-.d-text-lansum {
+.d-text-beta {
   @extend .d-text-bold;
   font-size: 1.75rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   line-height: 1.3;
 
   @include d-screen-medium-up {
@@ -30,7 +30,7 @@
   }
 }
 
-.d-text-beta {
+.d-text-gamma {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -41,38 +41,28 @@
   }
 }
 
-.d-text-gamma {
+.d-text-delta {
   font-size: 1rem;
 }
 
-.d-text-delta {
+.d-text-epsilon {
   font-size: 0.8rem;
 }
 
 .d-text-link {
   @extend .d-text-bold;
-  transition: 0.25s color;
+  transition: 0.25s opacity;
   color: inherit;
 
   &:active, &:hover:active {
-    color: $d-colour-darkish;
+    opacity: 0.35;
     text-shadow: none;
-  }
-
-  @media (pointer:fine) {
-    &:hover {
-      color: white;
-    }
   }
 }
 
 .d-text-bold {
   font-weight: 600;
 }
-
-// .d-text-light {
-//   font-weight: 300;
-// }
 
 .d-text-italic {
   font-style: italic;

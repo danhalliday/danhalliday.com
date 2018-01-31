@@ -5,6 +5,10 @@
     padding: 3rem;
   }
 
+  @include d-screen-medium-up {
+    padding: 4.5rem;
+  }
+
   > * {
     padding: 1.5rem 0;
 
@@ -18,23 +22,25 @@
   }
 
   &:nth-child(even) {
-    background-color: darken($d-colour-dark, 2%);
+    background-color: $d-colour-white;
   }
 
   &.d-theme-soundry-co {
+    color: $d-colour-white;
     background-color: red;
   }
 
   &.d-theme-cantare-ladies-choir {
+    color: $d-colour-white;
     background-color: rgb(237, 0, 91);
   }
 
   &.d-theme-earsoft-audio {
     background-color: rgb(255, 225, 0);
-    color: $d-colour-dark;
   }
 
   &.d-theme-a-happy-couple {
+    color: $d-colour-white;
     background-color: rgb(133, 27, 52);
   }
 
