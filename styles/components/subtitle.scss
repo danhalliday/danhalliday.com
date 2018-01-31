@@ -1,7 +1,4 @@
 .d-subtitle {
   @extend .d-text-beta;
-
-  .d-title + &, .d-title-link + & {
-    padding-top: 0.5rem;
-  }
+  margin-top: -2.25rem;
 }

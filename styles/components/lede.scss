@@ -1,4 +1,8 @@
 .d-lede {
   @extend .d-text-lansum;
   max-width: 42rem;
+
+  @include d-screen-small-up {
+    margin-bottom: 1.5rem;
+  }
 }

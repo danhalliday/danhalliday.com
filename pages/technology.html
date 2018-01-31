@@ -17,7 +17,7 @@
         {{ technology.description }}
       </div>
 
-      <ul class="d-list d-highlight" hidden>
+      <ul class="d-list" hidden>
         <each loop="skill of [...new Set([].concat(...technology.projects.map(p => p.skills)))].sort()">
           <li>{{ skill }}</li>
         </each>
@@ -26,11 +26,11 @@
 
     <each loop="project of technology.projects.filter(p => !p.draft)">
       <section class="d-section" id="{{ project.id }}">
-        <a class="d-title-link" href="#{{ project.id }}">
-          <h2 class="d-title">
+        <h2 class="d-title">
+          <a class="d-title-link" href="#{{ project.id }}">
             {{ project.title }}
-          </h2>
-        </a>
+          </a>
+        </h2>
 
         <p class="d-subtitle">
           {{ project.subtitle }}

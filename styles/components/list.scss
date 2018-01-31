@@ -1,9 +1,11 @@
 .d-list {
+  display: block;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -0.75rem;
-  margin-left: -0.75rem;
   color: $d-colour-highlight;
+  margin-left: -0.75rem;
+  margin-top: -1.5rem;
+  margin-bottom: -0.75rem - 1.5rem;
 
   > * {
     @extend .d-list-item;
@@ -22,6 +24,10 @@
   @media print {
     color: $d-colour-darkish !important;
   }
+
+  &:last-child {
+    margin-bottom: -0.75rem;
+  }
 }
 
 .d-list-item {
@@ -34,21 +40,19 @@
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
   height: 1.75rem;
-  line-height: 1;
   white-space: nowrap;
   position: relative;
+  z-index: 0;
 
   &:after {
     content: "";
     display: flex;
     position: absolute;
-    width: 100%; height: 100%;
-    top: 0; left: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background-color: currentColor;
-    box-shadow: 0 0 0 2px currentColor;
     border-radius: 5rem;
     opacity: 0.05;
-    pointer-events: none;
+    z-index: -1;
 
     .d-theme-soundry-co & {
       opacity: 0.12;

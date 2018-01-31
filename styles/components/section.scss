@@ -1,18 +1,19 @@
 .d-section {
-  display: flex;
-  flex-direction: column;
+  padding: 1.5rem;
+
+  @include d-screen-small-up {
+    padding: 3rem;
+  }
 
   > * {
-    padding: 1.5rem;
-    margin-top: -1.5rem;
-
-    @include d-screen-small-up {
-      padding: 3rem;
-      margin-top: -3rem;
-    }
+    padding: 1.5rem 0;
 
     &:first-child, &.d-a11y:first-child + * {
-      margin-top: 0;
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 
