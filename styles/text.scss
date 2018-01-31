@@ -1,14 +1,21 @@
 .d-text {
   font-family: "Lota Grotesque Alt 3", "Helvetica Neue", sans-serif;
   line-height: 1.5;
-  letter-spacing: -0.0025em;
+  letter-spacing: -0.005em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
+  font-weight: 300;
+  text-shadow: 0 0 1px currentColor;
+
+  @supports (-webkit-text-stroke: 0.5px) {
+    -webkit-text-stroke: 0.5px; // Until we have variable fonts!
+    text-shadow: none;
+  }
 }
 
 .d-text-alpha {
-  @extend .d-text-bold;
+  @extend .d-text-light;
   font-size: 2rem;
   letter-spacing: -0.015em;
   line-height: 1.2;
@@ -18,11 +25,22 @@
   }
 }
 
+.d-text-lansum {
+  @extend .d-text-light;
+  font-size: 1.75rem;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+
+  @include d-screen-medium-up {
+    font-size: 2.25rem;
+  }
+}
+
 .d-text-beta {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  line-height: 1.2;
+  line-height: 1.4;
 
   @include d-screen-medium-up {
     font-size: 1.25rem;
@@ -55,7 +73,11 @@
 }
 
 .d-text-bold {
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.d-text-light {
+  font-weight: 200;
 }
 
 .d-text-italic {

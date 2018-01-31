@@ -1,6 +1,5 @@
 .d-subtitle {
   @extend .d-text-beta;
-  // opacity: 0.5;
 
   .d-title + &, .d-title-link + & {
     padding-top: 0.5rem;

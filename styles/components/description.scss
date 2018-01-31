@@ -1,7 +1,7 @@
 .d-description {
   overflow-wrap: break-word;
 
-  > * {
+  p {
     margin: 1.5rem 0;
 
     &:first-child {
@@ -12,6 +12,7 @@
   @include d-screen-small-up {
     column-count: 2;
     column-gap: 3rem;
+    column-fill: balance;
     max-width: 42rem;
   }
 

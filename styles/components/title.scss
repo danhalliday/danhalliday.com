@@ -1,5 +1,6 @@
 .d-title {
   @extend .d-text-alpha;
+  margin-left: -0.05em;
 
   :target & {
     animation: d-title-target 2s;
