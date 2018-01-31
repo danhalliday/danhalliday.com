@@ -18,6 +18,10 @@
   .d-theme-earsoft-audio & {
     color: $d-colour-dark;
   }
+
+  @media print {
+    color: $d-colour-darkish !important;
+  }
 }
 
 .d-list-item {
@@ -31,7 +35,6 @@
   margin-bottom: 0.75rem;
   height: 1.75rem;
   line-height: 1;
-  // background: red;
   white-space: nowrap;
   position: relative;
 
@@ -61,6 +64,10 @@
 
     .d-theme-a-happy-couple & {
       opacity: 0.05;
+    }
+
+    @media print {
+      opacity: 0.05 !important;
     }
   }
 }

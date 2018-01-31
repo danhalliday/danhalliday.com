@@ -36,4 +36,8 @@
   &.d-theme-a-happy-couple {
     background-color: rgb(133, 27, 52);
   }
+
+  @media print {
+    background-color: unset !important;
+  }
 }

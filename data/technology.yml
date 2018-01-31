@@ -92,6 +92,7 @@ projects:
       - React
       - MySQL
       - PostgreSQL
+      - Cross-Browser
 
   - id: audio-processing library
     title: Audio Processing Library
