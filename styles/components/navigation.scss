@@ -9,6 +9,7 @@
 
   @include d-screen-small-up {
     padding: 3rem;
+    margin-bottom: unset;
   }
 
   @include d-screen-medium-up {
