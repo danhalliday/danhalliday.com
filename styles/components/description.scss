@@ -7,6 +7,10 @@
     column-gap: 3rem;
     column-fill: balance;
     max-width: 42rem;
+
+    &.d-single {
+      column-count: unset;
+    }
   }
 
   p {
