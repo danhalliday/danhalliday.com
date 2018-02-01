@@ -4,29 +4,34 @@
   </block>
 
   <block name="main">
-    <div class="d-section">
+    <div class="d-section d-a11y">
       <h1 class="d-title d-a11y">
         {{ companies.title }}
       </h1>
 
-      <div class="d-description" md>
+      <!-- <div class="d-description" md>
         {{ companies.description }}
-      </div>
+      </div> -->
     </div>
 
     <each loop="company of companies.list">
       <section class="d-section" id="{{ company.id }}">
-        <a class="d-title-link" href="#{{ company.id }}">
-          <h2 class="d-title">
+        <h2 class="d-title">
+          <a class="d-title-link" href="#{{ company.id }}">
             {{ company.name }}
-          </h2>
-        </a>
+          </a>
+        </h2>
 
         <p class="d-subtitle">
           {{ company.position }}
         </p>
 
-        <div class="d-description" md>{{ company.description }}</div>
+        <if condition="company.website">
+          <p class="d-description d-single">
+            For more information, view the <a href="{{ company.website }}">{{ company.name }} website</a>.
+          </p>
+        </if>
+        <!-- <div class="d-description" md>{{ company.description }}</div> -->
       </section>
     </each>
 
