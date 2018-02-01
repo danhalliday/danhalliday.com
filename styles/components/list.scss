@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   margin-left: -0.75rem;
   margin-top: -1.5rem;
-  margin-bottom: -0.75rem - 1.5rem;
+  margin-bottom: -0.5rem - 1.5rem;
 
   > * {
     @extend .d-list-item;
@@ -25,7 +25,7 @@
   }
 
   &:last-child {
-    margin-bottom: -0.75rem;
+    margin-bottom: -0.5rem;
   }
 }
 
@@ -36,8 +36,8 @@
   align-items: center;
   justify-content: center;
   padding: 0.1rem 0.75rem 0;
-  margin-right: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   height: 1.75rem;
   white-space: nowrap;
   position: relative;
@@ -54,7 +54,7 @@
     z-index: -1;
 
     .d-theme-soundry-co & {
-      opacity: 0.12;
+      opacity: 0.15;
     }
 
     .d-theme-earsoft-audio & {
