@@ -4,20 +4,28 @@
   </h2>
 
   <ul class="d-navigation-items">
-    <li class="d-navigation-item d-target-index">
-      <a href="/">About</a>
+    <li class="d-navigation-item d-active-{{ id === 'index' }}">
+      <a class="d-navigation-link" href="/" tabindex="{{ id === 'index' ? -1 : 1 }}">
+        About
+      </a>
     </li>
 
-    <li class="d-navigation-item d-target-technology">
-      <a href="/technology/">Technology</a>
+    <li class="d-navigation-item d-active-{{ id === 'technology' }}">
+      <a class="d-navigation-link" href="/technology/" tabindex="{{ id === 'technology' ? -1 : 1 }}">
+        Technology
+      </a>
     </li>
 
-    <li class="d-navigation-item d-target-design">
-      <a href="/design/">Design</a>
+    <li class="d-navigation-item d-active-{{ id === 'design' }}">
+      <a class="d-navigation-link" href="/design/" tabindex="{{ id === 'design' ? -1 : 1 }}">
+        Design
+      </a>
     </li>
 
-    <li class="d-navigation-item d-target-companies">
-      <a href="/companies/">Companies</a>
+    <li class="d-navigation-item d-active-{{ id === 'companies' }}">
+      <a class="d-navigation-link" href="/companies/" tabindex="{{ id === 'companies' ? -1 : 1 }}">
+        Companies
+      </a>
     </li>
   </ul>
 </nav>
