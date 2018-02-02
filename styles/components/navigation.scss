@@ -42,12 +42,12 @@
 .d-navigation-item {
   @extend .d-text-epsilon;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   flex: 0 0 auto;
   text-decoration: none;
   position: relative;
 
-  @include d-screen-medium-up {
+  @include d-screen-small-up {
     margin-left: 3rem;
   }
 
