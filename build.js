@@ -9,6 +9,7 @@ const sass = require("node-sass")
 const autoprefixer = require("autoprefixer")
 const cssnano = require("cssnano")
 const postcss = require("postcss")
+const inline = require("inline-source")
 const slug = require("slug")
 
 slug.defaults.mode = "pretty"
@@ -47,9 +48,12 @@ const pages = async (context) => {
     const input = await fs.readFile(page)
     const plugin = standard({ locals, parser: false, minify: true })
     const template = await reshape(plugin).process(input)
+    const html = await inline.inlineSource(template.output(), {
+      compress: true, rootpath: path.resolve("build"), attribute: "data-d-inline"
+    })
 
     await fs.ensureDir(path.dirname(destination))
-    await fs.writeFile(destination, template.output())
+    await fs.writeFile(destination, html)
   })
 
   await Promise.all(tasks)
@@ -84,8 +88,8 @@ const build = async () => {
   console.time("build")
   await clean()
   const context = { ...await data(), slug }
-  await pages(context)
   await images()
+  await pages(context)
   await styles()
   await fonts()
   await general()
