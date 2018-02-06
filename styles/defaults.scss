@@ -1,5 +1,5 @@
 :root {
-  font-size: 18px;
+  font-size: 17px;
   color: $d-colour-dark;
   background-color: $d-colour-light;
   height: 100%;
@@ -10,8 +10,12 @@
     background-color: unset;
   }
 
+  @include d-screen-medium-up {
+    font-size: 16px;
+  }
+
   @include d-screen-huge-up {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
