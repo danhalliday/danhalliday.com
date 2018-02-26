@@ -71,7 +71,7 @@ const fonts = async () => {
   await fs.copy("fonts", "build/fonts")
 }
 
-const styles = async (production) => {
+const styles = async () => {
   const source = "styles/main.scss"
   const destination = "build/styles/main.css"
   const render = promisify(sass.render)
