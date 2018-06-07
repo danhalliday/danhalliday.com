@@ -16,23 +16,23 @@
   "license": "ISC",
   "homepage": "https://github.com/danhalliday/dan.halliday.work",
   "dependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^7.2.6",
     "cssnano": "^3.10.0",
     "fs-extra": "^5.0.0",
-    "glob-promise": "^3.3.0",
-    "image-2-min": "^6.0.1",
+    "glob-promise": "^3.4.0",
+    "image-2-min": "^6.0.2",
     "imagemin-jpegtran": "^5.0.2",
-    "inline-source": "^6.1.1",
-    "js-yaml": "^3.10.0",
+    "inline-source": "^6.1.5",
+    "js-yaml": "^3.12.0",
     "node-promisify": "^1.2.0",
-    "node-sass": "^4.7.2",
-    "postcss": "^6.0.16",
+    "node-sass": "^4.9.0",
+    "postcss": "^6.0.22",
     "reshape": "^0.4.2",
     "reshape-standard": "^3.3.0",
     "slug": "^0.9.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "chokidar": "^2.0.0"
+    "browser-sync": "^2.24.4",
+    "chokidar": "^2.0.3"
   }
 }
