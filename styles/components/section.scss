@@ -22,7 +22,7 @@
   }
 
   &:nth-child(even) {
-    background-color: $d-colour-light;
+    background-color: $d-colour-dark-alt;
   }
 
   &.d-theme-soundry-co {
@@ -36,6 +36,7 @@
   }
 
   &.d-theme-earsoft-audio {
+    color: $d-colour-dark;
     background-color: rgb(255, 225, 0);
   }
 

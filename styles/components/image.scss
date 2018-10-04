@@ -19,7 +19,11 @@
   }
 
   &.d-size-small {
-    width: calc(50% - 1.5rem);
+    width: calc(50% - 0.75rem);
+
+    @include d-screen-medium-up {
+      width: calc(50% - 1.5rem);
+    }
   }
 
   &:last-child, &.d-size-small:nth-last-child(2) {
