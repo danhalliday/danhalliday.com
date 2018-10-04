@@ -4,6 +4,6 @@
     <title>d-pattern</title>
     <desc>Created with Sketch.</desc>
     <g id="d-pattern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M21,49 L79,49 C79.5522847,49 80,49.4477153 80,50 L80,50 C80,50.5522847 79.5522847,51 79,51 L21,51 C20.4477153,51 20,50.5522847 20,50 L20,50 C20,49.4477153 20.4477153,49 21,49 Z" id="Rectangle" fill="#000000" transform="translate(50.000000, 50.000000) rotate(-30.000000) translate(-50.000000, -50.000000) "></path>
+        <path d="M21,49 L79,49 C79.5522847,49 80,49.4477153 80,50 L80,50 C80,50.5522847 79.5522847,51 79,51 L21,51 C20.4477153,51 20,50.5522847 20,50 L20,50 C20,49.4477153 20.4477153,49 21,49 Z" id="Rectangle" fill="#000000" transform="translate(50.000000, 50.000000) rotate(30.000000) translate(-50.000000, -50.000000) "></path>
     </g>
 </svg>

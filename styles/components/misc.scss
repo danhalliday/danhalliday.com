@@ -23,6 +23,7 @@
   margin-left: 0.25em;
   transform: translate(0, 0.05em);
 
+  .d-theme-multichannel-streaming-server &,
   .d-theme-earsoft-audio-app & {
     filter: invert(100%);
   }
