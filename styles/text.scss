@@ -11,8 +11,8 @@
 .d-text-alpha {
   @extend .d-text-bold;
   font-size: 2.25rem;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
 
   @include d-screen-medium-up {
     font-size: 3.5rem;
@@ -56,7 +56,7 @@
 
 .d-text-link {
   @extend .d-text-bold;
-  transition: 0.25s opacity;
+  transition: 0.25s opacity, 0.25s color;
   color: inherit;
   text-decoration-color: rgba($d-colour-white, 0.25);
 
@@ -66,9 +66,9 @@
     outline: none;
   }
 
-  .d-theme-soundry-co &,
-  .d-theme-cantare-ladies-choir &,
-  .d-theme-a-happy-couple {
+  .d-theme-soundry-co-brand-identity &,
+  .d-theme-cantare-ladies-choir-combination-mark &,
+  .d-theme-wedding-stationery-pack {
     text-decoration-color: rgba($d-colour-white, 0.4);
   }
 
@@ -85,4 +85,9 @@
 
 .d-text-italic {
   font-style: italic;
+}
+
+.d-text-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

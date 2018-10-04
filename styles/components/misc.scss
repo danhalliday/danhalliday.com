@@ -1,7 +1,7 @@
 .d-projects-link {
-  @extend .d-text-gamma;
+  @extend .d-text-caps;
+  @extend .d-text-epsilon;
   margin-top: 1.5rem;
-  opacity: 0.35;
   display: block;
 }
 
@@ -9,6 +9,7 @@
   width: 0.75em;
   height: 0.75em;
   vertical-align: baseline;
+  // background: red;
 }
 
 .d-read-more-link {
@@ -23,8 +24,8 @@
   margin-left: 0.25em;
   transform: translate(0, 0.05em);
 
-  .d-theme-multichannel-streaming-server &,
-  .d-theme-earsoft-audio-app & {
+  .d-theme-rimms-tv-multichannel-streaming-server &,
+  .d-theme-earsoft-audio-interactive-app & {
     filter: invert(100%);
   }
 }

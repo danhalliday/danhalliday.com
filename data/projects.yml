@@ -25,9 +25,9 @@
     - Bluetooth
     - Node.js
 
-- id: soundry-co
-  title: Soundry Co
-  subtitle: Complete Brand Identity
+- id: soundry-co-brand-identity
+  title: Brand Identity & Artwork
+  subtitle: Soundry Co
   category: design
   featured: true
   summary: |
@@ -62,17 +62,17 @@
       source: soundry-art-2.jpg
       size: small
 
-- id: multichannel-streaming-server
+- id: rimms-tv-multichannel-streaming-server
   title: Multichannel Streaming Server
   subtitle: RIMMS TV
   category: technology
   featured: true
   summary: |
-    I created macOS and iOS apps for [RIMMS TV](https://www.rimms.tv) to enable their users to hear custom live audio mixes on set. The macOS server app acts as a live mixer, taking in up to 100 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
+    I created macOS and iOS apps for [RIMMS TV](https://www.rimms.tv) to enable their users to hear custom live audio mixes on set. The macOS server app acts as a live mixer, taking in up to 64 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
   description: |
     I created macOS and iOS apps for [RIMMS TV](https://www.rimms.tv) to enable their users to hear custom live audio mixes on set.
 
-    The macOS server app acts as a live mixer, taking in up to 100 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
+    The macOS server app acts as a live mixer, taking in up to 64 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
 
     Producers and staff on set carry iPads running the iOS app, which connect to the server and each receive their own live audio mix. Each user can control levels using the iOS app, which talks to the server using a simple [Rest API](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
@@ -89,7 +89,7 @@
     - Objective-C
     - Swift
 
-- id: podcast-analytics-platform
+- id: dash-audio-podcast-analytics-platform
   title: Podcast Analytics Platform
   subtitle: Dash Audio
   category: technology
@@ -109,8 +109,8 @@
     - PostgreSQL
     - Cross-Browser
 
-- id: audio-processing library
-  title: Audio Processing Library
+- id: earsoft-audio-sound-processing-library
+  title: Sound Processing Library
   subtitle: EarSoft Audio
   draft: true
   category: technology
@@ -131,9 +131,9 @@
     - IOKit
     - Canvas
 
-- id: earsoft-audio-app
-  title: Earsoft Audio
-  subtitle: Mobile App Design
+- id: earsoft-audio-interactive-app
+  title: Interactive Audio Player App
+  subtitle: EarSoft Audio
   category: design
   featured: true
   summary: |
@@ -169,9 +169,9 @@
       source: earsoft-app-3.jpg
       size: small
 
-- id: cantare-ladies-choir
-  title: Cantare Ladies’ Choir
-  subtitle: Logo & Colour Guide
+- id: cantare-ladies-choir-combination-mark
+  title: Combination Mark & Style Guide
+  subtitle: Cantare Ladies’ Choir
   category: design
   description: |
     Cantare needed a strong, bold logo to use on everything from posters and concert programmes to bags and embroidered coats. They already had a strong black and pink colour scheme, so I worked with the group on a combination mark that would tie their brand together.
@@ -200,9 +200,9 @@
       source: cantare-coat-2.jpg
       size: small
 
-- id: a-happy-couple
-  title: A Happy Couple
-  subtitle: Wedding Stationery Pack
+- id: wedding-stationery-pack
+  title: Wedding Stationery Pack
+  subtitle: A Happy Couple
   category: design
   description: |
     The couple wanted a modern, elegant stationery pack, with a few extras such as a map for the day and a list of local attractions for guests to browse.
@@ -219,7 +219,7 @@
       source: wedding-envelope.jpg
       size: large
 
-- id: mobile-text-to-speech-library
+- id: speechkit-mobile-text-to-speech-library
   title: Mobile Text-to-Speech Library
   subtitle: SpeechKit
   category: technology

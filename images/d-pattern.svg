@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
     <title>d-pattern</title>
     <desc>Created with Sketch.</desc>
-    <g id="d-pattern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M21,49 L79,49 C79.5522847,49 80,49.4477153 80,50 L80,50 C80,50.5522847 79.5522847,51 79,51 L21,51 C20.4477153,51 20,50.5522847 20,50 L20,50 C20,49.4477153 20.4477153,49 21,49 Z" id="Rectangle" fill="#000000" transform="translate(50.000000, 50.000000) rotate(30.000000) translate(-50.000000, -50.000000) "></path>
+    <g id="d-pattern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M25,35.4980971 C36.0336751,33.3793188 43.9891493,37.9987885 48.8664227,49.3565064 C53.743696,60.7142243 62.290497,65.6678251 74.5068256,64.2173088" id="Path-3" stroke="#000000" stroke-width="2"></path>
     </g>
 </svg>

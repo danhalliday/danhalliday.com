@@ -10,13 +10,13 @@
     @extend .d-list-item;
   }
 
-  .d-theme-soundry-co &,
-  .d-theme-cantare-ladies-choir &,
-  .d-theme-a-happy-couple & {
+  .d-theme-soundry-co-brand-identity &,
+  .d-theme-cantare-ladies-choir-combination-mark &,
+  .d-theme-wedding-stationery-pack & {
     color: $d-colour-white;
   }
 
-  .d-theme-earsoft-audio-app & {
+  .d-theme-earsoft-audio-interactive-app & {
     color: $d-colour-dark;
   }
 
@@ -50,22 +50,22 @@
     top: 0; left: 0; right: 0; bottom: 0;
     background-color: currentColor;
     border-radius: 5rem;
-    opacity: 0.05;
+    opacity: 0.1;
     z-index: -1;
 
-    .d-theme-soundry-co & {
+    .d-theme-soundry-co-brand-identity & {
       opacity: 0.15;
     }
 
-    .d-theme-earsoft-audio-app & {
+    .d-theme-earsoft-audio-interactive-app & {
       opacity: 0.05;
     }
 
-    .d-theme-cantare-ladies-choir & {
+    .d-theme-cantare-ladies-choir-combination-mark & {
       opacity: 0.1;
     }
 
-    .d-theme-a-happy-couple & {
+    .d-theme-wedding-stationery-pack & {
       opacity: 0.05;
     }
 

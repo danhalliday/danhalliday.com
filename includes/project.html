@@ -1,4 +1,4 @@
-<section class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
+<article class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
   <h class="d-title">
     <a class="d-title-link" href="#{{ project.id }}">
       {{ project.title }}
@@ -17,13 +17,15 @@
 
   <div class="d-description" md>{{ project.description }}</div>
 
-  <div class="d-images">
-    <each loop="image in project.images">
-      <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
-        <a href="#{{ slug(image.title) }}" class="d-image-link">
-          <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
-        </a>
-      </p>
-    </each>
-  </div>
-</section>
+  <if condition="project.images">
+    <div class="d-images">
+      <each loop="image in project.images">
+        <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
+          <a href="#{{ slug(image.title) }}" class="d-image-link">
+            <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
+          </a>
+        </p>
+      </each>
+    </div>
+  </if>
+</article>
