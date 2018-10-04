@@ -1,13 +1,25 @@
+@mixin d-section-clip($padding: 1.5rem) {
+  // clip-path: polygon(0 $padding, 100% 0, 100% 100%, 0 100%);
+  // padding: ($padding * 2) $padding ($padding * 2);
+  // margin-top: calc(-#{$padding * 1} - 1px);
+  padding: $padding;
+}
+
 .d-section {
-  padding: 1.5rem;
+  position: relative;
+  @include d-section-clip(1.5rem);
 
   @include d-screen-small-up {
-    padding: 3rem;
+    @include d-section-clip(3rem);
+
   }
 
   @include d-screen-medium-up {
-    padding: 4.5rem;
+    @include d-section-clip(4.5rem);
+
+
   }
+
 
   > * {
     padding: 1.5rem 0;
@@ -35,14 +47,29 @@
     background-color: rgb(237, 0, 91);
   }
 
-  &.d-theme-earsoft-audio {
+  &.d-theme-earsoft-audio-app {
     color: $d-colour-dark;
-    background-color: rgb(255, 225, 0);
+    background-color: #ffd505;
   }
 
   &.d-theme-a-happy-couple {
     color: $d-colour-white;
     background-color: rgb(133, 27, 52);
+  }
+
+  &.d-theme-wireless-audio-visualiser {
+    color: $d-colour-white;
+    background-color: #0564ff;
+  }
+
+  &.d-theme-mobile-text-to-speech-library {
+    color: $d-colour-white;
+    background-color: #7203b9;
+  }
+
+  &.d-theme-multichannel-streaming-server {
+    color: $d-colour-white;
+    background-color: #ff8305;
   }
 
   @media print {

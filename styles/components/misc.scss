@@ -1,0 +1,29 @@
+.d-projects-link {
+  @extend .d-text-gamma;
+  margin-top: 1.5rem;
+  opacity: 0.35;
+  display: block;
+}
+
+.d-projects-link-icon {
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: baseline;
+}
+
+.d-read-more-link {
+  text-decoration: none;
+}
+
+.d-read-more-link-icon {
+  width: 0.7em;
+  height: 0.7em;
+  vertical-align: baseline;
+  display: inline;
+  margin-left: 0.25em;
+  transform: translate(0, 0.05em);
+
+  .d-theme-earsoft-audio-app & {
+    filter: invert(100%);
+  }
+}

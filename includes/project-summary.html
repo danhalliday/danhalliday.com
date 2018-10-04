@@ -1,0 +1,26 @@
+<section class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
+  <h class="d-title">
+    <a class="d-title-link" href="#{{ project.id }}">
+      {{ project.title }}
+    </a>
+  </h>
+
+  <p class="d-subtitle">
+    {{ project.subtitle }}
+  </p>
+
+  <ul class="d-list">
+    <each loop="skill in project.skills.sort()">
+      <li>{{ skill }}</li>
+    </each>
+  </ul>
+
+  <div class="d-description" md>{{ project.summary }}</div>
+
+  <p>
+    <a class="d-read-more-link" href="/{{ project.category }}/#{{ project.id }}">
+      Read More
+      <img class="d-read-more-link-icon" src="/images/d-icon-disclosure-right.svg" alt="Recent projects icon" hidden>
+    </a>
+  </p>
+</section>

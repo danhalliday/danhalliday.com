@@ -9,41 +9,24 @@
 
   <block name="main">
     <div class="d-section">
-      <h1 class="d-title d-a11y">
+      <h class="d-title d-a11y">
         {{ technology.title }}
-      </h1>
+      </h>
 
       <div class="d-description" md>
         {{ technology.description }}
       </div>
 
       <ul class="d-list" hidden>
-        <each loop="skill of [...new Set([].concat(...technology.projects.map(p => p.skills)))].sort()">
+        <!-- TODO: Factor out this expression! -->
+        <each loop="skill of [...new Set([].concat(...projects.filter(p => p.category === 'technology').map(p => p.skills)))].sort()">
           <li>{{ skill }}</li>
         </each>
       </ul>
     </div>
 
-    <each loop="project of technology.projects.filter(p => !p.draft)">
-      <section class="d-section" id="{{ project.id }}">
-        <h2 class="d-title">
-          <a class="d-title-link" href="#{{ project.id }}">
-            {{ project.title }}
-          </a>
-        </h2>
-
-        <p class="d-subtitle">
-          {{ project.subtitle }}
-        </p>
-
-        <ul class="d-list">
-          <each loop="skill in project.skills.sort()">
-            <li>{{ skill }}</li>
-          </each>
-        </ul>
-
-        <div class="d-description" md>{{ project.description }}</div>
-      </section>
+    <each loop="project of projects.filter(p => p.category === 'technology')">
+      <include src="includes/project.html"></include>
     </each>
   </block>
 </extends>

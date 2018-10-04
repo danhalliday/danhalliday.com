@@ -55,6 +55,12 @@
   width: 100%;
 }
 
+.d-image-portrait {
+  width: 5rem;
+  border-radius: 3rem;
+  padding: 0;
+}
+
 @keyframes d-image-target {
   0% { opacity: 0; }
   100% { opacity: 1; }

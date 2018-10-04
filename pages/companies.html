@@ -9,9 +9,9 @@
 
   <block name="main">
     <div class="d-section d-a11y">
-      <h1 class="d-title d-a11y">
+      <h class="d-title d-a11y">
         {{ companies.title }}
-      </h1>
+      </h>
 
       <!-- <div class="d-description" md>
         {{ companies.description }}
@@ -20,11 +20,11 @@
 
     <each loop="company of companies.list">
       <section class="d-section" id="{{ company.id }}">
-        <h2 class="d-title">
+        <h class="d-title">
           <a class="d-title-link" href="#{{ company.id }}">
             {{ company.name }}
           </a>
-        </h2>
+        </h>
 
         <p class="d-subtitle">
           {{ company.position }}

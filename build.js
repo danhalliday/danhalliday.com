@@ -3,6 +3,7 @@ const path = require("path")
 const glob = require("glob-promise")
 const reshape = require("reshape")
 const standard = require("reshape-standard")
+const hfill = require("reshape-hfill")
 const yaml = require("js-yaml")
 const promisify = require("node-promisify")
 const sass = require("node-sass")
@@ -15,24 +16,36 @@ const slug = require("slug")
 slug.defaults.mode = "pretty"
 slug.defaults.modes["pretty"].lower = true
 
+const plugins = [
+  hfill({
+    "headings": { "1-6": [ "h", "h1", "h2", "h3", "h4", "h5", "h6" ] }
+  })
+]
+
 const clean = async () => {
   await fs.remove("build")
 }
 
 const data = async () => {
-  const about = await fs.readFile("data/about.yml")
-  const technology = await fs.readFile("data/technology.yml")
-  const design = await fs.readFile("data/design.yml")
-  const companies = await fs.readFile("data/companies.yml")
-  const services = await fs.readFile("data/services.yml")
+  const aboutYaml = await fs.readFile("data/about.yml")
+  const technologyYaml = await fs.readFile("data/technology.yml")
+  const designYaml = await fs.readFile("data/design.yml")
+  const companiesYaml = await fs.readFile("data/companies.yml")
+  const servicesYaml = await fs.readFile("data/services.yml")
+  const projectsYaml = await fs.readFile("data/projects.yml")
 
   return {
-    about: yaml.load(about),
-    technology: yaml.load(technology),
-    design: yaml.load(design),
-    companies: yaml.load(companies),
-    services: yaml.load(services)
+    about: yaml.load(aboutYaml),
+    technology: yaml.load(technologyYaml),
+    design: yaml.load(designYaml),
+    companies: yaml.load(companiesYaml),
+    services: yaml.load(servicesYaml),
+    projects: decorateProjects(yaml.load(projectsYaml))
   }
+}
+
+const decorateProjects = (projects) => {
+  return projects.filter(p => !p.draft)
 }
 
 const pages = async (context) => {
@@ -46,7 +59,7 @@ const pages = async (context) => {
 
     const locals = Object.assign({ id }, context)
     const input = await fs.readFile(page)
-    const plugin = standard({ locals, parser: false, minify: true })
+    const plugin = standard({ locals, parser: false, minify: true, appendPlugins: plugins })
     const template = await reshape(plugin).process(input)
     const html = await inline.inlineSource(template.output(), {
       compress: true, rootpath: path.resolve("build"), attribute: "data-d-inline"
