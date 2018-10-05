@@ -32,17 +32,8 @@
 
 .d-read-more-link {
   text-decoration: none;
-}
 
-.d-read-more-link-icon {
-  width: 0.7em;
-  height: 0.7em;
-  vertical-align: baseline;
-  display: inline;
-  margin-left: 0.25em;
-  transform: translate(0, 0.05em);
-
-  .d-theme-dark & {
-    filter: invert(100%);
+  &::after {
+    content: "›"
   }
 }

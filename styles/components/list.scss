@@ -3,13 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.65rem;
-  // margin-left: -0.15rem;
   margin-top: -1.5rem - 0.25rem;
   margin-bottom: -0.5rem - 1.5rem;
-
-  > * {
-    @extend .d-list-item;
-  }
 
   @media print {
     color: $d-colour-dark !important;

@@ -69,22 +69,18 @@
   @extend .d-theme-light;
   background-color: #5945ff;
 
-  .d-title {
-    color: #ffeb05;
-  }
-
   .d-subtitle {
-    color: rgba(#ffeb05, 0.85);
+    color: rgba(white, 0.8);
   }
 
   .d-list-item {
-    background-color: #ffeb05;
+    color: white;
+    background-color: #23039e;
   }
 }
 
 .d-project-speechkit-mobile-text-to-speech-library {
   @extend .d-theme-light;
-  // background-color: #7203b9;
   background-color: #b95bcc;
 
   .d-title {

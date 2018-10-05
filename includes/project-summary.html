@@ -20,7 +20,9 @@
 
     <ul class="d-list">
       <each loop="skill in project.skills.sort()">
-        <li>{{ skill }}</li>
+        <li class="d-list-item">
+          {{ skill }}
+        </li>
       </each>
     </ul>
 
@@ -28,8 +30,7 @@
 
     <p>
       <a class="d-read-more-link" href="/{{ project.category }}/#{{ project.id }}">
-        Read More
-        <img class="d-read-more-link-icon" src="/images/d-icon-disclosure-right.svg" alt="Recent projects icon" hidden>
+        Read more
       </a>
     </p>
   </section>
