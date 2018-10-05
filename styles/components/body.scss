@@ -4,7 +4,7 @@
   flex-direction: column;
   background-image: url("/images/d-pattern.svg");
   scroll-behavior: smooth;
-  background-size: 20vw;
+  background-size: 12.5vw;
 
   @include d-screen-small-up {
     background-size: 10vw;

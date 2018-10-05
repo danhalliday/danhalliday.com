@@ -4,11 +4,15 @@
   margin-top: 1.5rem;
   display: inline-flex;
   align-items: center;
-  transition: 0.25s opacity, 0.25s color;
+  transition: 0.5s opacity, 0.5s color;
   padding-top: 0;
 
   &:hover {
     color: $d-colour-blue;
+
+    .d-projects-link-icon {
+      transform: scale(1.1);
+    }
   }
 
   &:active, &:hover:active {
@@ -23,6 +27,7 @@
   height: 1.5rem;
   margin-right: 0.5rem;
   margin-top: -1.5px;
+  transition: 0.5s transform;
 }
 
 .d-read-more-link {

@@ -60,7 +60,7 @@
 
 .d-text-link {
   @extend .d-text-bold;
-  transition: 0.25s opacity, 0.25s color;
+  transition: 0.5s opacity, 0.5s color;
   color: inherit;
 
   &:active, &:hover:active {
@@ -71,7 +71,6 @@
 }
 
 .d-text-link-plain {
-  // font-weight: inherit;
   text-decoration: none;
 }
 
