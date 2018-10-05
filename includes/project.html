@@ -1,31 +1,41 @@
-<article class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
-  <h class="d-title">
-    <a class="d-title-link" href="#{{ project.id }}">
-      {{ project.title }}
-    </a>
-  </h>
+<div class="d-project d-project-{{ project.id }}" id="{{ project.id }}">
+  <article class="d-section">
+    <h class="d-title">
+      <a class="d-title-link" href="#{{ project.id }}">
+        {{ project.title }}
+      </a>
+    </h>
 
-  <p class="d-subtitle">
-    {{ project.subtitle }}
-  </p>
+    <p class="d-subtitle">
+      <if condition="project.link">
+        <a class="d-title-link" href="{{ project.link }}">
+          {{ project.subtitle }}
+        </a>
+      </if>
 
-  <ul class="d-list">
-    <each loop="skill in project.skills.sort()">
-      <li>{{ skill }}</li>
-    </each>
-  </ul>
+      <else>
+        {{ project.subtitle }}
+      </else>
+    </p>
 
-  <div class="d-description" md>{{ project.description }}</div>
-
-  <if condition="project.images">
-    <div class="d-images">
-      <each loop="image in project.images">
-        <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
-          <a href="#{{ slug(image.title) }}" class="d-image-link">
-            <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
-          </a>
-        </p>
+    <ul class="d-list">
+      <each loop="skill in project.skills.sort()">
+        <li>{{ skill }}</li>
       </each>
-    </div>
-  </if>
-</article>
+    </ul>
+
+    <div class="d-description" md>{{ project.description }}</div>
+
+    <if condition="project.images">
+      <div class="d-images">
+        <each loop="image in project.images">
+          <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
+            <a href="#{{ slug(image.title) }}" class="d-image-link">
+              <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
+            </a>
+          </p>
+        </each>
+      </div>
+    </if>
+  </article>
+</div>

@@ -33,12 +33,12 @@
 .d-text-gamma {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 700;
 
   @include d-screen-medium-up {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -58,20 +58,12 @@
   @extend .d-text-bold;
   transition: 0.25s opacity, 0.25s color;
   color: inherit;
-  text-decoration-color: rgba($d-colour-white, 0.25);
 
   &:active, &:hover:active {
     opacity: 0.35;
     text-shadow: none;
     outline: none;
   }
-
-  .d-theme-soundry-co-brand-identity &,
-  .d-theme-cantare-ladies-choir-combination-mark &,
-  .d-theme-wedding-stationery-pack {
-    text-decoration-color: rgba($d-colour-white, 0.4);
-  }
-
 }
 
 .d-text-link-plain {

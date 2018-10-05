@@ -1,6 +1,5 @@
 .d-description {
   overflow-wrap: break-word;
-  // margin-top: -1.5rem;
 
   @include d-screen-small-up {
     column-count: 2;
@@ -34,6 +33,5 @@
     margin-left: 1ex;
     border-radius: 0.1em;
     position: relative;
-    opacity: 0.1;
   }
 }

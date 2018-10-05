@@ -1,26 +1,36 @@
-<section class="d-section d-theme-{{ project.id }}" id="{{ project.id }}">
-  <h class="d-title">
-    <a class="d-title-link" href="/{{ project.category }}/#{{ project.id }}">
-      {{ project.title }}
-    </a>
-  </h>
+<div class="d-project-{{ project.id }}" id="{{ project.id }}">
+  <section class="d-section">
+    <h class="d-title">
+      <a class="d-title-link" href="/{{ project.category }}/#{{ project.id }}">
+        {{ project.title }}
+      </a>
+    </h>
 
-  <p class="d-subtitle">
-    {{ project.subtitle }}
-  </p>
+    <p class="d-subtitle">
+      <if condition="project.link">
+        <a class="d-title-link" href="{{ project.link }}">
+          {{ project.subtitle }}
+        </a>
+      </if>
 
-  <ul class="d-list">
-    <each loop="skill in project.skills.sort()">
-      <li>{{ skill }}</li>
-    </each>
-  </ul>
+      <else>
+        {{ project.subtitle }}
+      </else>
+    </p>
 
-  <div class="d-description" md>{{ project.summary }}</div>
+    <ul class="d-list">
+      <each loop="skill in project.skills.sort()">
+        <li>{{ skill }}</li>
+      </each>
+    </ul>
 
-  <p>
-    <a class="d-read-more-link" href="/{{ project.category }}/#{{ project.id }}">
-      Read More
-      <img class="d-read-more-link-icon" src="/images/d-icon-disclosure-right.svg" alt="Recent projects icon" hidden>
-    </a>
-  </p>
-</section>
+    <div class="d-description" md>{{ project.summary }}</div>
+
+    <p>
+      <a class="d-read-more-link" href="/{{ project.category }}/#{{ project.id }}">
+        Read More
+        <img class="d-read-more-link-icon" src="/images/d-icon-disclosure-right.svg" alt="Recent projects icon" hidden>
+      </a>
+    </p>
+  </section>
+</div>

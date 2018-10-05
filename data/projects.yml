@@ -3,6 +3,7 @@
   subtitle: DST Innovations
   category: technology
   featured: true
+  link: http://www.dst-innovations.net
   summary: |
     I built an iOS app for [DST Innovations](http://www.dst-innovations.net) to serve as a controller for their prototype multimedia fashion product. The product features a wireless peripheral driving a visualiser display, which reacts to live music. The iOS app is a music player which analyses the audio in real time and computes a frequency spectrum, which is sent wirelessly to the peripheral.
   description: |
@@ -30,6 +31,7 @@
   subtitle: Soundry Co
   category: design
   featured: true
+  link: https://soundry.co
   summary: |
     To set Soundry apart from competitors and to reflect its focus on whole-product design and user experience, I created a bright and bold visual identity underpinned by Suitcase Type Foundry’s [Nudista](https://www.suitcasetype.com/nudista/specimen) — the perfect match for a modern engineering outfit.
   description: |
@@ -67,6 +69,7 @@
   subtitle: RIMMS TV
   category: technology
   featured: true
+  link: https://www.rimms.tv/
   summary: |
     I created macOS and iOS apps for [RIMMS TV](https://www.rimms.tv) to enable their users to hear custom live audio mixes on set. The macOS server app acts as a live mixer, taking in up to 64 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
   description: |
@@ -224,6 +227,7 @@
   subtitle: SpeechKit
   category: technology
   featured: true
+  link: https://speechkit.io
   summary: |
     I wrote an iOS [SDK](https://en.wikipedia.org/wiki/Software_development_kit) for [SpeechKit](https://speechkit.io) to give their customers an easy way to add podcast content to their apps. The kit is distributed on [CocoaPods](https://cocoapods.org), and can be added to an app in minutes. The implementation was relatively straightforward, being a thin front end to a backend service which uses IBM’s [Watson](https://www.ibm.com/watson/) to perform text-to-speech synthesis and intelligently cache articles as apps request them.
   description: |

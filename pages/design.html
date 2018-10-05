@@ -17,12 +17,12 @@
         {{ design.description }}
       </div>
 
-      <ul class="d-list" hidden>
+      <!-- <ul class="d-list" hidden> -->
         <!-- TODO: Factor out this expression! -->
-        <each loop="skill of [...new Set([].concat(...projects.filter(p => p.category === 'design').map(p => p.skills)))].sort()">
-          <li>{{ skill }}</li>
-        </each>
-      </ul>
+        <!-- <each loop="skill of [...new Set([].concat(...projects.filter(p => p.category === 'design').map(p => p.skills)))].sort()"> -->
+          <!-- <li>{{ skill }}</li> -->
+        <!-- </each> -->
+      <!-- </ul> -->
     </div>
 
     <each loop="project of projects.filter(p => p.category === 'design')">
