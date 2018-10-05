@@ -27,20 +27,12 @@ const clean = async () => {
 }
 
 const data = async () => {
-  const aboutYaml = await fs.readFile("data/about.yml")
-  const technologyYaml = await fs.readFile("data/technology.yml")
-  const designYaml = await fs.readFile("data/design.yml")
-  const companiesYaml = await fs.readFile("data/companies.yml")
-  const servicesYaml = await fs.readFile("data/services.yml")
-  const projectsYaml = await fs.readFile("data/projects.yml")
-
   return {
-    about: yaml.load(aboutYaml),
-    technology: yaml.load(technologyYaml),
-    design: yaml.load(designYaml),
-    companies: yaml.load(companiesYaml),
-    services: yaml.load(servicesYaml),
-    projects: decorateProjects(yaml.load(projectsYaml))
+    about: yaml.load(await fs.readFile("data/about.yml")),
+    technology: yaml.load(await fs.readFile("data/technology.yml")),
+    design: yaml.load(await fs.readFile("data/design.yml")),
+    companies: yaml.load(await fs.readFile("data/companies.yml")),
+    projects: decorateProjects(yaml.load(await fs.readFile("data/projects.yml")))
   }
 }
 
