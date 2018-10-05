@@ -1,11 +1,11 @@
 .d-projects-link {
   @extend .d-text-caps;
   @extend .d-text-epsilon;
-  margin-top: 1.5rem;
   display: inline-flex;
   align-items: center;
   transition: 0.5s opacity, 0.5s color;
-  padding-top: 0;
+  // padding-top: 0;
+  margin-top: auto;
 
   &:hover {
     color: $d-colour-blue;

@@ -33,6 +33,22 @@
     background-color: $d-colour-dark-alt;
   }
 
+  &.d-full {
+    $nav-text-height: 0.735rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 4.5rem - #{$nav-text-height} + 1px);
+
+    @include d-screen-small-up {
+      min-height: calc(100vh - 6rem - #{$nav-text-height} + 1px);
+    }
+
+    @include d-screen-medium-up {
+      min-height: calc(100vh - 9rem - #{$nav-text-height} + 1px);
+    }
+  }
+
   @media print {
     background-color: unset !important;
   }
