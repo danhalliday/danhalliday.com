@@ -2,14 +2,27 @@
   @extend .d-text-caps;
   @extend .d-text-epsilon;
   margin-top: 1.5rem;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.25s opacity, 0.25s color;
+  padding-top: 0;
+
+  &:hover {
+    color: $d-colour-blue;
+  }
+
+  &:active, &:hover:active {
+    opacity: 0.35;
+    text-shadow: none;
+    outline: none;
+  }
 }
 
 .d-projects-link-icon {
-  width: 0.75em;
-  height: 0.75em;
-  vertical-align: baseline;
-  // background: red;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  margin-top: -1.5px;
 }
 
 .d-read-more-link {

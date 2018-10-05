@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>d-icon-disclosure-bubble-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="d-icon-disclosure-bubble-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#3F83EF" cx="50" cy="50" r="49"></circle>
+        <path d="M56.2952169,28.0038019 C56.2952169,27.4494174 55.8472189,27 55.2864019,27 L44.7164691,27 C44.159316,27 43.7076541,27.4422797 43.7076541,28.0038019 L43.7076541,56.6589716 L30.4583608,54.0824498 C28.2952207,53.6617951 27.8029493,54.5923718 29.3597871,56.1619043 L48.5867522,75.5456484 C49.3680602,76.3333273 50.6289281,76.3392579 51.4161188,75.5456484 L70.6430839,56.1619043 C72.1994984,54.5927986 71.7048292,53.6623437 69.5445102,54.0824498 L56.2952169,56.6589716 L56.2952169,28.0038019 Z" id="Rectangle-40" fill="#FFFFFF"></path>
+    </g>
+</svg>

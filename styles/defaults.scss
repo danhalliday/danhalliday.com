@@ -30,3 +30,7 @@ a {
 em {
   @extend .d-text-italic;
 }
+
+hr {
+  display: none;
+}

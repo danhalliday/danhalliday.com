@@ -24,7 +24,7 @@
     }
   }
 
-  p:last-child:after {
+  p:last-child::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -33,5 +33,15 @@
     margin-left: 1ex;
     border-radius: 0.1em;
     position: relative;
+  }
+
+  &.d-tint-blue {
+    p:last-child::after {
+      background-color: $d-colour-blue;
+    }
+
+    a:hover {
+      color: $d-colour-blue;
+    }
   }
 }
