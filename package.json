@@ -27,6 +27,7 @@
     "node-promisify": "^1.2.0",
     "node-sass": "^4.9.3",
     "postcss": "^6.0.23",
+    "postcss-url": "^8.0.0",
     "reshape": "^0.4.2",
     "reshape-hfill": "^1.1.0",
     "reshape-standard": "^3.3.0",

@@ -10,16 +10,23 @@ const sass = require("node-sass")
 const autoprefixer = require("autoprefixer")
 const cssnano = require("cssnano")
 const postcss = require("postcss")
+const postcssUrl = require("postcss-url")
 const inline = require("inline-source")
 const slug = require("slug")
 
 slug.defaults.mode = "pretty"
 slug.defaults.modes["pretty"].lower = true
 
-const plugins = [
+const reshapePlugins = [
   hfill({
     "headings": { "1-6": [ "h", "h1", "h2", "h3", "h4", "h5", "h6" ] }
   })
+]
+
+const postcssPlugins = [
+  autoprefixer(),
+  cssnano({ preset: "advanced" }),
+  postcssUrl({ url: "inline" })
 ]
 
 const clean = async () => {
@@ -51,7 +58,7 @@ const pages = async (context) => {
 
     const locals = Object.assign({ id }, context)
     const input = await fs.readFile(page)
-    const plugin = standard({ locals, parser: false, minify: true, appendPlugins: plugins })
+    const plugin = standard({ locals, parser: false, minify: true, appendPlugins: reshapePlugins })
     const template = await reshape(plugin).process(input)
     const html = await inline.inlineSource(template.output(), {
       compress: true, rootpath: path.resolve("build"), attribute: "data-d-inline"
@@ -82,9 +89,8 @@ const styles = async () => {
   const render = promisify(sass.render)
   const result = await render({ file: source, includePaths: ["styles"], outputStyle: "compressed" })
   const buildPath = path.join(process.cwd(), "build")
-  const plugins = [autoprefixer(), cssnano({ preset: "advanced" })]
   const options = { from: source, to: destination }
-  const optimised = await postcss(plugins).process(result.css, options)
+  const optimised = await postcss(postcssPlugins).process(result.css, options)
   await fs.ensureDir(path.dirname(destination))
   await fs.writeFile(destination, optimised.css)
 }
