@@ -33,7 +33,7 @@
         <each loop="image in project.images">
           <p class="d-image-wrapper d-size-{{ image.size }}" id="{{ slug(image.title) }}">
             <a href="#{{ slug(image.title) }}" class="d-image-link">
-              <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="100%">
+              <img class="d-image" src="/images/photos/{{ image.source }}" alt="{{ image.title }}" width="300">
             </a>
           </p>
         </each>
