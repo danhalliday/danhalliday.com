@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dan.halliday.work/sitemap.xml
