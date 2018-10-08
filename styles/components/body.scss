@@ -2,15 +2,15 @@
   @extend .d-text;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/d-pattern.svg");
   scroll-behavior: smooth;
-  background-size: 12.5vw;
-
-  @include d-screen-small-up {
-    background-size: 10vw;
-  }
-
-  @include d-screen-medium-up {
-    background-size: 5vw;
-  }
+  // background-image: url("../images/d-pattern.svg");
+  // background-size: 12.5vw;
+  //
+  // @include d-screen-small-up {
+  //   background-size: 10vw;
+  // }
+  //
+  // @include d-screen-medium-up {
+  //   background-size: 5vw;
+  // }
 }

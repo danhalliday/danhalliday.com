@@ -1,10 +1,11 @@
+// TODO: Move these elements out
+
 .d-projects-link {
   @extend .d-text-caps;
   @extend .d-text-epsilon;
   display: inline-flex;
   align-items: center;
   transition: 0.5s opacity, 0.5s color;
-  // padding-top: 0;
   margin-top: auto;
 
   &:hover {
@@ -31,6 +32,7 @@
 }
 
 .d-read-more-link {
+  @extend .d-text-epsilon;
   text-decoration: none;
 
   &::after {
