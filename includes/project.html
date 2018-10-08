@@ -8,13 +8,13 @@
 
     <p class="d-subtitle">
       <if condition="project.link">
-        <a class="d-title-link" href="{{ project.link }}">
-          {{ project.subtitle }}
+        <a class="d-title-link" href="{{ project.link }}" rel="external">
+          {{ project.client }}
         </a>
       </if>
 
       <else>
-        {{ project.subtitle }}
+        {{ project.client }}
       </else>
     </p>
 

@@ -1,6 +1,6 @@
 - id: wireless-audio-visualiser
   title: Wireless Audio Visualiser
-  subtitle: DST Innovations
+  client: DST Innovations
   category: technology
   featured: true
   link: http://www.dst-innovations.net
@@ -28,7 +28,7 @@
 
 - id: soundry-co-brand-identity
   title: Brand Identity & Artwork
-  subtitle: Soundry Co
+  client: Soundry Co
   category: design
   featured: true
   link: https://soundry.co
@@ -66,7 +66,7 @@
 
 - id: rimms-tv-multichannel-streaming-server
   title: Multichannel Streaming Server
-  subtitle: RIMMS TV
+  client: RIMMS TV
   category: technology
   featured: true
   link: https://www.rimms.tv/
@@ -94,7 +94,7 @@
 
 - id: dash-audio-podcast-analytics-platform
   title: Podcast Analytics Platform
-  subtitle: Dash Audio
+  client: Dash Audio
   category: technology
   draft: true
   description:
@@ -114,7 +114,7 @@
 
 - id: earsoft-audio-sound-processing-library
   title: Sound Processing Library
-  subtitle: EarSoft Audio
+  client: EarSoft Audio
   draft: true
   category: technology
   description:
@@ -136,7 +136,7 @@
 
 - id: earsoft-audio-interactive-app
   title: Interactive Audio Player App
-  subtitle: EarSoft Audio
+  client: EarSoft Audio
   category: design
   featured: true
   summary: |
@@ -174,7 +174,7 @@
 
 - id: cantare-ladies-choir-combination-mark
   title: Combination Mark & Style Guide
-  subtitle: Cantare Ladies’ Choir
+  client: Cantare Ladies’ Choir
   category: design
   description: |
     Cantare needed a strong, bold logo to use on everything from posters and concert programmes to bags and embroidered coats. They already had a strong black and pink colour scheme, so I worked with the group on a combination mark that would tie their brand together.
@@ -205,7 +205,7 @@
 
 - id: wedding-stationery-pack
   title: Wedding Stationery Pack
-  subtitle: A Happy Couple
+  client: A Happy Couple
   category: design
   description: |
     The couple wanted a modern, elegant stationery pack, with a few extras such as a map for the day and a list of local attractions for guests to browse.
@@ -224,7 +224,7 @@
 
 - id: speechkit-mobile-text-to-speech-library
   title: Mobile Text-to-Speech Library
-  subtitle: SpeechKit
+  client: SpeechKit
   category: technology
   featured: true
   link: https://speechkit.io
