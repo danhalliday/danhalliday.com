@@ -13,6 +13,7 @@ const postcss = require("postcss")
 const postcssUrl = require("postcss-url")
 const inline = require("inline-source")
 const slug = require("slug")
+const sitemap = require("sitemap")
 
 slug.defaults.mode = "pretty"
 slug.defaults.modes["pretty"].lower = true
@@ -35,6 +36,7 @@ const clean = async () => {
 
 const data = async () => {
   return {
+    site: yaml.load(await fs.readFile("data/site.yml")),
     about: yaml.load(await fs.readFile("data/about.yml")),
     technology: yaml.load(await fs.readFile("data/technology.yml")),
     design: yaml.load(await fs.readFile("data/design.yml")),
@@ -95,6 +97,32 @@ const styles = async () => {
   await fs.writeFile(destination, optimised.css)
 }
 
+const createSitemap = async (context) => {
+  const base = "build"
+  const files = await glob(path.join(base, "**/*.html"))
+  const urls = files
+    .filter(includePageInSitemap)
+    .map(file => path.dirname(path.relative(base, file)))
+    .map(file => path.resolve(path.sep, file))
+    .map(file => path.join(file, path.sep))
+    .map(file => ({ url: file, changefreq: "monthly", priority: 1 }))
+
+  const map = sitemap.createSitemap({
+    hostname: context.site.host,
+    urls: urls
+  })
+
+  await fs.ensureDir("build")
+  await fs.writeFile(path.join("build", "sitemap.xml"), map.toString())
+}
+
+const includePageInSitemap = path => {
+  return (
+    path.includes("missing") === false &&
+    path.includes("halliday-group") === false
+  )
+}
+
 const build = async () => {
   console.time("build")
   await clean()
@@ -104,6 +132,7 @@ const build = async () => {
   await styles()
   await fonts()
   await general()
+  await createSitemap(context)
   console.timeEnd("build")
 }
 
