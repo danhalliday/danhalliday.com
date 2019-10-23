@@ -4,6 +4,12 @@ meta: Over fifteen years, I’ve founded several active technology companies, an
 
 list:
 
+  - id: swagger
+    name: Swagger
+    position: Partner
+    website: https://swagger.london
+    description:
+
   - id: halliday-group
     name: Halliday Group
     position: Director
