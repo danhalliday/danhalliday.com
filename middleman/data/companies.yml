@@ -1,0 +1,34 @@
+- id: swagger
+  name: Swagger
+  position: Partner
+  website: https://swagger.london
+  description:
+
+- id: halliday-group
+  name: Halliday Group
+  position: Director
+  website: https://halliday.group
+  description:
+
+- id: soundry-co-brand-identity
+  name: Soundry Co
+  position: Director
+  website: https://soundry.co
+  description:
+
+- id: web-workshop
+  name: Web Workshop
+  position: Advisor
+  website: https://webworkshop.ltd
+  description:
+
+- id: degenerate-media
+  name: Degenerate Media
+  position: Director
+  website: https://degenerate.media
+  description:
+
+- id: earsoft
+  name: EarSoft Audio
+  position: Director
+  description:

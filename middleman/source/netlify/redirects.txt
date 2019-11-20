@@ -1,0 +1,15 @@
+https://danhalliday.netlify.com/* https://dan.halliday.work/:splat 301!
+
+https://www.danhalliday.com/* https://danhalliday.com/:splat 301!
+https://danhalliday.com/* https://dan.halliday.work/:splat 301!
+
+https://www.halliday.work/* https://halliday.work/:splat 301!
+https://halliday.work/* https://dan.halliday.work/:splat 302!
+
+https://www.dan.halliday.work/* https://dan.halliday.work/:splat 301!
+
+https://www.halliday.group/* https://halliday.group/:splat 301!
+https://halliday.group/* /halliday-group/:splat 200!
+
+/* /missing/index.html 404
+https://halliday.group/* /missing/index.html 404

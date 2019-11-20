@@ -1,0 +1,116 @@
+.d-theme-light {
+  color: $d-colour-white;
+}
+
+.d-theme-dark {
+  color: $d-colour-dark;
+}
+
+.d-project-soundry-co-brand-identity {
+  @extend .d-theme-light;
+  background-color: red;
+
+  .d-subtitle {
+    color: rgba(white, 0.85);
+  }
+
+  .d-list-item {
+    color: white;
+    background-color: #222;
+  }
+}
+
+.d-project-cantare-ladies-choir-combination-mark {
+  @extend .d-theme-light;
+
+  .d-subtitle {
+    color: rgba(white, 0.85);
+  }
+
+  .d-section {
+    background-color: rgb(237, 0, 91);
+  }
+
+  .d-list-item {
+    color: white;
+    background-color: black;
+  }
+}
+
+.d-project-earsoft-audio-interactive-app {
+  @extend .d-theme-dark;
+  background-color: #ffd505;
+
+  .d-subtitle {
+    color: rgba(black, 0.75);
+  }
+
+  .d-list-item {
+    color: #02FFD8;
+    background-color: #222;
+  }
+}
+
+.d-project-wedding-stationery-pack {
+  @extend .d-theme-light;
+  background-color: rgb(133, 27, 52);
+
+  .d-subtitle {
+    color: rgba(white, 0.85);
+  }
+
+  .d-list-item {
+    color: #fff;
+    background-color: #222;
+  }
+}
+
+.d-project-wireless-audio-visualiser {
+  @extend .d-theme-light;
+  background-color: #5945ff;
+
+  .d-subtitle {
+    color: rgba(white, 0.8);
+  }
+
+  .d-list-item {
+    color: white;
+    background-color: #23039e;
+  }
+}
+
+.d-project-speechkit-mobile-text-to-speech-library {
+  @extend .d-theme-light;
+  background-color: #b95bcc;
+
+  .d-title {
+    color: #fff;
+  }
+
+  .d-subtitle {
+    color: #FFE15C;
+  }
+
+  .d-list-item {
+    color: #222;
+    background-color: #FFE15C;
+  }
+
+  .d-read-more-link {
+    color: #FFE15C;
+  }
+}
+
+.d-project-rimms-tv-multichannel-streaming-server {
+  @extend .d-theme-light;
+  background-color: #888;
+
+  .d-subtitle {
+    color: #ddd;
+  }
+
+  .d-list-item {
+    color: #fff;
+    background-color: #24BAA6;
+  }
+}

@@ -1,0 +1,47 @@
+.d-description {
+  overflow-wrap: break-word;
+
+  @include d-screen-small-up {
+    column-count: 2;
+    column-gap: 3rem;
+    column-fill: balance;
+    max-width: 42rem;
+
+    &.d-single {
+      column-count: unset;
+    }
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p:last-child::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1ex; height: 1ex;
+    background-color: currentColor;
+    margin-left: 1ex;
+    border-radius: 0.1em;
+    position: relative;
+  }
+
+  &.d-tint-blue {
+    p:last-child::after {
+      background-color: $d-colour-blue;
+    }
+
+    a:hover {
+      color: $d-colour-blue;
+    }
+  }
+}

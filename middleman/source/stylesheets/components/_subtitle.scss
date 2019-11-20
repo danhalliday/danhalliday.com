@@ -1,0 +1,7 @@
+.d-subtitle {
+  @extend .d-text-gamma;
+
+  .d-title + & {
+    margin-top: -2.25rem;
+  }
+}

@@ -1,0 +1,17 @@
+.d-title {
+  @extend .d-text-alpha;
+  margin-left: -0.025em;
+
+  // :target & {
+  //   animation: d-title-target 2s;
+  // }
+}
+
+.d-title-link {
+  text-decoration: none;
+}
+
+// @keyframes d-title-target {
+//   0% { color: $d-colour-highlight; }
+//   100% { color: unset; }
+// }

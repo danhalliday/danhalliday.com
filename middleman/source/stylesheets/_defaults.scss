@@ -1,0 +1,36 @@
+:root {
+  font-size: 18px;
+  color: $d-colour-light;
+  background-color: $d-colour-dark;
+  height: 100%;
+
+  @media print {
+    font-size: 10px;
+    color: $d-colour-dark;
+    background-color: unset;
+  }
+
+  @include d-screen-medium-up {
+    font-size: 16px;
+  }
+
+  @include d-screen-huge-up {
+    font-size: 18px;
+  }
+}
+
+body {
+  @extend .d-body;
+}
+
+a {
+  @extend .d-text-link;
+}
+
+em {
+  @extend .d-text-italic;
+}
+
+hr {
+  display: none;
+}

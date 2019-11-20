@@ -1,0 +1,22 @@
+name: Dan Halliday
+role: Technologist & Designer
+email: dan@halliday.work
+university: University of Surrey
+
+portrait:
+  url: images/d-photo-portrait-500.png
+  width: 500
+  height: 500
+
+profiles:
+  - https://swagger.london/partners/dan
+  - https://webworkshop.ltd/team/dan-halliday
+  - https://github.com/danhalliday
+  - https://dribbble.com/danhalliday
+  - https://www.linkedin.com/in/danhalliday
+  - https://twitter.com/danielhalliday
+
+colleagues:
+  - https://swagger.london/partners/andrew
+  - https://swagger.london/partners/parwinder
+  - https://benholland.work

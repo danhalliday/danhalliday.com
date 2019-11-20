@@ -1,0 +1,16 @@
+doctype html
+
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta content="ie=edge" http-equiv="x-ua-compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    meta name="author" content="Dan Halliday"
+    meta name="description" content=page_description
+    title = page_title
+    = stylesheet_link_tag :site
+
+  body class=page_id_class
+    == yield
+    = partial :navigation
+    = partial :footer

@@ -1,0 +1,88 @@
+.d-text {
+  font-family: "Lota Grotesque Alt 3", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  font-weight: 400;
+}
+
+.d-text-alpha {
+  @extend .d-text-bold;
+  font-size: 2.25rem;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+
+  @include d-screen-medium-up {
+    font-size: 3.5rem;
+  }
+
+  &.d-loose {
+    line-height: 1.1;
+  }
+}
+
+// .d-text-beta {
+//   @extend .d-text-bold;
+//   font-size: 1.75rem;
+//   letter-spacing: -0.02em;
+//   line-height: 1.2;
+//
+//   @include d-screen-medium-up {
+//     font-size: 2.25rem;
+//   }
+// }
+
+.d-text-gamma {
+  font-size: 1.1 rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  line-height: 1.2;
+  font-weight: 700;
+
+  @include d-screen-medium-up {
+    font-size: 1.35rem;
+  }
+}
+
+.d-text-delta {
+  font-size: 1rem;
+}
+
+.d-text-epsilon {
+  font-size: 0.7rem;
+
+  @include d-screen-medium-up {
+    font-size: 0.8rem;
+  }
+}
+
+.d-text-link {
+  @extend .d-text-bold;
+  transition: 0.5s opacity, 0.5s color;
+  color: inherit;
+
+  &:active, &:hover:active {
+    opacity: 0.35;
+    text-shadow: none;
+    outline: none;
+  }
+}
+
+.d-text-link-plain {
+  text-decoration: none;
+}
+
+.d-text-bold {
+  font-weight: 700;
+}
+
+.d-text-italic {
+  font-style: italic;
+}
+
+.d-text-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
