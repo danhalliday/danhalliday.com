@@ -1,23 +1,21 @@
-.d-section.d-full
-  img.d-image-portrait alt=("Dan’s profile photo") data-d-inline="" src="/images/d-photo-portrait.jpg" width="100"
+a.d-nav-link href="#" About
 
-  h1.d-lede.d-loose
-    span Independent technologist and designer
-    span.d-lede-addendum based in and around London.
+h1.d-hero-title
+  | Independent
+  em<> technologist
+  em.d-hero-ampersand<> &amp;
+  em<> designer
+  | based in London, founding partner at
+  a.d-hero-link<> href="https://swagger.london" Swagger.
 
-  .d-description.d-tint-blue
-    p Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
-    p If you’re working on something good, I want to be the first to hear about it. Just a[introduce yourself](mailto:dan@halliday.work).
+.d-description
+  p
+    | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
 
-  a.d-projects-link.d-text-link-plain hidden="" href="#recent-projects"
-    img.d-projects-link-icon alt=("Recent projects icon") data-d-inline="" src="/images/d-icon-disclosure-bubble-down.svg"
-    | Recent Projects
-
-section#recent-projects
-  h.d-a11y
-    | Recent Projects
-  each loop=("project of projects.filter(p => p.featured)")
-    include src="includes/project-summary.html"
+  p
+    | If you’re working on something good, I want to be the first to hear about it. Just
+    a< href="mailto:#{data.contact.email}" introduce yourself
+    | .
 
 = schema "schema/person"
 = schema "schema/website"

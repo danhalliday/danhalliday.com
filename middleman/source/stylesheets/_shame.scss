@@ -1,41 +1,98 @@
-// TODO: Move these elements out
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
 
-.d-projects-link {
-  @extend .d-text-caps;
-  @extend .d-text-epsilon;
-  display: inline-flex;
-  align-items: center;
-  transition: 0.5s opacity, 0.5s color;
-  margin-top: auto;
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
 
-  &:hover {
-    color: $d-colour-blue;
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
 
-    .d-projects-link-icon {
-      transform: scale(1.1);
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
     }
   }
 
-  &:active, &:hover:active {
-    opacity: 0.35;
-    text-shadow: none;
-    outline: none;
+  @if $fallback {
+    font-size: $fallback;
   }
+
+  font-size: $responsive;
 }
 
-.d-projects-link-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
-  margin-top: -1.5px;
-  transition: 0.5s transform;
+
+html {
+  height: 100%;
 }
 
-.d-read-more-link {
-  @extend .d-text-epsilon;
+body {
+  background: black;
+  color: white;
+  font-family: "Lagu Sans Variable";
+  font-variation-settings: "wght" 380;
+  min-height: 100%;
+  padding: 10vw;
+  font-size: 125%;
+  line-height: 1.4;
+  background-image: url("/images/d-background-black.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center 75%;
+}
+
+a {
+  color: #baa885;
   text-decoration: none;
+  font-variation-settings: "wght" 360;
 
-  &::after {
-    content: "›"
+  &:hover {
+    color: inherit;
   }
+}
+
+em {
+  font-style: italic;
+}
+
+.d-nav-link {
+  font-family: "Termina";
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
+.d-hero-title {
+  font-size: 2rem;
+  font-variation-settings: "wght" 315;
+  line-height: 1.25;
+  margin: 10vw 0;
+
+  @media (min-width: 900px) {
+    font-size: 4rem;
+  }
+}
+
+.d-hero-ampersand {
+  font-size: 0.77em;
+  font-variation-settings: "wght" 350;
+  // font-style: italic;
+}
+
+.d-hero-period {
+  margin-left: -0.075em;
+}
+
+.d-hero-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(white, 0.1);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.125em;
+  color: #baa885;
+}
+
+.d-description {
+  display: grid;
+  grid-gap: 2.5vw;
 }
