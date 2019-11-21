@@ -1,6 +1,20 @@
 .d-grid {
   display: grid;
-  grid-template-columns: [main-start] var(--d-grid-gutter) [content-start] 1fr [content-middle] 1fr [content-end] var(--d-grid-gutter) [main-end];
+  grid-template-columns:
+    [main-start]
+    var(--d-grid-gutter)
+    [content-start]
+    1fr
+    [content-left-quarter]
+    1fr
+    [content-middle]
+    1fr
+    [content-right-quarter]
+    1fr
+    [content-end]
+    var(--d-grid-gutter)
+    [main-end];
+
   grid-template-rows: auto;
   grid-gap: var(--d-grid-gap) 0;
 

@@ -8,6 +8,10 @@
     h1.d-masthead-headline
       = work.title
 
+    ul.d-tags
+      - work.data.skills.each do |skill|
+        li.d-tag = skill
+
   .d-work-body
     == yield
 

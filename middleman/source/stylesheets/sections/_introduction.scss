@@ -11,22 +11,6 @@
   }
 }
 
-.d-introduction-image-alt {
-  @extend .d-round-left;
-  display: none;
-  grid-column: main-end / content-end;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-    object-position: 20%;
-  }
-
-  @media (min-width: 600px) {
-    display: flex;
-  }
-}
-
 .d-introduction-image {
   @extend .d-round-right;
   grid-column: main-start / content-end;

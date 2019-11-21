@@ -1,6 +1,5 @@
 .d-cards {
   @extend .d-grid;
-
 }
 
 .d-card {
@@ -31,6 +30,6 @@
   grid-gap: 0.5rem;
 
   @media (min-width: 900px) {
-    grid-gap: 1rem;
+    grid-gap: 0.75rem;
   }
 }
