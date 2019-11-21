@@ -15,19 +15,22 @@ html {
   background-position: center top;
 }
 
+
+$d-border-radius: 4px;
+
 .d-round-left {
   &, & img {
     border-radius: unset;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: $d-border-radius;
+    border-bottom-left-radius: $d-border-radius;
   }
 }
 
 .d-round-right {
   &, & img {
     border-radius: unset;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: $d-border-radius;
+    border-bottom-right-radius: $d-border-radius;
   }
 }
 
@@ -67,7 +70,7 @@ em {
   display: inline;
   margin-top: 0.5em;
   margin-right: 1.5em;
-  opacity: 0.4;
+  color: mix(white, black, 30%);
 }
 
 img {

@@ -1,0 +1,14 @@
+.d-header {
+  display: flex;
+}
+
+.d-header-home-link {
+  @extend .d-text-subheading;
+  color: mix(white, black, 20%);
+  transition: 0.5s color;
+  line-height: 1;
+
+  &:hover {
+    color: white;
+  }
+}

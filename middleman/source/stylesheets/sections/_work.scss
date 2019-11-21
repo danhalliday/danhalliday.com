@@ -4,11 +4,35 @@
 
 // TODO: Relocate
 .d-work-body {
-  display: grid;
-  grid-gap: 1rem * 1.6;
+  @extend .d-grid;
+  @extend .d-tight;
+  // display: grid;
+  // grid-gap: 1rem * 1.6;
   grid-column: content-start / content-end;
 
   @media (min-width: 600px) {
     grid-column: content-start / content-middle;
+  }
+
+  h2 {
+    @extend .d-text-heading;
+    margin: (1rem * 1.6) 0 (1rem * 1.4);
+  }
+
+  h3 {
+    @extend .d-text-subheading;
+    margin: (1rem * 1.6) 0 (1rem * 1.4);
+  }
+
+  p {
+    @media (min-width: 600px) {
+      grid-column: content-start / content-middle;
+    }
+  }
+
+  figure {
+    @media (min-width: 600px) {
+      grid-column: main-start / content-middle;
+    }
   }
 }
