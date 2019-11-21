@@ -7,16 +7,13 @@ html {
   @extend .d-text;
   background: hsl(0deg, 0%, 4%);
   color: white;
-  // background: white;
-  // color: black;
   min-height: 100%;
   background-image: url("/images/d-background-black.svg");
-  background-size: 100% auto;
-  background-position: center top;
+  background-size: 125% auto;
+  background-position: center top -15vw;
 }
 
-
-$d-border-radius: 4px;
+$d-border-radius: 6px;
 
 .d-round-left {
   &, & img {
@@ -63,14 +60,17 @@ em {
 .d-tags {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 5%;
+  margin-top: 0.25rem;
 }
 
 .d-tag {
   @extend .d-text-caption;
-  display: inline;
-  margin-top: 0.5em;
-  margin-right: 1.5em;
-  color: mix(white, black, 30%);
+  color: mix(white, black, 50%);
+  line-height: 1.8;
+
+ display: inline;
+ margin-right: 1.25em;
 }
 
 img {

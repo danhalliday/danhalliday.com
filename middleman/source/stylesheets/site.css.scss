@@ -1,13 +1,15 @@
 @import "reset";
 
-@import "grids";
 @import "text";
+@import "grids";
 
+@import "components/cards";
+@import "components/gradient";
+@import "components/header";
+@import "components/masthead";
+
+@import "sections/companies";
 @import "sections/introduction";
 @import "sections/work";
-
-@import "components/masthead";
-@import "components/cards";
-@import "components/header";
 
 @import "shame";

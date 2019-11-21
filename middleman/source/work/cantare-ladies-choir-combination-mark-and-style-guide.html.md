@@ -11,6 +11,8 @@ skills:
   - Print Design
   - Design Documentation
 
+image: /images/photos/cantare-logo.jpg
+
 images:
   - title: Cantare Ladies’ Choir Combination Mark Detail
     source: cantare-logo.jpg

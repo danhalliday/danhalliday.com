@@ -12,11 +12,11 @@ p.d-header
     span.d-hero-period .
 
 .d-introduction
-  p.d-introduction-body
-    | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
-
   p.d-introduction-image
     img src="https://www.datocms-assets.com/15979/1570392617-265.jpg?w=1500"
+
+  p.d-introduction-body
+    | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
 
   p.d-introduction-body
     | If you’re working on something good, I want to be the first to hear about it. Just
@@ -31,7 +31,7 @@ section.d-section-work#work
   .d-cards
     - blog.articles.each do |work|
       a.d-card href=work.path
-        img.d-card-image src=(work.data.images ? "/images/photos/#{work.data.images.first.source}" : "https://placehold.it/900x600")
+        img.d-card-image src=(work.data.image) loading="lazy"
 
         .d-card-body
           p.d-text-subheading
@@ -41,18 +41,16 @@ section.d-section-work#work
             = work.title
 
           ul.d-tags
-            - work.data.skills.each do |skill|
+            - work.data.skills.sort.each do |skill|
               li.d-tag = skill
 
-section#writing
+section.d-section-companies#companies
   h2.d-text-heading.d-anchor-ref-container
-      | Writing
-      a.d-anchor-ref hidden="" href="#writing" Link to this section
+    | Companies
+    a.d-anchor-ref hidden="" href="#companies" Link to this section
 
-section#companies
-  h2.d-text-heading.d-anchor-ref-container
-      | Companies
-      a.d-anchor-ref hidden="" href="#companies" Link to this section
+  - data.companies.each do |company|
+    p = company.name
 
 = schema "schema/person"
 = schema "schema/website"

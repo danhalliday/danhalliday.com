@@ -14,6 +14,8 @@ skills:
   - Icons
   - Prototyping
 
+image: /images/photos/earsoft-app-9.jpg
+
 images:
   - title: EarSoft App Design Detail 1
     source: earsoft-app-9.jpg

@@ -13,6 +13,8 @@ skills:
   - Typography
   - Web
 
+image: /images/photos/soundry-logo.jpg
+
 images:
   - title: Soundry Colour Combination Mark
     source: soundry-logo.jpg

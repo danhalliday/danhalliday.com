@@ -1,13 +1,18 @@
 .d-section-work {
   @extend .d-grid;
+  @extend .d-gradient;
+  padding-top: var(--d-grid-gap);
 }
 
 // TODO: Relocate
 .d-work-body {
   @extend .d-grid;
   @extend .d-tight;
-  // display: grid;
-  // grid-gap: 1rem * 1.6;
+
+  @extend .d-gradient;
+  padding-top: var(--d-grid-gap);
+
+
   grid-column: content-start / content-end;
 
   @media (min-width: 600px) {
