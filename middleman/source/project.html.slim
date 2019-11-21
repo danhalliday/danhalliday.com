@@ -1,7 +1,11 @@
 - current_page.data.title = project_page_title(project)
 
-h1.d-text-headline
-  = project.title
+.d-masthead
+  p.d-masthead-subtitle
+    = project.client
 
-p.d-text-title
-  = project.client
+  h1.d-masthead-headline
+    = project.title
+
+.d-test
+  markdown: #{project.description}

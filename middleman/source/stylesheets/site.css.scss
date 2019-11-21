@@ -1,7 +1,12 @@
 @import "reset";
 
+@import "grids";
 @import "text";
 
-@import "card";
+@import "sections/introduction";
+@import "sections/work";
+
+@import "components/masthead";
+@import "components/cards";
 
 @import "shame";

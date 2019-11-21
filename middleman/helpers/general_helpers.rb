@@ -2,7 +2,8 @@ require "json"
 
 module GeneralHelpers
   def page_title
-    (current_page.data.title ? [current_page.data.title, data.site.name] : [data.site.name, data.site.tagline]).join(data.site.separator.center(3))
+    custom_title = yield_content(:title) || current_page.data.title
+    (custom_title ? [custom_title, data.site.name] : [data.site.name, data.site.tagline]).join(data.site.separator.center(3))
   end
 
   def page_description
@@ -35,5 +36,13 @@ module GeneralHelpers
 
   def project_page_title(project)
     "#{project.title} for #{project.client}"
+  end
+
+  def work
+    current_article
+  end
+
+  def work_title
+    "#{work.title} for #{work.data.client}"
   end
 end

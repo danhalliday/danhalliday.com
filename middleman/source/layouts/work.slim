@@ -1,0 +1,15 @@
+- content_for :title, work_title
+
+= wrap_layout :layout do
+  .d-masthead
+    p.d-masthead-subtitle
+      = work.data.client
+
+    h1.d-masthead-headline
+      = work.title
+
+  .d-work-body
+    == yield
+
+  - work.data.images.each do |image|
+    = image_tag "/images/photos/#{image.source}"

@@ -1,0 +1,36 @@
+.d-cards {
+  @extend .d-grid;
+
+}
+
+.d-card {
+  @extend .d-grid;
+  @extend .d-tight;
+}
+
+.d-card-title {
+  @extend .d-text-title;
+}
+
+.d-card-subtitle {
+  @extend .d-text-subheading;
+}
+
+.d-card-image {
+  @extend .d-round-left;
+  grid-column: content-start / main-end;
+
+  .d-card:nth-child(even) & {
+    @extend .d-round-right;
+    grid-column: main-start / content-end;
+  }
+}
+
+.d-card-body {
+  display: grid;
+  grid-gap: 0.5rem;
+
+  @media (min-width: 900px) {
+    grid-gap: 1rem;
+  }
+}

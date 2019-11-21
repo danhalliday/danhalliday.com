@@ -1,0 +1,37 @@
+.d-introduction {
+  @extend .d-grid;
+  @extend .d-tight;
+}
+
+.d-introduction-body {
+  grid-column: content-start / content-end;
+
+  @media (min-width: 600px) {
+    grid-column: content-start / content-middle;
+  }
+}
+
+.d-introduction-image-alt {
+  @extend .d-round-left;
+  display: none;
+  grid-column: main-end / content-end;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 20%;
+  }
+
+  @media (min-width: 600px) {
+    display: flex;
+  }
+}
+
+.d-introduction-image {
+  @extend .d-round-right;
+  grid-column: main-start / content-end;
+
+  @media (min-width: 600px) {
+    grid-column: main-start / content-middle;
+  }
+}

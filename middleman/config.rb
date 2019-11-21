@@ -14,6 +14,13 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :blog do |blog|
+  blog.layout = :work
+  blog.prefix = "work"
+  blog.sources = "{slug}.html"
+  blog.permalink = "{slug}.html"
+end
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

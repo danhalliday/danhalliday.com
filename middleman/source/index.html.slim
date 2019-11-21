@@ -1,50 +1,64 @@
-p.d-text-subtitle.d-fade Dan Halliday
+p.d-text-subheading.d-fade
+  | Dan Halliday
 
-h1.d-text-headline
-  | Independent
-  em<> tech&shy;nologist
-  em.d-ampersand<> &amp;
-  em<> designer
-  | based in London, founding partner at
-  a< href="https://swagger.london" Swagger
-  span.d-hero-period .
+.d-masthead
+  h1.d-masthead-headline
+    | Independent
+    em<> tech&shy;nologist
+    em.d-ampersand<> &amp;
+    em<> designer
+    | based in London, founding partner at
+    a< href="https://swagger.london" Swagger
+    span.d-hero-period .
 
-.d-text-block
-  p
+.d-introduction
+  p.d-introduction-body
     | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
 
-  p
-    img.ttt src="https://www.datocms-assets.com/15979/1570392617-265.jpg?w=1500"
+  p.d-introduction-image
+    img src="https://www.datocms-assets.com/15979/1570392617-265.jpg?w=1500"
 
-  p
+  p.d-introduction-image-alt
+    img src="https://www.datocms-assets.com/15979/1570392650-303.jpg?w=1500"
+
+  p.d-introduction-body
     | If you’re working on something good, I want to be the first to hear about it. Just
     a< href="mailto:#{data.contact.email}" introduce yourself
     | .
 
-h2.d-text-title href="#" Work
+section.d-section-work#work
+  h2.d-text-heading.d-anchor-ref-container
+    | Work
+    a.d-anchor-ref hidden="" href="#work" Link to this section
 
-.d-card-group
-  - data.projects.each do |project|
-    a.d-card href=project_path(project)
-      img.d-card-image src=(project.images ? "/images/photos/#{project.images.first.source}" : "https://placehold.it/900x600")
+  .d-cards
+    - blog.articles.each do |work|
+      a.d-card href=work.path
+        img.d-card-image src=(work.data.images ? "/images/photos/#{work.data.images.first.source}" : "https://placehold.it/900x600")
 
-      .d-card-body
-        h3.d-text-subtitle
-          = project.title
+        .d-card-body
+          p.d-text-subheading
+            = work.data.client
 
-        p.d-text-caption
-          = project.client
+          h3.d-card-title
+            = work.title
 
-        ul.d-tags
-          li.d-tag Brand Art
-          li.d-tag Logo
-          li.d-tag Stationery
-          li.d-tag Typography
-          li.d-tag Web
+          ul.d-tags
+            li.d-tag Brand Art
+            li.d-tag Logo
+            li.d-tag Stationery
+            li.d-tag Typography
+            li.d-tag Web
 
-h2.d-text-title href="#" Writing
+section#writing
+  h2.d-text-heading.d-anchor-ref-container
+      | Writing
+      a.d-anchor-ref hidden="" href="#writing" Link to this section
 
-h2.d-text-title href="#" Companies
+section#companies
+  h2.d-text-heading.d-anchor-ref-container
+      | Companies
+      a.d-anchor-ref hidden="" href="#companies" Link to this section
 
 = schema "schema/person"
 = schema "schema/website"
