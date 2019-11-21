@@ -1,21 +1,50 @@
-a.d-nav-link href="#" About
+p.d-text-subtitle.d-fade Dan Halliday
 
-h1.d-hero-title
+h1.d-text-headline
   | Independent
-  em<> technologist
-  em.d-hero-ampersand<> &amp;
+  em<> tech&shy;nologist
+  em.d-ampersand<> &amp;
   em<> designer
   | based in London, founding partner at
-  a.d-hero-link<> href="https://swagger.london" Swagger.
+  a< href="https://swagger.london" Swagger
+  span.d-hero-period .
 
-.d-description
+.d-text-block
   p
     | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
+
+  p
+    img.ttt src="https://www.datocms-assets.com/15979/1570392617-265.jpg?w=1500"
 
   p
     | If you’re working on something good, I want to be the first to hear about it. Just
     a< href="mailto:#{data.contact.email}" introduce yourself
     | .
+
+h2.d-text-title href="#" Work
+
+.d-card-group
+  - data.projects.each do |project|
+    a.d-card href=project_path(project)
+      img.d-card-image src=(project.images ? "/images/photos/#{project.images.first.source}" : "https://placehold.it/900x600")
+
+      .d-card-body
+        h3.d-text-subtitle
+          = project.title
+
+        p.d-text-caption
+          = project.client
+
+        ul.d-tags
+          li.d-tag Brand Art
+          li.d-tag Logo
+          li.d-tag Stationery
+          li.d-tag Typography
+          li.d-tag Web
+
+h2.d-text-title href="#" Writing
+
+h2.d-text-title href="#" Companies
 
 = schema "schema/person"
 = schema "schema/website"

@@ -28,4 +28,12 @@ module GeneralHelpers
     minfied = JSON.generate(JSON.parse(output))
     "<script type='application/ld+json'>#{minfied}</script>".html_safe
   end
+
+  def project_path(project)
+    "/projects/#{project.id}.html"
+  end
+
+  def project_page_title(project)
+    "#{project.title} for #{project.client}"
+  end
 end

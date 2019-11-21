@@ -1,3 +1,6 @@
+require "helpers/general_helpers"
+include GeneralHelpers
+
 ignore "*.sketch*"
 
 set :slim, { pretty: !build?, disable_escape: false }
@@ -20,6 +23,10 @@ page '/*.txt', layout: false
 
 # Proxies
 # https://middlemanapp.com/advanced/dynamic-pages/
+
+data.projects.each do |project|
+  proxy project_path(project), "project.html", ignore: true, locals: { project: project }
+end
 
 proxy "_headers", "netlify/headers.txt", ignore: true
 proxy "_redirects", "netlify/redirects.txt", ignore: true

@@ -11,7 +11,9 @@ html lang="en"
     = stylesheet_link_tag :site
     = stylesheet_link_tag "https://swagger.london/stylesheets/fonts.css"
 
-  body class=page_id_class
-    == yield
+  body.d-body class=page_id_class
+    main.d-main
+      == yield
+
     = partial :navigation
     = partial :footer
