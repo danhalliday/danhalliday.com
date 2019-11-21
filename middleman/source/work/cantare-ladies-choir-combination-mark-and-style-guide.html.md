@@ -8,7 +8,8 @@ summary: Cantare needed a strong, bold logo to use on everything from posters an
 
 skills:
   - Logo Design
-  - Documentation
+  - Print Design
+  - Design Documentation
 
 images:
   - title: Cantare Ladies’ Choir Combination Mark Detail

@@ -5,11 +5,7 @@
     var(--d-grid-gutter)
     [content-start]
     1fr
-    [content-left-quarter]
-    1fr
     [content-middle]
-    1fr
-    [content-right-quarter]
     1fr
     [content-end]
     var(--d-grid-gutter)
@@ -40,17 +36,17 @@
   --d-grid-gutter: 2rem;
 
   @media (min-width: 350px) {
-    --d-grid-gap: 6rem;
-    --d-grid-gutter: 3rem;
+    --d-grid-gap: 5rem;
+    --d-grid-gutter: 2.5rem;
   }
 
   @media (min-width: 600px) {
     --d-grid-gap: 9rem;
-    --d-grid-gutter: 6rem;
+    --d-grid-gutter: 4.5rem;
   }
 
   @media (min-width: 1200px) {
     --d-grid-gap: 12rem;
-    --d-grid-gutter: 9rem;
+    --d-grid-gutter: 6rem;
   }
 }

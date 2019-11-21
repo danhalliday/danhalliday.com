@@ -5,7 +5,7 @@
 // TODO: Relocate
 .d-work-body {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 1rem * 1.6;
   grid-column: content-start / content-end;
 
   @media (min-width: 600px) {
