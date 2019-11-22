@@ -26,10 +26,16 @@
 }
 
 .d-card-body {
-  display: grid;
-  grid-gap: 0.5rem;
+  @extend .d-grid;
+  grid-gap: 0.5rem 0;
+}
 
-  @media (min-width: 900px) {
-    grid-gap: 0.75rem;
+.d-card-summary {
+  @extend .d-text-small;
+  margin-top: 1.25rem;
+
+  @media (min-width: 600px) {
+    grid-column: content-start / content-middle;
+    margin-top: 2rem;
   }
 }

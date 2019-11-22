@@ -14,7 +14,9 @@ skills:
   - Icons
   - Prototyping
 
-image: /images/photos/earsoft-app-9.jpg
+image:
+  src: /images/photos/earsoft-app-9.jpg
+  alt: Bright yellow modern app design
 
 images:
   - title: EarSoft App Design Detail 1

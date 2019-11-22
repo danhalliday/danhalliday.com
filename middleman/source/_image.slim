@@ -1,0 +1,15 @@
+- raise "Image requires a source URL `src`" unless defined?(src)
+- raise "Image requires an image description `alt`" unless defined?(alt)
+- raise "Image doesn’t accept source URLs with a querystring" if src.include?("?")
+
+- classes ||= ""
+
+picture class=classes
+  img [
+    alt=alt
+    class="d-image"
+    src=image_src(src)
+    srcset=image_srcset(src)
+    loading="lazy"
+    sizes="100vw"
+  ]

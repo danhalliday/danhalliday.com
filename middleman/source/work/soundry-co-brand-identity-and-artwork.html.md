@@ -13,7 +13,9 @@ skills:
   - Typography
   - Web
 
-image: /images/photos/soundry-logo.jpg
+image:
+  src: /images/photos/soundry-logo.jpg
+  alt: Bold red soundwave logo
 
 images:
   - title: Soundry Colour Combination Mark

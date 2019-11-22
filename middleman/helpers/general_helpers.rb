@@ -37,4 +37,16 @@ module GeneralHelpers
   def work_title
     "#{work.title} for #{work.data.client}"
   end
+
+  def image_src(src)
+    "#{src}?w=1000&auto=format&q=50"
+  end
+
+  def image_srcset(src)
+    (300..5100).step(300).map { |s| "#{src}?w=#{s}&auto=format&q=25 #{s}w" }.join(", ")
+  end
+
+  def process_work_body(body)
+    body
+  end
 end

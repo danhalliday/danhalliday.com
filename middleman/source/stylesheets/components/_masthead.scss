@@ -1,10 +1,6 @@
 .d-masthead {
   @extend .d-grid;
   grid-gap: 0.5rem 0;
-
-  @media (min-width: 900px) {
-    grid-gap: 0.75rem 0;
-  }
 }
 
 .d-masthead-headline {

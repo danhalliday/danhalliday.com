@@ -16,7 +16,9 @@ skills:
   - Objective-C
   - Swift
 
-image: https://placehold.it/1200x800/1a1a1a?text=%20
+image:
+  src: https://placehold.it/1200x800/1a1a1a
+  alt: Alt text
 
 ---
 

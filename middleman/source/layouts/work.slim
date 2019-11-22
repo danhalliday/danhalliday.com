@@ -16,7 +16,7 @@
         li.d-tag = skill
 
   .d-work-body
-    == yield
+    == process_work_body(yield)
 
   - if work.data.images
     - work.data.images.each do |image|

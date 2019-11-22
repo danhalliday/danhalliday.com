@@ -11,7 +11,9 @@ skills:
   - Print Design
   - Design Documentation
 
-image: /images/photos/cantare-logo.jpg
+image:
+  src: /images/photos/cantare-logo.jpg
+  alt: Bright pink treble clef shape logo
 
 images:
   - title: Cantare Ladies’ Choir Combination Mark Detail

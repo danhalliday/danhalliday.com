@@ -1,0 +1,19 @@
+$d-round-radius: 6px;
+
+.d-round {
+  &, & img {
+    border-radius: $d-round-radius;
+  }
+}
+
+.d-round-left {
+  &, & img {
+    border-radius: $d-round-radius 0 0 $d-round-radius;
+  }
+}
+
+.d-round-right {
+  &, & img {
+    border-radius: 0 $d-round-radius $d-round-radius 0;
+  }
+}
