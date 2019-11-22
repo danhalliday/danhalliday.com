@@ -82,14 +82,18 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
     font-variation-settings: "wght" 380;
   }
 
+  .d-text-heading + & {
+    margin-top: 0.125em;
+  }
+
   > * {
     display: inline;
   }
 }
 
 .d-text-title {
-  font-size: 1.563rem;
-  line-height: 1.3;
+  font-size: 1.953rem;
+  line-height: 1.25;
   margin-left: -0.035em;
   letter-spacing: -0.0025em;
   font-variation-settings: "wght" 380;
@@ -103,6 +107,10 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   @include d-size(1200) {
     font-size: 3.052rem;
     letter-spacing: -0.0075em;
+  }
+
+  .d-text-subheading + & {
+    margin-top: 0.125em;
   }
 }
 
