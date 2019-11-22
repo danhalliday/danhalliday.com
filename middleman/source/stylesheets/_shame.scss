@@ -22,32 +22,6 @@
   margin-left: -0.1em;
 }
 
-.d-tags {
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 5%;
-
-  .d-text-title + & {
-    margin-top: 0.5em;
-  }
-
-  .d-text-headline + & {
-    margin-top: 0.5em;
-
-    @include d-size(600) {
-      margin-top: 1em;
-    }
-  }
-}
-
-.d-tag {
-  @extend .d-text-caption;
-  color: $d-color-gray;
-  line-height: 1.8;
-  display: inline;
-  margin-right: 1.25em;
-}
-
 .d-anchor-ref-container {
   position: relative;
 }

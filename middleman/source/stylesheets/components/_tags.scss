@@ -1,0 +1,38 @@
+.d-tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 5%;
+  overflow: hidden;
+
+  .d-text-title + & {
+    margin-top: 0.5em;
+  }
+
+  .d-text-headline + & {
+    margin-top: 0.5em;
+
+    @include d-size(600) {
+      margin-top: 1em;
+    }
+  }
+}
+
+.d-tag {
+  @extend .d-text-caption;
+  color: $d-color-gray;
+  line-height: 1.8;
+  display: inline;
+  position: relative;
+
+  padding-left: 2em;
+  margin-left: -2em;
+  margin-right: 2em;
+
+  &::before {
+    content: "·";
+    position: absolute;
+    left: 1em;
+    transform: translate(-50%, 0);
+    color: $d-color-gray-dark;
+  }
+}
