@@ -42,7 +42,7 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
 
 .d-text-headline {
   font-size: 1.953rem;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" 380;
   letter-spacing: -0.005em;
   line-height: 1.3;
   hyphens: none;
@@ -50,13 +50,13 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
 
   @media (min-width: 600px) {
     font-size: 3.052rem;
-    font-variation-settings: "wght" 390;
+    font-variation-settings: "wght" 370;
     line-height: 1.25;
     letter-spacing: -0.0075em;
   }
 
   @media (min-width: 900px) {
-    font-variation-settings: "wght" 380;
+    font-variation-settings: "wght" 360;
     letter-spacing: -0.01em;
     margin-left: -0.075em;
     padding-right: 5%;
@@ -64,17 +64,17 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
 
   @media (min-width: 1200px) {
     font-size: 3.815rem;
-    font-variation-settings: "wght" 370;
+    font-variation-settings: "wght" 350;
     letter-spacing: -0.0125em;
   }
 
   @media (min-width: 1500px) {
-    font-variation-settings: "wght" 360;
+    font-variation-settings: "wght" 340;
     letter-spacing: -0.015em;
   }
 
   @media (min-width: 1800px) {
-    font-variation-settings: "wght" 350;
+    font-variation-settings: "wght" 330;
     letter-spacing: -0.015em;
   }
 
@@ -93,7 +93,7 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   line-height: 1.3;
   margin-left: -0.035em;
   letter-spacing: -0.0025em;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" 380;
 
   @media (min-width: 900px) {
     font-size: 2.441rem;

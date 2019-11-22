@@ -30,14 +30,6 @@ module GeneralHelpers
     "<script type='application/ld+json'>#{minfied}</script>".html_safe
   end
 
-  def project_path(project)
-    "/projects/#{project.id}.html"
-  end
-
-  def project_page_title(project)
-    "#{project.title} for #{project.client}"
-  end
-
   def work
     current_article
   end
