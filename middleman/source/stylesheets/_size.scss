@@ -1,0 +1,11 @@
+$d-sizes: 350 600 900 1200 1500 1800;
+
+@mixin d-size($size) {
+  @if (index($d-sizes, $size) == null) {
+    @error "#{$size}px is not a valid breakpoint size";
+  }
+
+  @media screen and (min-width: #{$size}px) {
+    @content;
+  }
+}

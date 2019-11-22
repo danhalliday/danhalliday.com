@@ -4,7 +4,7 @@ client: Soundry Co
 title: Brand Identity & Artwork
 date: 2015-01-01
 
-summary: To set Soundry apart from competitors and to reflect its focus on whole-product design and user experience, I created a bright and bold visual identity underpinned by Suitcase Type Foundry’s Nudista — the perfect match for a modern engineering outfit.
+summary: I created a bright and bold visual identity to set this modern engineering outfit apart from their competition.
 
 skills:
   - Logo
@@ -19,7 +19,7 @@ image:
 
 ---
 
-[Soundry Co](http://soundry.co) make bespoke audio software. To set the company apart from competitors and to reflect its focus on whole-product design and user experience, I created a bright and bold visual identity underpinned by Suitcase Type Foundry’s [Nudista](https://www.suitcasetype.com/nudista/specimen) — the perfect match for a modern engineering outfit.
+[Soundry Co](http://soundry.co) make bespoke audio software. To set the company apart from their competition and to reflect its focus on whole-product design and user experience, I created a bright and bold visual identity underpinned by Suitcase Type Foundry’s [Nudista](https://www.suitcasetype.com/nudista/specimen) — the perfect match for a modern engineering outfit.
 
 ![Soundry Colour Combination Mark](/images/photos/soundry-logo.jpg)
 

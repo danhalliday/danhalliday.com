@@ -18,13 +18,17 @@
 }
 
 .d-article-paragraph {
-  @media (min-width: 600px) {
+  @include d-size(600) {
     grid-column: content-start / content-middle;
+
+    & + & {
+      margin-top: calc(0px - (var(--d-grid-gap) / 4));
+    }
   }
 }
 
 .d-article-figure-group {
-  @media (min-width: 600px) {
+  @include d-size(600) {
     grid-column: content-start / content-middle;
   }
 

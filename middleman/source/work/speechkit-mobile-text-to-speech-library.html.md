@@ -4,7 +4,7 @@ client: SpeechKit
 title: Mobile Text-to-Speech Library
 date: 2017-01-01
 
-summary: I wrote an iOS SDK for SpeechKit to give their customers an easy way to add podcast content to their apps. The kit is distributed on, and can be added to an app in minutes. The implementation was relatively straightforward, being a thin front end to a backend service which uses IBM’s Watson to perform text-to-speech synthesis and intelligently cache articles as apps request them.
+summary: I wrote an iOS SDK for SpeechKit to give their customers an easy way to add podcast content to their apps.
 
 skills:
   - iOS
@@ -15,8 +15,8 @@ skills:
   - React Native
 
 image:
-  src: https://placehold.it/1200x800/1a1a1a
-  alt: Alt text
+  src: /images/d-placeholder.svg
+  alt: Placeholder image
 
 ---
 

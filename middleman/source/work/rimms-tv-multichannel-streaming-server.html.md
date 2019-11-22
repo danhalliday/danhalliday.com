@@ -4,7 +4,7 @@ client: RIMMS TV
 title: Multichannel Streaming Server
 date: 2016-01-01
 
-summary: I created macOS and iOS apps for RIMMS TV to enable their users to hear custom live audio mixes on set. The macOS server app acts as a live mixer, taking in up to 64 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
+summary: I created macOS and iOS apps for RIMMS TV to enable their users to hear custom live audio mixes on set.
 
 skills:
   - iOS
@@ -17,8 +17,8 @@ skills:
   - Swift
 
 image:
-  src: https://placehold.it/1200x800/1a1a1a
-  alt: Alt text
+  src: /images/d-placeholder.svg
+  alt: Placeholder image
 
 ---
 

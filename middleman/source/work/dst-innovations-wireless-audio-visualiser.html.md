@@ -4,7 +4,7 @@ client: DST Innovations
 title: Wireless Audio Visualiser
 date: 2017-01-01
 
-summary: I built an iOS app for [DST Innovations](http://www.dst-innovations.net) to serve as a controller for their prototype multimedia fashion product. The product features a wireless peripheral driving a visualiser display, which reacts to live music. The iOS app is a music player which analyses the audio in real time and computes a frequency spectrum, which is sent wirelessly to the peripheral.
+summary: I built an iOS app for DST Innovations to serve as a controller for their prototype multimedia fashion product.
 
 skills:
   - C
@@ -17,13 +17,8 @@ skills:
   - Node.js
 
 image:
-  src: https://placehold.it/1200x800/1a1a1a
-  alt: Alt text
-
-images:
-  - title: Placeholder
-    source: image.jpg
-    format: large
+  src: /images/d-placeholder.svg
+  alt: Placeholder image
 
 ---
 

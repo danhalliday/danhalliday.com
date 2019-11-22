@@ -4,7 +4,7 @@ client: Cantare Ladies’ Choir
 title: Combination Mark & Style Guide
 date: 2013-01-01
 
-summary: Cantare needed a strong, bold logo to use on everything from posters and concert programmes to bags and embroidered coats. They already had a strong black and pink colour scheme, so I worked with the group on a combination mark that would tie their brand together.
+summary: I worked with this group on a combination mark that would tie their brand together, complete with usage documentation.
 
 skills:
   - Logo Design

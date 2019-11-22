@@ -35,22 +35,22 @@
   --d-grid-gap: 4rem;
   --d-grid-gutter: 2rem;
 
-  @media (min-width: 350px) {
+  @include d-size(350) {
     --d-grid-gap: 5rem;
     --d-grid-gutter: 2.5rem;
   }
 
-  @media (min-width: 600px) {
+  @include d-size(600) {
     --d-grid-gap: 9rem;
     --d-grid-gutter: 4.5rem;
   }
 
-  @media (min-width: 900px) {
+  @include d-size(900) {
     --d-grid-gap: 12rem;
     --d-grid-gutter: 6rem;
   }
 
-  @media (min-width: 1200px) {
+  @include d-size(1200) {
     --d-grid-gap: 14rem;
     --d-grid-gutter: 7rem;
   }

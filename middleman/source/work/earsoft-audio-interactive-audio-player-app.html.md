@@ -4,7 +4,7 @@ client: EarSoft Audio
 title: Interactive Audio Player App
 date: 2012-01-01
 
-summary: I designed and built a unique audio player app for EarSoft that tailors sound to the listener’s environment and mood. The visuals are based around clean typography and strong iconography, and the two-tone colour scheme is algorithmically generated based on a hue chosen by the user.
+summary: I designed and built a unique audio player app for EarSoft that tailors sound to the listener’s environment and mood.
 
 skills:
   - Mobile

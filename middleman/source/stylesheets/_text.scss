@@ -14,19 +14,19 @@
 .d-text-sizing {
   font-size: 100%;
 
-  @media (min-width: 350px) {
+  @include d-size(350) {
     font-size: 100% * (18 / 16);
   }
 
-  @media (min-width: 900px) {
+  @include d-size(900) {
     font-size: 100% * (20 / 16);
   }
 
-  @media (min-width: 1500px) {
+  @include d-size(1500) {
     font-size: 100% * (22 / 16);
   }
 
-  @media (min-width: 1800px) {
+  @include d-size(1800) {
     font-size: 100% * (24 / 16);
   }
 }
@@ -37,7 +37,7 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
 .d-text {
   font-family: $d-font-stack-text;
   font-variation-settings: "wght" 380;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .d-text-headline {
@@ -48,39 +48,38 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   hyphens: none;
   margin-left: -0.05em;
 
-  @media (min-width: 600px) {
+  @include d-size(600) {
     font-size: 3.052rem;
     font-variation-settings: "wght" 370;
     line-height: 1.25;
     letter-spacing: -0.0075em;
   }
 
-  @media (min-width: 900px) {
+  @include d-size(900) {
     font-variation-settings: "wght" 360;
     letter-spacing: -0.01em;
-    margin-left: -0.075em;
     padding-right: 5%;
   }
 
-  @media (min-width: 1200px) {
+  @include d-size(1200) {
     font-size: 3.815rem;
     font-variation-settings: "wght" 350;
     letter-spacing: -0.0125em;
   }
 
-  @media (min-width: 1500px) {
+  @include d-size(1500) {
     font-variation-settings: "wght" 340;
     letter-spacing: -0.015em;
   }
 
-  @media (min-width: 1800px) {
+  @include d-size(1800) {
     font-variation-settings: "wght" 330;
     letter-spacing: -0.015em;
   }
 
   .d-ampersand {
     font-size: 0.77em;
-    font-variation-settings: "wght" 360;
+    font-variation-settings: "wght" 380;
   }
 
   > * {
@@ -95,13 +94,13 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   letter-spacing: -0.0025em;
   font-variation-settings: "wght" 380;
 
-  @media (min-width: 900px) {
+  @include d-size(900) {
     font-size: 2.441rem;
     margin-left: -0.05em;
     letter-spacing: -0.005em;
   }
 
-  @media (min-width: 1200px) {
+  @include d-size(1200) {
     font-size: 3.052rem;
     letter-spacing: -0.0075em;
   }
@@ -113,15 +112,18 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   font-size: 0.8rem;
   letter-spacing: 0.025em;
 
-  @media (min-width: 600px) {
+  @include d-size(600) {
     font-size: 1rem;
   }
 
-  @media (min-width: 900px) {
+  @include d-size(900) {
+    font-size: 1.25rem;
+  }
+
+  @include d-size(1200) {
     font-size: 1.563rem;
   }
 }
-
 
 .d-text-subheading {
   font-family: $d-font-stack-display;
@@ -129,7 +131,7 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   font-size: 0.64rem;
   letter-spacing: 0.025em;
 
-  @media (min-width: 900px) {
+  @include d-size(900) {
     font-size: 0.8rem;
   }
 }
@@ -140,22 +142,35 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
   font-size: 0.512rem;
   letter-spacing: 0.05em;
 
-  @media (min-width: 900px) {
+  @include d-size(1200) {
     font-size: 0.64rem;
   }
 }
 
-.d-text-link {
+.d-text-link-base {
   text-decoration: underline;
-  text-decoration-color: rgba(white, 0.1);
+  text-decoration-color: rgba($d-color-white, 0.1);
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.125em;
-  color: #baa885;
+  color: $d-color-gold;
   transition: 0.25s color;
 
   &:hover {
     color: inherit;
   }
+}
+
+.d-text-link-weight {
+  font-variation-settings: "wght" 440;
+}
+
+.d-text-link {
+  @extend .d-text-link-base;
+  @extend .d-text-link-weight;
+}
+
+.d-text-headline-link {
+  @extend .d-text-link-base;
 }
 
 .d-text-small {

@@ -4,7 +4,7 @@ client: A Happy Couple
 title: Wedding Stationery Pack
 date: 2012-01-01
 
-summary: The couple wanted a modern, elegant stationery pack, with a few extras such as a map for the day and a list of local attractions for guests to browse.
+summary: A modern, elegant stationery pack, with a few extras such as a map for the day and a list of local attractions for guests to browse.
 
 skills:
   - Print

@@ -34,8 +34,8 @@
   @extend .d-text-small;
   margin-top: 1.25rem;
 
-  @media (min-width: 600px) {
+  @include d-size(600) {
     grid-column: content-start / content-middle;
-    margin-top: 2rem;
+    margin-top: calc(var(--d-grid-gap) / 4);
   }
 }
