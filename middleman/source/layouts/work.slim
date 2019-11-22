@@ -1,4 +1,5 @@
 - content_for :title, work_title
+- content_for :description, work.data.summary
 
 = wrap_layout :layout do
   a.d-header-home-link href="/"
@@ -15,5 +16,6 @@
       - work.data.skills.each do |skill|
         li.d-tag = skill
 
-  .d-work-body
-    == process_work_body(yield)
+  .d-article
+    .d-article-body
+      == process_article_body(yield)

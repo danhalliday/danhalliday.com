@@ -1,39 +1,21 @@
-html {
+.d-root {
   @extend .d-text-sizing;
   height: 100%;
 }
 
 .d-body {
   @extend .d-text;
-  background: hsl(0deg, 0%, 4%);
-  color: white;
+  background: $d-color-black;
+  color: $d-color-white;
   min-height: 100%;
   background-image: url("/images/d-background-black.svg");
   background-size: 125% auto;
   background-position: center top -15vw;
 }
 
-
-img {
-  display: flex;
-}
-
 .d-main {
   @extend .d-grid;
   @extend .d-pad;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:not([class]) {
-  @extend .d-text-link;
-}
-
-em {
-  font-style: italic;
 }
 
 .d-hero-period {
@@ -49,16 +31,11 @@ em {
 
 .d-tag {
   @extend .d-text-caption;
-  color: mix(white, black, 50%);
+  color: $d-color-gray;
   line-height: 1.8;
 
  display: inline;
  margin-right: 1.25em;
-}
-
-img {
-  width: 100%;;
-  max-width: 100%;;
 }
 
 .d-anchor-ref-container {

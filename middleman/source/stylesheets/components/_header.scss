@@ -4,7 +4,7 @@
 
 .d-header-home-link {
   @extend .d-text-subheading;
-  color: mix(white, black, 25%);
+  color: $d-color-gray;
   transition: 0.5s color;
   line-height: 1;
 

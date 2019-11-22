@@ -1,5 +1,6 @@
 @import "reset";
 
+@import "colors";
 @import "text";
 @import "grids";
 @import "round";
@@ -9,8 +10,10 @@
 @import "components/header";
 @import "components/masthead";
 
+@import "sections/article";
 @import "sections/companies";
 @import "sections/introduction";
 @import "sections/work";
 
+@import "defaults";
 @import "shame";

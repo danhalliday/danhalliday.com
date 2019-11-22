@@ -7,7 +7,7 @@ module GeneralHelpers
   end
 
   def page_description
-    current_page.data.description || data.site.description
+    yield_content(:description) || current_page.data.description || data.site.description
   end
 
   def page_id_class
@@ -44,9 +44,5 @@ module GeneralHelpers
 
   def image_srcset(src)
     (300..5100).step(300).map { |s| "#{src}?w=#{s}&auto=format&q=25 #{s}w" }.join(", ")
-  end
-
-  def process_work_body(body)
-    body
   end
 end
