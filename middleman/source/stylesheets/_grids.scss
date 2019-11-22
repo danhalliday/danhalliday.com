@@ -45,8 +45,13 @@
     --d-grid-gutter: 4.5rem;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     --d-grid-gap: 12rem;
     --d-grid-gutter: 6rem;
+  }
+
+  @media (min-width: 1200px) {
+    --d-grid-gap: 14rem;
+    --d-grid-gutter: 7rem;
   }
 }

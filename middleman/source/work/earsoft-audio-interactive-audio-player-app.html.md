@@ -42,4 +42,4 @@ images:
 
 I designed and built a unique audio player app for EarSoft that tailors sound to the listener’s environment and mood. The visuals are based around clean typography and strong iconography, and the two-tone colour scheme is algorithmically generated based on a hue chosen by the user.
 
-The implementation had to be very low level to ensure good battery life while listening, so I wrote a C library to do the audio processing, and connected it using iOS’s AudioUnit API and Android’s NDK for playback.
+The implementation had to be very low-level to ensure good battery life while listening, so I wrote a C library to do the audio processing, and connected it using iOS’s AudioUnit API and Android’s NDK for playback.

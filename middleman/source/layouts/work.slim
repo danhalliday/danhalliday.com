@@ -17,7 +17,3 @@
 
   .d-work-body
     == process_work_body(yield)
-
-  - if work.data.images
-    - work.data.images.each do |image|
-      = image_tag "/images/photos/#{image.source}"
