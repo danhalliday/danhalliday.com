@@ -10,7 +10,7 @@ skills:
   - iOS
   - Swift
   - CocoaPods
-  - API
+  - API Design
   - Documentation
   - React Native
 

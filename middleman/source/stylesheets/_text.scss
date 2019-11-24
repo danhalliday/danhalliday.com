@@ -37,21 +37,20 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
 .d-text {
   font-family: $d-font-stack-text;
   font-variation-settings: "wght" 380;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .d-text-headline {
   font-size: 1.953rem;
   font-variation-settings: "wght" 380;
   letter-spacing: -0.005em;
-  line-height: 1.25;
+  line-height: 1.2;
   hyphens: none;
   margin-left: -0.05em;
 
   @include d-size(600) {
     font-size: 3.052rem;
     font-variation-settings: "wght" 370;
-    line-height: 1.25;
     letter-spacing: -0.0075em;
   }
 
@@ -93,7 +92,7 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;;
 
 .d-text-title {
   font-size: 1.953rem;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-left: -0.05em;
   letter-spacing: -0.0025em;
   font-variation-settings: "wght" 380;
