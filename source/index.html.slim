@@ -48,14 +48,6 @@ section.d-section-work#work
           p.d-card-summary
             = work.data.summary
 
-section.d-section-companies#companies
-  h2.d-text-heading.d-anchor-ref-container
-    | Companies
-    a.d-anchor-ref hidden="" href="#companies" Link to this section
-
-  - data.companies.each do |company|
-    p = company.name
-
 = schema "schema/person"
 = schema "schema/website"
 = schema "schema/companies"

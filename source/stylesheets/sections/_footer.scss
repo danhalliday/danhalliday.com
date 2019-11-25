@@ -1,0 +1,7 @@
+.d-footer {
+  @extend .d-grid;
+  @extend .d-pad;
+  @extend .d-gradient;
+  @extend .d-text-small;
+  color: $d-color-gray-dark;
+}
