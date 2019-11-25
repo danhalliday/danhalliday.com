@@ -1,0 +1,9 @@
+.d-body {
+  @extend .d-text;
+  background: $d-color-black;
+  color: $d-color-white;
+  min-height: 100%;
+  background-image: url("/images/d-background-black.svg");
+  background-size: 125% auto;
+  background-position: center top -15vw;
+}

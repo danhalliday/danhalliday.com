@@ -15,6 +15,7 @@ skills:
   - Accelerate
   - Bluetooth
   - Node.js
+  - Documentation
 
 image:
   src: /images/d-placeholder.svg
