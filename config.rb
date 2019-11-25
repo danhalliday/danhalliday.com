@@ -16,8 +16,8 @@ activate :autoprefixer do |prefix|
 end
 
 activate :blog do |blog|
-  blog.layout = :work
-  blog.prefix = "work"
+  blog.layout = :project
+  blog.prefix = "projects"
   blog.sources = "{slug}.html"
   blog.permalink = "{slug}.html"
 end
