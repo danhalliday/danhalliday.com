@@ -27,12 +27,12 @@ I designed and built a unique audio player app for EarSoft that tailors sound to
 
 The implementation had to be very low-level to ensure good battery life while listening, so I wrote a C library to do the audio processing, and connected it using iOS’s AudioUnit API and Android’s NDK for playback.
 
-![EarSoft App Design Detail 1](/images/photos/earsoft-app-9.jpg "EarSoft App Design Detail")
+![App design detail](/images/photos/earsoft-app-9.jpg "App design detail")
 
-![EarSoft App Design Detail 2](/images/photos/earsoft-app-1a.jpg "EarSoft App Design Detail")
+![App design detail](/images/photos/earsoft-app-1a.jpg "App design detail")
 
-![EarSoft App Design Detail 5](/images/photos/earsoft-app-2.jpg "EarSoft App Design Detail")
+![App design detail](/images/photos/earsoft-app-2.jpg "App design detail")
 
-![EarSoft App Design Detail 3](/images/photos/earsoft-app-1b.jpg "EarSoft App Design Detail")
+![App design detail](/images/photos/earsoft-app-1b.jpg "App design detail")
 
-![EarSoft App Design Detail 6](/images/photos/earsoft-app-3.jpg "EarSoft App Design Detail")
+![App design detail](/images/photos/earsoft-app-3.jpg "App design detail")
