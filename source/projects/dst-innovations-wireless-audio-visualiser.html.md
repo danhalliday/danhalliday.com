@@ -2,7 +2,7 @@
 
 client: DST Innovations
 title: Wireless Audio Visualiser
-date: 2017-01-01
+date: 2017-06-01
 
 summary: I built an iOS app for DST Innovations to serve as a controller for their prototype multimedia fashion product.
 
