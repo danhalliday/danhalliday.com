@@ -1,0 +1,12 @@
+.d-masthead {
+  @extend .d-grid;
+  grid-gap: 0;
+}
+
+.d-masthead-headline {
+  @extend .d-text-headline;
+}
+
+.d-masthead-subtitle {
+  @extend .d-text-heading;
+}

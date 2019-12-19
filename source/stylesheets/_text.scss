@@ -1,0 +1,184 @@
+// 5.96rem
+// 4.768rem
+// 3.815rem
+// 3.052rem
+// 2.441rem
+// 1.953rem
+// 1.563rem
+// 1.25rem
+// 1rem
+// 0.8rem
+// 0.64rem
+// 0.512rem
+
+.d-text-sizing {
+  font-size: 100%;
+
+  @include d-size(350) {
+    font-size: 100% * (18 / 16);
+  }
+
+  @include d-size(900) {
+    font-size: 100% * (20 / 16);
+  }
+
+  @include d-size(1500) {
+    font-size: 100% * (22 / 16);
+  }
+
+  @include d-size(1800) {
+    font-size: 100% * (24 / 16);
+  }
+}
+
+$d-font-stack-display: "Termina", sans-serif;
+$d-font-stack-text: "Lagu Sans Variable", sans-serif;;
+
+.d-text {
+  font-family: $d-font-stack-text;
+  font-variation-settings: "wght" 380;
+  line-height: 1.45;
+}
+
+.d-text-headline {
+  font-size: 1.953rem;
+  font-variation-settings: "wght" 380;
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+  hyphens: none;
+  margin-left: -0.05em;
+
+  @include d-size(600) {
+    font-size: 3.052rem;
+    font-variation-settings: "wght" 370;
+    letter-spacing: -0.0075em;
+  }
+
+  @include d-size(900) {
+    font-variation-settings: "wght" 360;
+    letter-spacing: -0.01em;
+    padding-right: 5%;
+  }
+
+  @include d-size(1200) {
+    font-size: 3.815rem;
+    font-variation-settings: "wght" 350;
+    letter-spacing: -0.0125em;
+  }
+
+  @include d-size(1500) {
+    font-variation-settings: "wght" 340;
+    letter-spacing: -0.015em;
+  }
+
+  @include d-size(1800) {
+    font-variation-settings: "wght" 330;
+    letter-spacing: -0.015em;
+  }
+
+  .d-ampersand {
+    font-size: 0.77em;
+    font-variation-settings: "wght" 380;
+  }
+
+  .d-text-heading + & {
+    margin-top: 0.15em;
+  }
+
+  > * {
+    display: inline;
+  }
+}
+
+.d-text-title {
+  font-size: 1.953rem;
+  line-height: 1.2;
+  margin-left: -0.05em;
+  letter-spacing: -0.0025em;
+  font-variation-settings: "wght" 380;
+
+  @include d-size(900) {
+    font-size: 2.441rem;
+    letter-spacing: -0.005em;
+  }
+
+  @include d-size(1200) {
+    font-size: 3.052rem;
+    letter-spacing: -0.0075em;
+  }
+
+  .d-text-subheading + & {
+    margin-top: 0.15em;
+  }
+}
+
+.d-text-heading {
+  font-family: $d-font-stack-display;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.025em;
+
+  @include d-size(600) {
+    font-size: 1rem;
+  }
+
+  @include d-size(900) {
+    font-size: 1.25rem;
+  }
+
+  @include d-size(1200) {
+    font-size: 1.563rem;
+  }
+}
+
+.d-text-subheading {
+  font-family: $d-font-stack-display;
+  text-transform: uppercase;
+  font-size: 0.64rem;
+  letter-spacing: 0.025em;
+
+  @include d-size(900) {
+    font-size: 0.8rem;
+  }
+}
+
+.d-text-caption {
+  font-family: $d-font-stack-display;
+  text-transform: uppercase;
+  font-size: 0.512rem;
+  letter-spacing: 0.05em;
+
+  @include d-size(1200) {
+    font-size: 0.64rem;
+  }
+}
+
+.d-text-link-base {
+  text-decoration: underline;
+  text-decoration-color: rgba($d-color-white, 0.1);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.125em;
+  color: $d-color-gold;
+  transition: 0.25s color;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.d-text-link-weight {
+  font-variation-settings: "wght" 440;
+}
+
+.d-text-link {
+  @extend .d-text-link-base;
+  @extend .d-text-link-weight;
+}
+
+.d-text-headline-link {
+  @extend .d-text-link-base;
+}
+
+.d-text-small {
+  font-size: 0.8rem;
+}

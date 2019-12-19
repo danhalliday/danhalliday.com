@@ -1,0 +1,35 @@
+.d-hero-period {
+  margin-left: -0.1em;
+}
+
+.d-anchor-ref-container {
+  position: relative;
+}
+
+.d-anchor-ref {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  visibility: hidden;
+  display: inline-flex;
+
+  &::before {
+    content: "#";
+    position: absolute;
+    left: 0;
+    transform: translate(-100%, 0);
+    padding: 0 0.5em;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 0;
+    transition: 0.5s opacity;
+  }
+
+  .d-anchor-ref-container:hover &::before {
+    opacity: 0.2;
+  }
+
+  .d-anchor-ref-container:hover &:hover::before {
+    opacity: 1;
+  }
+}

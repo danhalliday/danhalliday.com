@@ -1,0 +1,41 @@
+.d-cards {
+  @extend .d-grid;
+}
+
+.d-card {
+  @extend .d-grid;
+  @extend .d-tight;
+}
+
+.d-card-title {
+  @extend .d-text-title;
+}
+
+.d-card-subtitle {
+  @extend .d-text-subheading;
+}
+
+.d-card-image {
+  @extend .d-round-left;
+  grid-column: content-start / main-end;
+
+  .d-card:nth-child(even) & {
+    @extend .d-round-right;
+    grid-column: main-start / content-end;
+  }
+}
+
+.d-card-body {
+  @extend .d-grid;
+  grid-gap: 0;
+}
+
+.d-card-summary {
+  @extend .d-text-small;
+  margin-top: 1.25rem;
+
+  @include d-size(600) {
+    grid-column: content-start / content-middle;
+    margin-top: calc(var(--d-grid-gap) / 4);
+  }
+}

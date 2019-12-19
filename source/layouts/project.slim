@@ -1,0 +1,22 @@
+- content_for :title, work_title
+- content_for :description, work.data.summary
+
+= wrap_layout :layout do
+  p.d-header
+    a.d-header-home-link href="/"
+      = data.site.name
+
+  .d-masthead
+    p.d-masthead-subtitle
+      = work.data.client
+
+    h1.d-masthead-headline
+      = work.title
+
+    ul.d-tags
+      - work.data.skills.each do |skill|
+        li.d-tag = skill
+
+  .d-article
+    .d-article-body
+      == process_article_body(yield)

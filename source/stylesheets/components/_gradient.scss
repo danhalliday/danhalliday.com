@@ -1,0 +1,7 @@
+.d-gradient {
+  border-top: 2px solid rgba($d-color-black, 1);
+  background-image: linear-gradient(rgba($d-color-black, 0.75), rgba($d-color-black, 0));
+  background-position: center top;
+  background-size: 100% 75vh;
+  background-repeat: repeat-x;
+}

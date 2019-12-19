@@ -1,0 +1,5 @@
+.d-section-work {
+  @extend .d-grid;
+  @extend .d-gradient;
+  padding-top: var(--d-grid-gap);
+}

@@ -1,0 +1,19 @@
+---
+title: Page Not Found
+description: Looks like you found a broken link. Feel free to let me know about it!
+noindex: true
+---
+
+p.d-header
+  a.d-header-home-link href="/"
+    = data.site.name
+
+.d-masthead
+  h1.d-masthead-headline
+    | Page Not Found
+
+.d-introduction
+  p.d-introduction-body
+    | Looks like you found a broken link. Feel free to
+    a<> href="mailto:#{data.contact.email}" let me know
+    | about it!

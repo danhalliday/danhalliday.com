@@ -1,0 +1,21 @@
+.d-introduction {
+  @extend .d-grid;
+  @extend .d-tight;
+}
+
+.d-introduction-body {
+  grid-column: content-start / content-end;
+
+  @include d-size(600) {
+    grid-column: content-start / content-middle;
+  }
+}
+
+.d-introduction-image {
+  @extend .d-round-right;
+  grid-column: main-start / content-end;
+
+  @include d-size(600) {
+    grid-column: main-start / content-middle;
+  }
+}

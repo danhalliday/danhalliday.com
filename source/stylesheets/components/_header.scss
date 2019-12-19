@@ -1,0 +1,13 @@
+.d-header {
+  display: flex;
+}
+
+.d-header-home-link {
+  @extend .d-text-subheading;
+  color: $d-color-gray;
+  transition: 0.5s color;
+
+  &:hover {
+    color: white;
+  }
+}
