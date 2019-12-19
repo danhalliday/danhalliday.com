@@ -19,7 +19,7 @@ image:
 
 ---
 
-[Soundry Co](http://soundry.co) make bespoke audio software. To set the company apart from their competition and to reflect its focus on whole-product design and user experience, I created a bright and bold visual identity underpinned by Suitcase Type Foundry’s [Nudista](https://www.suitcasetype.com/nudista/specimen) — the perfect match for a modern engineering outfit.
+[Soundry Co](http://soundry.co) make bespoke audio software. To set the company apart from their competition and to reflect its focus on whole-product design and user experience, I worked with [Web Workshop](https://webworkshop.ltd) to create a bright and bold visual identity underpinned by Suitcase Type Foundry’s [Nudista](https://www.suitcasetype.com/nudista/specimen) — the perfect match for a modern engineering outfit.
 
 ![Soundry Colour Combination Mark](/images/photos/soundry-logo.jpg)
 
