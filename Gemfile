@@ -14,5 +14,6 @@ gem "tilt-jbuilder", "~> 0.7"
 gem "slim", "~> 4.0"
 gem "kramdown", "~> 1.2"
 gem "nokogiri", "~> 1.10"
-gem "image_optim", "~> 0.26.5"
-gem "image_optim_pack", "~> 0.6.0"
+gem "svgo", "~> 1.0"
+
+gem "pry", "~> 0.12.2"

@@ -43,7 +43,6 @@ I worked with iOS’s [Audio Units](https://en.wikipedia.org/wiki/Audio_Units) A
 
 To test the system end-to-end, I created a simple Node.js tool running on a desktop computer which prints Bluetooth session lifecycle events and statistics on the incoming packets, and could be left running for long periods. This was especially helpful with the clock synchronisation mechanism, which would have been wildly unstable without some timeout values and other insights pulled from extended real-world use.
 
-
 ![Documentation detail](https://www.datocms-assets.com/18750/1574858659-dsc6319.jpg "Documentation detail")
 
 ![Documentation detail](https://www.datocms-assets.com/18750/1574858651-dsc6317.jpg "Documentation detail")
