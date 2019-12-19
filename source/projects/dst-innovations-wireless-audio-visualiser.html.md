@@ -19,7 +19,7 @@ skills:
 
 image:
   src: https://www.datocms-assets.com/18750/1574859036-dsc6348.jpg
-  alt: Placeholder image
+  alt: Audio visualiser running on mobile device
 
 ---
 

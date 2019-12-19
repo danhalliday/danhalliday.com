@@ -13,7 +13,7 @@ skills:
 
 image:
   src: /images/photos/cantare-logo.jpg
-  alt: Bright pink treble clef shape logo
+  alt: Bright pink treble clef shaped logo
 
 ---
 

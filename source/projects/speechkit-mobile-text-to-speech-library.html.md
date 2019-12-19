@@ -15,8 +15,8 @@ skills:
   - React Native
 
 image:
-  src: /images/d-placeholder.svg
-  alt: Placeholder image
+  src: https://www.datocms-assets.com/18750/1574858651-dsc6317.jpg
+  alt: Printed development kit documentation
 
 ---
 
