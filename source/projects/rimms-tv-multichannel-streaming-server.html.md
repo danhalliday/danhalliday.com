@@ -17,7 +17,8 @@ skills:
   - Swift
 
 image:
-  src: https://www.datocms-assets.com/18750/1575579268-screenshot-2019-12-05-at-20-53-51.png
+  src: https://www.datocms-assets.com/18750/1575679354-dsc6368.jpg
+  # src: https://www.datocms-assets.com/18750/1575579268-screenshot-2019-12-05-at-20-53-51.png
   alt: App running with code in background
 
 ---

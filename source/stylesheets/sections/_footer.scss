@@ -4,4 +4,21 @@
   @extend .d-gradient;
   @extend .d-text-small;
   color: $d-color-gray-dark;
+  font-feature-settings: "case" on;
+}
+
+.d-footer-copyright {
+  display: block;
+  margin-top: 1em;
+
+  @include d-size(600) {
+    display: inline;
+    margin-top: unset;
+
+    &:before {
+      content: " · ";
+      opacity: 0.5;
+      margin: 0 0.25em;
+    }
+  }
 }

@@ -2,7 +2,7 @@
 //
 // Numbers are good to see at the call site. Things get abstract fast when using 'small', 'medium',
 // 'large', 'x-large' etc. Which size applies to iPad Pro in portrait, again? But they’re also
-// typo-prone, so the mixin fixes that.
+// typo-prone, so the mixin fixes that with some compile-time safety..
 
 $d-sizes: 350 600 900 1200 1500 1800;
 
