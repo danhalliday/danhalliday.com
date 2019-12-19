@@ -1,6 +1,3 @@
-require "helpers/general_helpers"
-include GeneralHelpers
-
 ignore "*.sketch*"
 
 set :slim, { pretty: !build?, disable_escape: false }
