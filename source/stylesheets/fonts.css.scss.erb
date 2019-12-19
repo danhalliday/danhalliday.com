@@ -1,0 +1,48 @@
+<%# Main Fonts %>
+
+<% styles = [:normal, :italic] %>
+
+<% styles.each do |style| %>
+  @font-face {
+    font-family: "Lagu Sans Variable";
+    font-style: <%= style %>;
+    font-display: swap;
+    src: url("<%= data.fonts.lagu.variable[style].woff2 %>") format("woff2"),
+         url("<%= data.fonts.lagu.variable[style].woff %>") format("woff");
+  }
+<% end %>
+
+@font-face {
+  font-family: "Termina";
+  font-weight: normal;
+  font-display: swap;
+  src: url("<%= data.fonts.termina.medium.woff2 %>") format("woff2"),
+       url("<%= data.fonts.termina.medium.woff %>") format("woff");
+}
+
+<%# Fallback Fonts %>
+
+<% weights = {
+  thin: 100,
+  extralight: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900
+} %>
+
+<% styles.each do |style| %>
+  <% weights.each do |name, value| %>
+    @font-face {
+      font-family: "Lagu Sans Standard";
+      font-style: <%= style %>;
+      font-weight: <%= value %>;
+      font-display: swap;
+      src: url("<%= data.fonts.lagu.standard[style][name].woff2 %>") format("woff2"),
+           url("<%= data.fonts.lagu.standard[style][name].woff %>") format("woff");
+    }
+  <% end %>
+<% end %>

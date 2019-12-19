@@ -1,0 +1,70 @@
+termina:
+  medium:
+    woff: https://www.datocms-assets.com/15979/1568841059-termina-medium-subset.woff
+    woff2: https://www.datocms-assets.com/15979/1568841059-termina-medium-subset.woff2
+
+lagu:
+  variable:
+    normal:
+      woff: https://www.datocms-assets.com/15979/1568841822-lagu-sans-variable-subset.woff
+      woff2: https://www.datocms-assets.com/15979/1568841823-lagu-sans-variable-subset.woff2
+    italic:
+      woff: https://www.datocms-assets.com/15979/1568842283-lagu-sans-italic-variable-subset.woff
+      woff2: https://www.datocms-assets.com/15979/1568842284-lagu-sans-italic-variable-subset.woff2
+  standard:
+    normal:
+      thin:
+        woff: https://www.datocms-assets.com/15979/1573232509-lagusans-thin-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232535-lagusans-thin-webfont.woff2
+      extralight:
+        woff: https://www.datocms-assets.com/15979/1573232237-lagusans-extralight-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232246-lagusans-extralight-webfont.woff2
+      light:
+        woff: https://www.datocms-assets.com/15979/1573232340-lagusans-light-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232352-lagusans-light-webfont.woff2
+      regular:
+        woff: https://www.datocms-assets.com/15979/1573232448-lagusans-regular-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232458-lagusans-regular-webfont.woff2
+      medium:
+        woff: https://www.datocms-assets.com/15979/1573232381-lagusans-medium-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232392-lagusans-medium-webfont.woff2
+      semibold:
+        woff: https://www.datocms-assets.com/15979/1573232471-lagusans-semibold-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232478-lagusans-semibold-webfont.woff2
+      bold:
+        woff: https://www.datocms-assets.com/15979/1573232126-lagusans-bold-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232137-lagusans-bold-webfont.woff2
+      extrabold:
+        woff: https://www.datocms-assets.com/15979/1573232176-lagusans-extrabold-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232187-lagusans-extrabold-webfont.woff2
+      black:
+        woff: https://www.datocms-assets.com/15979/1573232029-lagusans-black-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232047-lagusans-black-webfont.woff2
+    italic:
+      thin:
+        woff: https://www.datocms-assets.com/15979/1573232549-lagusans-thinitalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232556-lagusans-thinitalic-webfont.woff2
+      extralight:
+        woff: https://www.datocms-assets.com/15979/1573232266-lagusans-extralightitalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232277-lagusans-extralightitalic-webfont.woff2
+      light:
+        woff: https://www.datocms-assets.com/15979/1573232363-lagusans-lightitalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232372-lagusans-lightitalic-webfont.woff2
+      regular:
+        woff: https://www.datocms-assets.com/15979/1573232298-lagusans-regularitalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232320-lagusans-regularitalic-webfont.woff2
+      medium:
+        woff: https://www.datocms-assets.com/15979/1573232401-lagusans-mediumitalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232428-lagusans-mediumitalic-webfont.woff2
+      semibold:
+        woff: https://www.datocms-assets.com/15979/1573232489-lagusans-semibolditalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232498-lagusans-semibolditalic-webfont.woff2
+      bold:
+        woff: https://www.datocms-assets.com/15979/1573232149-lagusans-bolditalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232161-lagusans-bolditalic-webfont.woff2
+      extrabold:
+        woff: https://www.datocms-assets.com/15979/1573232211-lagusans-extrabolditalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232221-lagusans-extrabolditalic-webfont.woff2
+      black:
+        woff: https://www.datocms-assets.com/15979/1573232090-lagusans-blackitalic-webfont.woff
+        woff2: https://www.datocms-assets.com/15979/1573232103-lagusans-blackitalic-webfont.woff2
