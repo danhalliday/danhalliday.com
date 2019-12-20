@@ -7,6 +7,7 @@ set :markdown, { smartypants: true, header_offset: 1 }
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :livereload
+activate :dato, live_reload: true
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"

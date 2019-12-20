@@ -17,15 +17,14 @@ skills:
   - Swift
 
 image:
-  src: https://www.datocms-assets.com/18750/1575679354-dsc6368.jpg
-  # src: https://www.datocms-assets.com/18750/1575579268-screenshot-2019-12-05-at-20-53-51.png
+  src: https://www.datocms-assets.com/18750/1576835286-rimms-macos-app-and-code.jpg
   alt: App running with code in background
 
 ---
 
 I created macOS and iOS apps for [RIMMS TV](https://www.rimms.tv) to enable their users to hear custom live audio mixes on set.
 
-![App running with code in background](https://www.datocms-assets.com/18750/1575579268-screenshot-2019-12-05-at-20-53-51.png)
+![App running with code in background](https://www.datocms-assets.com/18750/1576835286-rimms-macos-app-and-code.jpg)
 
 The macOS server app acts as a live mixer, taking in up to 64 channels from an external sound card in the gallery and providing an unlimited number of separate output mixes fed back to the sound card and recorded using dedicated hardware.
 

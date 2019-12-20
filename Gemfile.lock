@@ -12,6 +12,7 @@ GEM
       execjs
     backports (3.15.0)
     builder (3.2.4)
+    cacert (0.5.0)
     coderay (1.1.2)
     coffee-script (2.4.1)
       coffee-script-source
@@ -19,13 +20,32 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     contracts (0.13.0)
-    dotenv (2.7.5)
+    dato (0.7.9)
+      activesupport (>= 4.2.7)
+      addressable
+      cacert
+      dato_json_schema
+      dotenv
+      faraday (>= 0.9.0)
+      faraday_middleware (>= 0.9.0)
+      imgix (>= 0.3.1)
+      listen
+      mime-types
+      pusher-client
+      thor
+      toml
+    dato_json_schema (0.20.8)
+    dotenv (2.1.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
+    faraday (0.17.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.13.1)
+      faraday (>= 0.7.4, < 1.0)
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.11.3)
@@ -38,8 +58,11 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    imgix (3.2.1)
+      addressable
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
+    json (2.3.0)
     kramdown (1.17.0)
     libv8 (7.3.492.27.1)
     listen (3.0.8)
@@ -85,14 +108,23 @@ GEM
       servolux
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
+    middleman-dato (0.9.0)
+      activesupport
+      dato (>= 0.7.0)
+      dotenv (<= 2.1)
+      middleman-core (>= 4.1.10)
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    mime-types (3.3)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2019.1009)
     mini_portile2 (2.4.0)
     mini_racer (0.2.5)
       libv8 (>= 6.9.411)
     minitest (5.13.0)
+    multipart-post (2.1.1)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     padrino-helpers (0.13.3.4)
@@ -102,10 +134,14 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.19.1)
+    parslet (1.8.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (4.0.1)
+    pusher-client (0.6.2)
+      json
+      websocket (~> 1.0)
     rack (2.0.8)
     rack-livereload (0.3.17)
       rack
@@ -127,10 +163,13 @@ GEM
     tilt-jbuilder (0.7.1)
       jbuilder
       tilt (>= 1.3.0, < 3)
+    toml (0.2.0)
+      parslet (~> 1.8.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    websocket (1.2.8)
 
 PLATFORMS
   ruby
@@ -143,6 +182,7 @@ DEPENDENCIES
   middleman (~> 4.3)
   middleman-autoprefixer (~> 2.10)
   middleman-blog (~> 4.0)
+  middleman-dato (~> 0.9.0)
   middleman-livereload (~> 3.4)
   nokogiri (~> 1.10)
   pry (~> 0.12.2)
