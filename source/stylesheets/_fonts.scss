@@ -1,0 +1,13 @@
+$d-font-stack-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+$d-font-stack-text-variable: "Lagu Sans Variable", $d-font-stack-default;
+$d-font-stack-text-standard: "Lagu Sans Standard", $d-font-stack-default;
+$d-font-stack-display: "Termina", $d-font-stack-default;
+
+.d-font-stack-text {
+  font-family: $d-font-stack-text-variable;
+
+  &[data-d-font-variable=false] {
+    font-family: $d-font-stack-text-standard;
+  }
+}

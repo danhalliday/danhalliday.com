@@ -31,11 +31,9 @@
   }
 }
 
-$d-font-stack-display: "Termina", sans-serif;
-$d-font-stack-text: "Lagu Sans Variable", sans-serif;
-
 .d-text {
-  font-family: $d-font-stack-text;
+  @extend .d-font-stack-text;
+  font-weight: 400;
   font-variation-settings: "wght" 380;
   line-height: 1.45;
 }
@@ -167,6 +165,7 @@ $d-font-stack-text: "Lagu Sans Variable", sans-serif;
 }
 
 .d-text-link-weight {
+  font-weight: 500;
   font-variation-settings: "wght" 440;
 }
 

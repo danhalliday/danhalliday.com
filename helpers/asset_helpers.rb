@@ -16,4 +16,9 @@ module AssetHelpers
   def svg_data_uri(file)
     "data:image/svg+xml;base64,#{Base64.strict_encode64(svg_optimized(file))}"
   end
+
+  def javascript_inline_tag(file)
+    js = File.read("source/javascripts/#{file.to_s}")
+    "<script>#{Uglifier.new.compile(js)}</script>".html_safe
+  end
 end
