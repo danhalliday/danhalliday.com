@@ -2,16 +2,13 @@ require "json"
 
 module GeneralHelpers
   def page_title
-    custom_title = yield_content(:title) || current_page.data.title
-    (custom_title ? [custom_title, data.site.name] : [data.site.name, data.site.tagline]).join(data.site.separator.center(3))
+    title = yield_content(:title) || current_page.data.title
+    components = title ? [title, data.site.name] : [data.site.name, data.site.tagline]
+    components.join(data.site.separator.center(3))
   end
 
   def page_description
     yield_content(:description) || current_page.data.description || data.site.description
-  end
-
-  def page_id_class
-    "d-page-#{current_page.page_id}"
   end
 
   def sitemap_url
