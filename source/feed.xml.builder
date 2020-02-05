@@ -12,7 +12,7 @@ xml.rss :version => "2.0" do
         xml.description work.data.summary
         xml.pubDate work.date.to_s(:rfc822)
         xml.link work_url(work)
-        xml.guid work.slug
+        xml.guid work_url(work)
       end
     end
   end
