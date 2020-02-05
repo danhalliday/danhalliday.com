@@ -1,25 +1,23 @@
-xml.instruct! :xml, :version => "1.0"
+xml.instruct!
 
-rss_attributes = {
-  "version" => "2.0",
-  "xmlns:atom" => "http://www.w3.org/2005/Atom"
-}
+xml.feed xmlns: "http://www.w3.org/2005/Atom" do
+  xml.title data.feed.title
+  xml.subtitle data.feed.subtitle
+  xml.id feed_url
+  xml.link href: feed_url, rel: :self
+  xml.updated(blog.articles.first.date.to_time.iso8601) unless blog.articles.empty?
+  xml.author { xml.name data.site.name }
 
-xml.rss rss_attributes do
-  xml.channel do
-    xml.title data.feed.title
-    xml.description data.feed.description
-    xml.link feed_url
-    xml.atom :link, href: feed_url, rel: "self", type: "application/rss+xml"
-
-    blog.articles.each do |work|
-      xml.item do
-        xml.title work_title(work)
-        xml.description work.data.summary
-        xml.pubDate work.date.to_s(:rfc822)
-        xml.link work_url(work)
-        xml.guid work_url(work)
-      end
+  blog.articles.each do |article|
+    xml.entry do
+      xml.id work_url(article)
+      xml.title work_title(article)
+      xml.link rel: :alternate, href: work_url(article)
+      xml.published article.date.to_time.iso8601
+      xml.updated article.date.to_time.iso8601
+      xml.author { xml.name data.site.name }
+      xml.summary article.data.summary, type: :text
+      xml.content article.data.summary, type: :text
     end
   end
 end
