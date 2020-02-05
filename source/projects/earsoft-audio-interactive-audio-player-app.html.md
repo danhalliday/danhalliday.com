@@ -2,7 +2,7 @@
 
 client: EarSoft Audio
 title: Interactive Audio Player App
-date: 2012-01-01
+date: 2011-06-01
 
 summary: I designed and built a unique audio player app for EarSoft that tailors sound to the listener’s environment and mood.
 
