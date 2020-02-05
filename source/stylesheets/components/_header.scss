@@ -5,7 +5,7 @@
 .d-header-home-link {
   @extend .d-text-subheading;
   color: $d-color-gold;
-  transition: 0.5s color;
+  transition: $d-effect-duration color;
 
   &:hover {
     color: $d-color-black;

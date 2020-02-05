@@ -34,8 +34,8 @@
 .d-text {
   @extend .d-font-stack-text;
   font-weight: 400;
-  font-variation-settings: "wght" 380;
-  line-height: 1.45;
+  font-variation-settings: "wght" 390;
+  line-height: 1.5;
 }
 
 .d-text-headline {
@@ -92,17 +92,20 @@
   font-size: 1.953rem;
   line-height: 1.2;
   margin-left: -0.05em;
-  letter-spacing: -0.0025em;
+  letter-spacing: -0.005em;
   font-variation-settings: "wght" 380;
+
+  @include d-size(600) {
+    letter-spacing: -0.0075em;
+  }
 
   @include d-size(900) {
     font-size: 2.441rem;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.01em;
   }
 
   @include d-size(1200) {
     font-size: 3.052rem;
-    letter-spacing: -0.0075em;
   }
 
   .d-text-subheading + & {
@@ -157,23 +160,18 @@
   text-decoration-color: rgba($d-color-gold, 0.2);
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.125em;
-  transition: color $d-effect-duration, text-decoration-color $d-effect-duration;
+  transition: color $d-effect-duration, -webkit-text-decoration-color $d-effect-duration;
 
   @media (hover) {
     &:hover {
       color: $d-color-black;
-      // text-decoration-color: rgba($d-color-gold, 0.6);
     }
-  }
-
-  &:active {
-    color: green;
   }
 }
 
 .d-text-link-weight {
   font-weight: 500;
-  font-variation-settings: "wght" 440;
+  font-variation-settings: "wght" 460;
 }
 
 .d-text-link {
@@ -187,4 +185,8 @@
 
 .d-text-small {
   font-size: 0.8rem;
+
+  @include d-size(1200) {
+    font-size: 1rem;
+  }
 }
