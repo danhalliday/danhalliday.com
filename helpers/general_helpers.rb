@@ -15,6 +15,10 @@ module GeneralHelpers
     URI::join(data.site.url, "sitemap.xml")
   end
 
+  def feed_url
+    URI::join(data.site.url, "feed.xml")
+  end
+
   def sitemap_resources
     sitemap.resources.select do |page|
       page.destination_path =~ /\.html/ && page.data.noindex != true
@@ -31,7 +35,11 @@ module GeneralHelpers
     current_article
   end
 
-  def work_title
-    "#{work.title} for #{work.data.client}"
+  def work_title(item)
+    "#{item.title} for #{item.data.client}"
+  end
+
+  def work_url(item)
+    URI::join(data.site.url, item.path.chomp(".html"))
   end
 end
