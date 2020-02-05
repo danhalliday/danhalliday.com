@@ -18,13 +18,13 @@ p.d-header
   p.d-introduction-image
     = partial :image, locals: { src: "https://www.datocms-assets.com/18750/1576835312-dan-halliday-portrait.jpg", alt: "Dan sketching in a notebook" }
 
-  p.d-introduction-body
-    | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
-
-  p.d-introduction-body
-    | If you’re working on something good, I want to be the first to hear about it. Just
-    a< href="mailto:#{data.contact.email}" introduce yourself
-    | .
+  .d-introduction-body
+    p
+      | Over fifteen years, I’ve founded several active technology companies, and worked as technical director and consultant to many more. From visual design and user experience through full stack web development to apps and low level programming — if it’s interesting, I’m interested.
+    p
+      | If you’re working on something good, I want to be the first to hear about it. Just
+      a< href="mailto:#{data.contact.email}" introduce yourself
+      | .
 
 section.d-section-work#work
   h2.d-text-heading.d-anchor-ref-container

@@ -11,6 +11,12 @@
   }
 }
 
+.d-introduction-paragraph {
+  & + & {
+    margin-top: 1.5em;
+  }
+}
+
 .d-introduction-image {
   @extend .d-round-right;
   grid-column: main-start / content-end;

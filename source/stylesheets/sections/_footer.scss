@@ -38,6 +38,7 @@
 }
 
 .d-footer-copyright {
+  @extend .d-text-tiny;
   margin-top: 1.5em;
   color: $d-color-gray;
 }
