@@ -10,6 +10,7 @@ xml.rss rss_attributes do
     xml.title data.feed.title
     xml.description data.feed.description
     xml.link feed_url
+    xml.atom :link, href: feed_url, rel: "self", type: "application/rss+xml"
 
     blog.articles.each do |work|
       xml.item do
