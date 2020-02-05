@@ -9,7 +9,7 @@
 
 .d-footer-body {
   @include d-size(600) {
-    &:after {
+    &::after {
       content: none;
     }
   }

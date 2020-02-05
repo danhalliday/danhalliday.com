@@ -5,8 +5,13 @@
 
 .d-masthead-headline {
   @extend .d-text-headline;
+
+  &.d-spaced::after {
+    content: "\A\A"; // Blank line
+    white-space: pre;
+  }
 }
 
-.d-masthead-subtitle {
+.d-masthead-subhead {
   @extend .d-text-heading;
 }
