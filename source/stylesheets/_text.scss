@@ -152,15 +152,22 @@
 }
 
 .d-text-link-base {
+  color: $d-color-gold;
   text-decoration: underline;
-  text-decoration-color: rgba($d-color-white, 0.1);
+  text-decoration-color: rgba($d-color-gold, 0.2);
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.125em;
-  color: $d-color-gold;
-  transition: 0.25s color;
+  transition: color $d-effect-duration, text-decoration-color $d-effect-duration;
 
-  &:hover {
-    color: inherit;
+  @media (hover) {
+    &:hover {
+      color: $d-color-black;
+      // text-decoration-color: rgba($d-color-gold, 0.6);
+    }
+  }
+
+  &:active {
+    color: green;
   }
 }
 

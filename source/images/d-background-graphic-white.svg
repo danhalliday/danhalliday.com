@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>d-background-graphic-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.12208627e-05%" y1="0%" x2="8.12208627e-05%" y2="74.636517%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="27.1026838%"></stop>
+            <stop stop-color="#F8F8F8" offset="68.5349937%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="76.9216312%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F8F8F8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F5F5F5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="d-background-graphic-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1000" height="1000"></rect>
+        <polygon id="Path-6" fill="url(#linearGradient-1)" points="1000 0 0 1000 0 0"></polygon>
+        <polygon id="Path-7" fill="url(#linearGradient-2)" points="500 2.20302957e-13 1000 500 1000 2.27373675e-13"></polygon>
+        <polygon id="Path-8" fill="url(#linearGradient-3)" points="0 500 500 1000 0 1000"></polygon>
+    </g>
+</svg>

@@ -4,10 +4,10 @@
 
 .d-header-home-link {
   @extend .d-text-subheading;
-  color: $d-color-gray;
+  color: $d-color-gold;
   transition: 0.5s color;
 
   &:hover {
-    color: white;
+    color: $d-color-black;
   }
 }
