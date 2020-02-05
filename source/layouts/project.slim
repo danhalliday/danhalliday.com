@@ -3,7 +3,7 @@
 
 = wrap_layout :layout do
   p.d-header
-    a.d-header-home-link.d-effect-appear-5 href="/"
+    a.d-header-home-link.d-effect-appear-4 href="/"
       = data.site.name
 
   .d-masthead
@@ -17,6 +17,6 @@
       - work.data.skills.each do |skill|
         li.d-tag = skill
 
-  .d-article.d-effect-appear-6
+  .d-article.d-effect-appear-5
     .d-article-body
       == process_article_body(yield)
