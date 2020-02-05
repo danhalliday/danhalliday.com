@@ -1,4 +1,8 @@
 .d-footer
   p
-    | Designed, photographed, written, typeset, and encoded by Dan Halliday
-    span.d-footer-copyright< = "© 2000–#{Date.today.year}"
+    span.d-footer-body
+      | Designed, written, typeset, photographed, and encoded by
+      a< href="mailto:#{data.contact.email}" Dan Halliday
+      | .
+    span.d-footer-addenda
+      = "© 2000–#{Date.today.year}"
