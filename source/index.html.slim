@@ -1,20 +1,20 @@
 p.d-header
-  a.d-header-home-link href="/"
+  a.d-header-home-link.d-effect-appear-5 href="/"
     = data.site.name
 
 .d-masthead
-  h1.d-masthead-headline.d-spaced
+  h1.d-masthead-headline.d-spaced.d-effect-appear-1
     | Independent
     em<> technologist
     em.d-ampersand<> &amp;
     em<> designer
-    | based in London.
-  .d-masthead-subhead
+    | based in&nbsp;London.
+  .d-masthead-subhead.d-effect-appear-2
     | Partner at
     a< href="https://swagger.london" Swagger
     | .
 
-.d-introduction
+.d-introduction.d-effect-appear-6
   p.d-introduction-image
     = partial :image, locals: { src: "https://www.datocms-assets.com/18750/1576835312-dan-halliday-portrait.jpg", alt: "Dan sketching in a notebook" }
 
