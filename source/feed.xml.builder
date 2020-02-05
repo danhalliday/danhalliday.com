@@ -1,6 +1,11 @@
 xml.instruct! :xml, :version => "1.0"
 
-xml.rss :version => "2.0" do
+rss_attributes = {
+  "version" => "2.0",
+  "xmlns:atom" => "http://www.w3.org/2005/Atom"
+}
+
+xml.rss rss_attributes do
   xml.channel do
     xml.title data.feed.title
     xml.description data.feed.description
