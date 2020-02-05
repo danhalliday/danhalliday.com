@@ -6,9 +6,8 @@
 .d-masthead-headline {
   @extend .d-text-headline;
 
-  &.d-spaced::after {
-    content: "\A\A"; // Blank line
-    white-space: pre;
+  &.d-spaced {
+    margin-bottom: 1em;
   }
 }
 

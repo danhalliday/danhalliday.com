@@ -1,3 +1,4 @@
+task test: :build
 task default: :serve
 
 task :serve do
