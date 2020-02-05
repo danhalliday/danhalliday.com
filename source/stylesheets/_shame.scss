@@ -22,15 +22,12 @@
     padding: 0 0.5em;
     pointer-events: auto;
     visibility: visible;
+    color: $d-color-gray;
     opacity: 0;
-    transition: 0.5s opacity;
+    transition: opacity $d-effect-duration;
   }
 
   .d-anchor-ref-container:hover &::before {
-    opacity: 0.2;
-  }
-
-  .d-anchor-ref-container:hover &:hover::before {
     opacity: 1;
   }
 }
