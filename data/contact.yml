@@ -4,9 +4,9 @@ email: dan@halliday.work
 university: University of Surrey
 
 portrait:
-  url: images/d-photo-portrait-500.png
-  width: 500
-  height: 500
+  url: https://www.datocms-assets.com/18750/1580913670-dan-halliday-avatar.png?w=1000
+  width: 1000
+  height: 1000
 
 profiles:
   - https://swagger.london/partners/dan
