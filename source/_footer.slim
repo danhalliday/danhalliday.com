@@ -1,9 +1,17 @@
 .d-footer
-  p
-    span.d-footer-body
+  .d-footer-inner
+    ul.d-footer-links
+      li.d-footer-links-item
+        a.d-footer-link.d-icon.d-icon-top href="#top"
+          | Back to Top
+      li.d-footer-links-item
+        a.d-footer-link.d-icon.d-icon-feed href=feed_url
+          | News Feed
+
+    p.d-footer-body
       | Designed, written, typeset, photographed, and encoded by
       a< href="mailto:#{data.contact.email}" Dan Halliday
       | .
-    span.d-footer-addenda
-      a href=feed_url RSS
+
+    p.d-footer-copyright
       =< "© 2000–#{Date.today.year}"

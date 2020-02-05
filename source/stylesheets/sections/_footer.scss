@@ -2,22 +2,42 @@
   @extend .d-grid;
   @extend .d-pad;
   @extend .d-text-small;
-
   color: $d-color-white;
   background-color: $d-color-black;
   font-feature-settings: "case" on;
 }
 
 .d-footer-body {
-  @include d-size(600) {
-    &::after {
-      content: none;
+  margin-top: 0.75em;
+}
+
+.d-footer-links {
+  display: flex;
+}
+
+.d-footer-links-item {
+  & + & {
+    margin-left: 1.75em;
+  }
+}
+
+.d-footer-link {
+  display: block;
+  transition: color $d-effect-duration;
+  background-repeat: no-repeat;
+  background-size: 1.25em;
+  background-position: 0 40%;
+  padding-left: 1.625em;
+  color: $d-color-gray;
+
+  @media (hover) {
+    &:hover {
+      color: $d-color-gold;
     }
   }
 }
 
-.d-footer-addenda {
-  display: block;
-  margin-top: 1rem;
+.d-footer-copyright {
+  margin-top: 1.5em;
   color: $d-color-gray;
 }
