@@ -17,11 +17,12 @@
 
 .d-footer-links-item {
   & + & {
-    margin-left: 1.75em;
+    margin-left: 1.5em;
   }
 }
 
 .d-footer-link {
+  @extend .d-text-link-weight;
   display: block;
   transition: color $d-effect-duration;
   background-repeat: no-repeat;

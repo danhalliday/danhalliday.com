@@ -2,11 +2,13 @@
   .d-footer-inner
     ul.d-footer-links
       li.d-footer-links-item
-        a.d-footer-link.d-icon.d-icon-top href="#top"
-          | Back to Top
+        = link_to "Top", "#top", class: "d-footer-link d-icon d-icon-top"
+
       li.d-footer-links-item
-        a.d-footer-link.d-icon.d-icon-feed href=feed_url
-          | News Feed
+        = link_to "Home", "/", class: "d-footer-link d-icon d-icon-home"
+
+      li.d-footer-links-item
+        = link_to "Feed", feed_url, class: "d-footer-link d-icon d-icon-feed"
 
     p.d-footer-body
       | Designed, written, typeset, photographed, and encoded by
