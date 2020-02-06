@@ -38,6 +38,11 @@
   }
 }
 
+.d-footer-privacy {
+  @extend .d-text-caption;
+  margin-top: 0.5rem;
+}
+
 .d-footer-copyright {
   @extend .d-text-tiny;
   margin-top: 1.5em;
