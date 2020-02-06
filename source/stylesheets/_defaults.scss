@@ -6,10 +6,6 @@
   img { @extend .d-article-image; }
 }
 
-.d-introduction-body {
-  p { @extend .d-introduction-paragraph; }
-}
-
 img {
   display: flex;
   width: 100%;;

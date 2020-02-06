@@ -18,10 +18,17 @@
 .d-card-image {
   @extend .d-round-left;
   grid-column: content-start / main-end;
+  transition: transform $d-effect-duration*5 ease-in-out;
 
   .d-card:nth-child(even) & {
     @extend .d-round-right;
     grid-column: main-start / content-end;
+  }
+
+  @media (hover) {
+    .d-card:hover & {
+      transform: translate(0, 0.25rem);
+    }
   }
 }
 
@@ -38,4 +45,9 @@
     grid-column: content-start / content-middle;
     margin-top: calc(var(--d-grid-gap) / 4);
   }
+}
+
+.d-card-image-placeholder {
+  height: var(--d-grid-gap);
+  background-color: $d-color-gold;
 }

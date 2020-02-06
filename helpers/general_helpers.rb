@@ -11,13 +11,6 @@ module GeneralHelpers
     yield_content(:description) || current_page.data.description || data.site.description
   end
 
-  def sitemap_url
-    URI::join(data.site.url, "sitemap.xml")
-  end
-
-  def feed_url
-    URI::join(data.site.url, "feed.xml")
-  end
 
   def sitemap_resources
     sitemap.resources.select do |page|
@@ -29,17 +22,5 @@ module GeneralHelpers
     output = partial(file, locals: locals)
     minfied = JSON.generate(JSON.parse(output))
     "<script type='application/ld+json'>#{minfied}</script>".html_safe
-  end
-
-  def work
-    current_article
-  end
-
-  def work_title(item)
-    "#{item.title} for #{item.data.client}"
-  end
-
-  def work_url(item)
-    URI::join(data.site.url, item.path.chomp(".html"))
   end
 end

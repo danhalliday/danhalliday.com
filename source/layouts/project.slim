@@ -1,4 +1,4 @@
-- content_for :title, work_title(work)
+- content_for :title, project_title(work)
 - content_for :description, work.data.summary
 
 = wrap_layout :layout do
@@ -13,10 +13,16 @@
     h1.d-masthead-headline.d-effect-appear-2
       = work.title
 
-    ul.d-tags.d-effect-appear-4
+    ul.d-tags.d-effect-appear-3
       - work.data.skills.each do |skill|
         li.d-tag = skill
 
   .d-article.d-effect-appear-5
     .d-article-body
       == process_article_body(yield)
+
+      - if work.data.url
+        p
+          | Read more at
+          =< link_to work.data.client, work.data.url
+          | .

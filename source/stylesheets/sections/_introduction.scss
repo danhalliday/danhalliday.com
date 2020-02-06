@@ -4,16 +4,11 @@
 }
 
 .d-introduction-body {
+  @extend .d-article-paragraph;
   grid-column: content-start / content-end;
 
   @include d-size(600) {
     grid-column: content-start / content-middle;
-  }
-}
-
-.d-introduction-paragraph {
-  & + & {
-    margin-top: 1.5em;
   }
 }
 
