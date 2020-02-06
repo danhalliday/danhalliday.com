@@ -4,7 +4,7 @@ client: Smashing Magazine
 title: Magic Flip Cards
 date: 2020-02-05
 
-summary: I wrote a tutorial for Smashing Magazine introducing a more robust implementation for animated flip cards.
+summary: I wrote for Smashing Magazine to introduce a more robust implementation for animated flip cards.
 
 skills:
   - Web
@@ -21,4 +21,4 @@ url: https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-pro
 
 ---
 
-I wrote a tutorial for Smashing Magazine introducing a more robust implementation for animated flip cards.
+I wrote for Smashing Magazine to introduce a more robust implementation for animated flip cards.

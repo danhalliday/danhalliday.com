@@ -1,5 +1,5 @@
 module ProjectHelpers
-  def work
+  def project
     current_article
   end
 

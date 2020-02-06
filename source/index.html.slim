@@ -32,23 +32,23 @@ section.d-section-work#work
     a.d-anchor-ref hidden="" href="#work" Link to this section
 
   .d-cards
-    - blog.articles.each do |work|
-      a.d-card href=project_path(work)
-        = partial :image, locals: { src: work.data.image.src, alt: work.data.image.alt, classes: "d-card-image" }
+    - blog.articles.each do |project|
+      a.d-card href=project_path(project)
+        = partial :image, locals: { src: project.data.image.src, alt: project.data.image.alt, classes: "d-card-image" }
 
         .d-card-body
           p.d-text-subheading
-            = work.data.client
+            = project.data.client
 
           h3.d-card-title
-            = work.title
+            = project.title
 
           ul.d-tags
-            - work.data.skills.sort.each do |skill|
+            - project.data.skills.sort.each do |skill|
               li.d-tag = skill
 
           p.d-card-summary
-            = work.data.summary
+            = project.data.summary
 
 = schema "schema/person"
 = schema "schema/website"

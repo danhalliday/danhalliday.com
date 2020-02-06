@@ -1,5 +1,5 @@
-- content_for :title, project_title(work)
-- content_for :description, work.data.summary
+- content_for :title, project_title(project)
+- content_for :description, project.data.summary
 
 = wrap_layout :layout do
   p.d-header
@@ -8,21 +8,21 @@
 
   .d-masthead
     p.d-masthead-subhead.d-effect-appear-1
-      = work.data.client
+      = project.data.client
 
     h1.d-masthead-headline.d-effect-appear-2
-      = work.title
+      = project.title
 
     ul.d-tags.d-effect-appear-3
-      - work.data.skills.each do |skill|
+      - project.data.skills.each do |skill|
         li.d-tag = skill
 
   .d-article.d-effect-appear-5
     .d-article-body
       == process_article_body(yield)
 
-      - if work.data.url
+      - if project.data.url
         p
           | Read more at
-          =< link_to work.data.client, work.data.url
+          =< link_to project.data.client, project.data.url
           | .
