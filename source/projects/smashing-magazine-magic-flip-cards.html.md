@@ -14,7 +14,7 @@ skills:
   - Accessibility
 
 image:
-  src: https://www.datocms-assets.com/18750/1580984039-ace-bet-business-card-262333.jpg
+  src: https://www.datocms-assets.com/18750/1580988686-magic-flip-cards-ace-of-spades.jpg
   alt: Closeup of the ace of spades
 
 url: https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/
