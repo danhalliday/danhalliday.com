@@ -43,11 +43,6 @@
 
   @include d-size(600) {
     grid-column: content-start / content-middle;
-    margin-top: calc(var(--d-grid-gap) / 4);
+    margin-top: calc(var(--d-unit) / 2);
   }
-}
-
-.d-card-image-placeholder {
-  height: var(--d-grid-gap);
-  background-color: $d-color-gold;
 }

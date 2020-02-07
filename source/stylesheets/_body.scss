@@ -1,7 +1,6 @@
 .d-body {
   @extend .d-text;
-  color: $d-color-black;
   min-height: 100%;
-  background-color: $d-color-white;
+  background-color: var(--d-color-white);
   background-position: center top -15vw;
 }

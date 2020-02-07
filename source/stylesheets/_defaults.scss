@@ -1,3 +1,7 @@
+:root {
+  @extend .d-root;
+}
+
 .d-article {
   p { @extend .d-article-paragraph; }
   h2 { @extend .d-article-h1; }

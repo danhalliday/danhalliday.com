@@ -1,0 +1,32 @@
+.d-grid {
+  display: grid;
+  grid-template-columns:
+    [main-start]
+    var(--d-unit)
+    [content-start]
+    1fr
+    [content-middle]
+    1fr
+    [content-end]
+    var(--d-unit)
+    [main-end];
+
+  grid-template-rows: auto;
+  grid-gap: calc(var(--d-unit) * 2) 0;
+
+  > * {
+    grid-column: content-start / content-end;
+  }
+
+  &.d-pad {
+    padding: var(--d-unit) 0;
+  }
+
+  &.d-tight {
+    grid-gap: var(--d-unit) 0;
+  }
+
+  & & {
+    grid-column: main-start / main-end;
+  }
+}

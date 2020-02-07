@@ -17,7 +17,7 @@
     padding: 0 0.5em;
     pointer-events: auto;
     visibility: visible;
-    color: $d-color-gray;
+    color: var(--d-color-gray);
     opacity: 0;
     transition: opacity $d-effect-duration;
   }

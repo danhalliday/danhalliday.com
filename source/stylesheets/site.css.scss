@@ -1,11 +1,10 @@
 @import "reset";
 
 @import "size";
-@import "colors";
 @import "fonts";
 @import "effects";
 @import "text";
-@import "grids";
+@import "grid";
 @import "round";
 
 @import "root";
@@ -25,3 +24,5 @@
 
 @import "defaults";
 @import "shame";
+
+@import "settings";

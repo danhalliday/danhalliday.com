@@ -11,32 +11,13 @@
 // 0.64rem
 // 0.512rem
 
-.d-text-sizing {
-  font-size: 100%;
-
-  @include d-size(350) {
-    font-size: 100% * (18 / 16);
-  }
-
-  @include d-size(900) {
-    font-size: 100% * (20 / 16);
-  }
-
-  @include d-size(1500) {
-    font-size: 100% * (22 / 16);
-  }
-
-  @include d-size(1800) {
-    font-size: 100% * (24 / 16);
-  }
-}
-
 .d-text {
   @extend .d-font-stack-text;
   font-weight: 400;
   font-variation-settings: "wght" 410;
   line-height: 1.5;
   text-size-adjust: 100%;
+  color: var(--d-color-black);
 }
 
 .d-text-headline {
@@ -157,12 +138,12 @@
 }
 
 .d-text-link-base {
-  color: $d-color-gold;
+  color: var(--d-color-gold);
   text-decoration: underline;
-  text-decoration-color: rgba($d-color-gold, 0.2);
+  text-decoration-color: var(--d-color-gold-translucent);
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.125em;
-  transition: color $d-effect-duration, -webkit-text-decoration-color $d-effect-duration;
+  transition: color $d-effect-duration;
 
   @media (hover) {
     &:hover {

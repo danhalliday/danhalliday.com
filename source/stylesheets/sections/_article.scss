@@ -20,7 +20,7 @@
     grid-column: content-start / content-middle;
 
     & + & {
-      margin-top: calc(0px - (var(--d-grid-gap) / 4));
+      margin-top: calc(0px - (var(--d-unit) / 2));
     }
   }
 }

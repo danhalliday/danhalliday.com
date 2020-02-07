@@ -2,8 +2,8 @@
   @extend .d-grid;
   @extend .d-pad;
   @extend .d-text-small;
-  color: $d-color-white;
-  background-color: $d-color-black;
+  color: var(--d-color-white);
+  background-color: var(--d-color-black);
   font-feature-settings: "case" on;
 }
 
@@ -29,11 +29,11 @@
   background-size: 1.25em;
   background-position: 0 40%;
   padding-left: 1.625em;
-  color: $d-color-gray;
+  color: var(--d-color-gray);
 
   @media (hover) {
     &:hover {
-      color: $d-color-gold;
+      color: var(--d-color-gold);
     }
   }
 }
@@ -46,5 +46,5 @@
 .d-footer-copyright {
   @extend .d-text-tiny;
   margin-top: 1.5em;
-  color: $d-color-gray;
+  color: var(--d-color-gray);
 }
