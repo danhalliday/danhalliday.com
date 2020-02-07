@@ -2,13 +2,13 @@
   @extend .d-grid;
   @extend .d-pad;
   @extend .d-text-small;
+  grid-gap: calc(var(--d-unit) / 2) 0;
   color: var(--d-color-white);
   background-color: var(--d-color-black);
-  font-feature-settings: "case" on;
 }
 
 .d-footer-body {
-  margin-top: 0.75em;
+
 }
 
 .d-footer-links {
@@ -40,11 +40,11 @@
 
 .d-footer-privacy {
   @extend .d-text-caption;
-  margin-top: 0.5rem;
+  display: block;
+  margin-top: 1em;
 }
 
 .d-footer-copyright {
   @extend .d-text-tiny;
-  margin-top: 1.5em;
   color: var(--d-color-gray);
 }

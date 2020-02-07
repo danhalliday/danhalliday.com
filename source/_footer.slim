@@ -1,22 +1,20 @@
 .d-footer
-  .d-footer-inner
-    ul.d-footer-links
-      li.d-footer-links-item
-        = link_to "Top", "#top", class: "d-footer-link d-icon d-icon-top"
+  ul.d-footer-links
+    li.d-footer-links-item
+      = link_to "Top", "#top", class: "d-footer-link d-icon d-icon-top"
 
-      li.d-footer-links-item
-        = link_to "Home", "/", class: "d-footer-link d-icon d-icon-home"
+    li.d-footer-links-item
+      = link_to "Home", "/", class: "d-footer-link d-icon d-icon-home"
 
-      li.d-footer-links-item
-        = link_to "Feed", feed_url, class: "d-footer-link d-icon d-icon-feed"
+    li.d-footer-links-item
+      = link_to "Feed", feed_url, class: "d-footer-link d-icon d-icon-feed"
 
-    p.d-footer-body
-      | Designed, written, typeset, photographed, and encoded by
-      a< href="mailto:#{data.contact.email}" Dan Halliday
-      | .
-
-    p.d-footer-privacy
+  p.d-footer-body
+    | Designed, written, typeset, photographed, and encoded by
+    a< href="mailto:#{data.contact.email}" Dan Halliday
+    | .
+    span.d-footer-privacy<
       | Proudly tracker-free
 
-    p.d-footer-copyright
-      =< "© 2000–#{Date.today.year}"
+  p.d-footer-copyright
+    =< "© 2000–#{Date.today.year}"
