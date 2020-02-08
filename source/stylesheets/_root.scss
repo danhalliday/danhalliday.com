@@ -1,6 +1,6 @@
 .d-root {
   @extend .d-settings;
-  font-size: var(--d-font-size);
+  font-size: var(--d-scale-0);
   scroll-behavior: smooth;
   height: 100%;
 }

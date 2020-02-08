@@ -2,7 +2,7 @@
   @extend .d-grid;
   @extend .d-pad;
   @extend .d-text-small;
-  grid-gap: calc(var(--d-unit) / 2) 0;
+  grid-gap: calc(var(--d-grid-row-gap) / 4) 0;
   color: var(--d-color-white);
   background-color: var(--d-color-black);
 }
