@@ -21,9 +21,8 @@
 }
 
 .d-text-headline {
-  // 35px – 85px
   // font-size: 1.953rem;
-  font-size: var(--d-fluid-5); // Test this and maybe change scale to be tighter and require more gradations. Will have to alter grid padding scale to get finer control over text, but that’s ok.
+  font-size: var(--step-3);
 
   font-variation-settings: "wght" 380;
   letter-spacing: -0.005em;
@@ -75,7 +74,9 @@
 }
 
 .d-text-title {
-  font-size: 1.953rem;
+  font-size: var(--step-2);
+
+  // font-size: 1.953rem;
   line-height: 1.2;
   margin-left: -0.05em;
   letter-spacing: -0.005em;
@@ -86,12 +87,12 @@
   }
 
   @include d-size(900) {
-    font-size: 2.441rem;
+    // font-size: 2.441rem;
     letter-spacing: -0.01em;
   }
 
   @include d-size(1200) {
-    font-size: 3.052rem;
+    // font-size: 3.052rem;
   }
 
   .d-text-subheading + & {
@@ -119,13 +120,15 @@
 }
 
 .d-text-subheading {
+  font-size: var(--step--3);
+
   font-family: $d-font-stack-display;
   text-transform: uppercase;
-  font-size: 0.64rem;
+  // font-size: 0.64rem;
   letter-spacing: 0.025em;
 
   @include d-size(900) {
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
   }
 }
 

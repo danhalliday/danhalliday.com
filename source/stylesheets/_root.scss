@@ -1,6 +1,10 @@
 .d-root {
   @extend .d-settings;
-  font-size: var(--d-fluid-0);
+  font-size: var(--step-0);
   scroll-behavior: smooth;
   height: 100%;
+
+  // @media screen and (max-width: #{$d-width-min}px) {
+  //   font-size: 1rem; // Ignore fluid scale for tiny screens
+  // }
 }
