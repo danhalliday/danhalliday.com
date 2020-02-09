@@ -1,14 +1,17 @@
-$d-effect-duration: 0.85s;
-$d-effect-stagger: $d-effect-duration * 0.35;
+.d-settings {
+  --d-effect-duration: 0.85s;
+  --d-effect-duration-long: calc(var(--d-effect-duration) * 2);
+  --d-effect-stagger: calc(var(--d-effect-duration) * 0.35);
+}
 
 .d-effect-appear {
-  animation: d-effect-appear $d-effect-duration*2 ease-in-out 0s 1 normal backwards;
+  animation: d-effect-appear var(--d-effect-duration-long) ease-in-out 0s 1 normal backwards;
 }
 
 @for $i from 1 through 10 {
   .d-effect-appear-#{$i} {
     @extend .d-effect-appear;
-    animation-delay: ($i - 1) * $d-effect-stagger;
+    animation-delay: calc(#{$i - 1} * var(--d-effect-stagger));
   }
 }
 

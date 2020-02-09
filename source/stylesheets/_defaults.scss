@@ -2,18 +2,14 @@
   @extend .d-root;
 }
 
-.d-article {
-  p { @extend .d-article-paragraph; }
-  h2 { @extend .d-article-h1; }
-  h3 { @extend .d-article-h2; }
-  figure { @extend .d-article-figure; }
-  img { @extend .d-article-image; }
+body {
+  @extend .d-body;
 }
 
 img {
   display: flex;
-  width: 100%;;
-  max-width: 100%;;
+  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -27,4 +23,12 @@ a:not([class]) {
 
 em {
   font-style: italic;
+}
+
+.d-article {
+  p { @extend .d-article-paragraph; }
+  h2 { @extend .d-article-h1; }
+  h3 { @extend .d-article-h2; }
+  figure { @extend .d-article-figure; }
+  img { @extend .d-article-image; }
 }

@@ -18,7 +18,7 @@
 .d-card-image {
   @extend .d-round-left;
   grid-column: content-start / main-end;
-  transition: transform $d-effect-duration*5 ease-in-out;
+  transition: transform calc(var(--d-effect-duration) * 5) ease-in-out;
 
   .d-card:nth-child(even) & {
     @extend .d-round-right;
@@ -43,6 +43,6 @@
 
   @include d-size(600) {
     grid-column: content-start / content-middle;
-    margin-top: var(--d-scale-5);
+    margin-top: var(--d-fluid-5);
   }
 }

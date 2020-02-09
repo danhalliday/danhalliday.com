@@ -24,7 +24,7 @@
 .d-footer-link {
   @extend .d-text-link-weight;
   display: block;
-  transition: color $d-effect-duration;
+  transition: color var(--d-effect-duration);
   background-repeat: no-repeat;
   background-size: 1.25em;
   background-position: 0 40%;

@@ -19,7 +19,7 @@
     visibility: visible;
     color: var(--d-color-gray);
     opacity: 0;
-    transition: opacity $d-effect-duration;
+    transition: opacity var(--d-effect-duration);
   }
 
   .d-anchor-ref-container:hover &::before {

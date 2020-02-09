@@ -21,7 +21,10 @@
 }
 
 .d-text-headline {
-  font-size: 1.953rem;
+  // 35px – 85px
+  // font-size: 1.953rem;
+  font-size: var(--d-fluid-5); // Test this and maybe change scale to be tighter and require more gradations. Will have to alter grid padding scale to get finer control over text, but that’s ok.
+
   font-variation-settings: "wght" 380;
   letter-spacing: -0.005em;
   line-height: 1.2;
@@ -29,7 +32,7 @@
   margin-left: -0.05em;
 
   @include d-size(600) {
-    font-size: 3.052rem;
+    // font-size: 3.052rem;
     font-variation-settings: "wght" 370;
     letter-spacing: -0.0075em;
   }
@@ -41,7 +44,7 @@
   }
 
   @include d-size(1200) {
-    font-size: 3.815rem;
+    // font-size: 3.815rem;
     font-variation-settings: "wght" 350;
     letter-spacing: -0.0125em;
   }
@@ -52,7 +55,7 @@
   }
 
   @include d-size(1800) {
-    font-size: 4.768rem;
+    // font-size: 4.768rem;
     font-variation-settings: "wght" 330;
     letter-spacing: -0.015em;
   }
@@ -143,7 +146,7 @@
   text-decoration-color: var(--d-color-gold-translucent);
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.125em;
-  transition: color $d-effect-duration;
+  transition: color var(--d-effect-duration);
 
   @media (hover) {
     &:hover {
