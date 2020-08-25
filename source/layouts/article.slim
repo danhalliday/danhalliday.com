@@ -1,0 +1,24 @@
+= wrap_layout :layout do
+  p.d-header
+    a.d-header-home-link.d-effect-appear-4 href="/"
+      = data.site.name
+
+  .d-masthead
+    p.d-masthead-subhead.d-effect-appear-1
+      | Article
+
+    h1.d-masthead-headline.d-effect-appear-2
+      = current_article.title
+
+    ul.d-tags.d-effect-appear-3
+      - current_article.tags.each do |tag|
+        li.d-tag
+          a href=tag_path(tag)
+            = tag
+
+  .d-article.d-effect-appear-5
+    .d-article-body
+      p.d-text-caption.d-effect-appear-6
+        = current_article.date.strftime("%B %Y")
+
+      == process_article_body(yield)

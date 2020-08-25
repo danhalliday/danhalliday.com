@@ -14,10 +14,21 @@ activate :autoprefixer do |prefix|
 end
 
 activate :blog do |blog|
+  blog.name = "projects"
   blog.layout = :project
   blog.prefix = "projects"
   blog.sources = "{slug}.html"
   blog.permalink = "{slug}.html"
+end
+
+activate :blog do |blog|
+  blog.name = "articles"
+  blog.layout = :article
+  blog.prefix = "articles"
+  blog.sources = "{slug}.html"
+  blog.permalink = "{slug}.html"
+  blog.tag_template = "series.html"
+  blog.taglink = "series/{tag}.html"
 end
 
 # Layouts
@@ -29,10 +40,6 @@ page '/*.txt', layout: false
 
 # Proxies
 # https://middlemanapp.com/advanced/dynamic-pages/
-
-# data.projects.each do |project|
-#   proxy project_path(project), "project.html", ignore: true, locals: { project: project }
-# end
 
 proxy "_headers", "netlify/headers.txt", ignore: true
 proxy "_redirects", "netlify/redirects.txt", ignore: true

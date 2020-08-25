@@ -1,0 +1,32 @@
+p.d-header
+  a.d-header-home-link.d-effect-appear-4 href="/"
+    = data.site.name
+
+.d-masthead
+  p.d-masthead-subhead.d-effect-appear-1
+    | Series
+
+  h1.d-masthead-headline.d-spaced.d-effect-appear-1
+    = tagname.capitalize
+
+  p All articles and projects related to #{tagname}.
+
+section.d-grid
+  .d-cards
+    - articles.each do |article|
+      = link_to article, class: "d-card"
+        / = partial :image, locals: { src: project.data.image.src, alt: project.data.image.alt, classes: "d-card-image" }
+
+        .d-card-body
+          p.d-text-subheading
+            = article.date.strftime("%B %Y")
+
+          h3.d-card-title
+            = article.title
+
+          ul.d-tags
+            - article.tags.sort.each do |tag|
+              li.d-tag = tag
+
+          p.d-card-summary
+            = article.data.description

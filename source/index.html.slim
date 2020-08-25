@@ -26,13 +26,13 @@ p.d-header
     a< href="mailto:#{data.contact.email}" introduce yourself
     | .
 
-section.d-section-work#work
+section.d-grid#work
   h2.d-text-heading.d-anchor-ref-container
     | Selected Work
     a.d-anchor-ref hidden="" href="#work" Link to this section
 
   .d-cards
-    - blog.articles.each do |project|
+    - blog("projects").articles.each do |project|
       a.d-card href=project_path(project)
         = partial :image, locals: { src: project.data.image.src, alt: project.data.image.alt, classes: "d-card-image" }
 
@@ -49,6 +49,28 @@ section.d-section-work#work
 
           p.d-card-summary
             = project.data.summary
+
+section.d-grid#articles
+  h2.d-text-heading.d-anchor-ref-container
+    | Selected Articles
+    a.d-anchor-ref hidden="" href="#articles" Link to this section
+
+  .d-cards
+    - blog("articles").articles.each do |article|
+      a.d-card
+        .d-card-body
+          p.d-text-subheading
+            = article.date.strftime("%B %Y")
+
+          h3.d-card-title
+            = article.title
+
+          ul.d-tags
+            - article.tags.sort.each do |tag|
+              li.d-tag = tag
+
+          p.d-card-summary
+            = article.data.description
 
 = schema "schema/person"
 = schema "schema/website"
