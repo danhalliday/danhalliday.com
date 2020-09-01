@@ -52,14 +52,9 @@
   color: inherit;
   padding: 1em 1.5em 0.9em;
   margin: 0;
-  // border-radius: 2px;
   line-height: inherit;
-  // width: 100%;
   text-align: left;
-
-  &::placeholder {
-
-  }
+  border-radius: 0;
 }
 
 .d-subscribe-email {
