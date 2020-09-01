@@ -42,7 +42,7 @@
   }
 }
 
-.d-subscribe-email, .d-subscribe-submit {
+.d-subscribe-field, .d-subscribe-submit {
   @extend .d-text-subheading;
   appearance: none;
   -webkit-appearance: none;
@@ -57,10 +57,21 @@
   border-radius: 0;
 }
 
-.d-subscribe-email {
+.d-subscribe-field {
   background-color: var(--d-color-white);
-  border-top-left-radius: $d-round-radius / 2;
-  border-top-right-radius: $d-round-radius / 2;
+
+  &:first-of-type {
+    border-top-left-radius: $d-round-radius / 2;
+    border-top-right-radius: $d-round-radius / 2;
+  }
+
+  & ~ & {
+    border-top: 0.5px solid rgba(black, 0.15);
+  }
+
+  &:focus {
+    z-index: 1;
+  }
 }
 
 .d-subscribe-submit {

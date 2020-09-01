@@ -11,7 +11,9 @@ section.d-subscribe
       li <strong><em>Play</em></strong> with exclusive pre-release versions of the apps
       li <strong><em>No Spam</em></strong> — issues will be weekly at most
 
-  form.d-subscribe-form
+  form.d-subscribe-form netlify="true" name="Article Subscription Form"
+    label.d-a11y for="name" Your Name
+    input.d-subscribe-field#name type="text" required="true" placeholder="Your Name" name="name"
     label.d-a11y for="email" Your Email Address
-    input.d-subscribe-email#email type="email" required="true" placeholder="Your Email"
+    input.d-subscribe-field#email type="email" required="true" placeholder="Your Email" name="email"
     input.d-subscribe-submit type="submit" value="Subscribe ↗︎"
