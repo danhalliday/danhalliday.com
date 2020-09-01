@@ -1,0 +1,8 @@
+design:
+  description: "All articles and projects related to design."
+development:
+  description: "All articles and projects related to development."
+music:
+  description: "All articles and projects related to music."
+serenade:
+  description: "All articles and project write-ups for my music app, [Serenade](https://serenade.soundry.co)."

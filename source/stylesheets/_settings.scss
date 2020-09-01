@@ -3,7 +3,7 @@
   --d-font-size: 100%;
 
   @include d-size(350) {
-    --d-unit: 2.5rem;
+    // --d-unit: 2.5rem;
     --d-font-size: #{100% * (18 / 16)};
   }
 

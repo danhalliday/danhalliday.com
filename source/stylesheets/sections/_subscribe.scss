@@ -1,0 +1,82 @@
+.d-subscribe {
+  @extend .d-grid;
+  @extend .d-tight;
+  @extend .d-pad;
+  background-color: var(--d-color-gold);
+  background-position: center top -15vw;
+  margin: calc(0px - var(--d-unit)) 0;
+
+  @include d-size(600) {
+    grid-gap: calc(var(--d-unit) / 4) 0;
+  }
+}
+
+.d-subscribe-summary {
+  display: grid;
+  grid-gap: var(--d-unit);
+
+  @include d-size(600) {
+    grid-gap: calc(var(--d-unit) / 4);
+  }
+
+  @include d-size(900) {
+    grid-column: content-start / content-middle;
+  }
+}
+
+.d-subscribe-bullets {
+  @extend .d-article-list;
+  @extend .d-text-tiny;
+}
+
+// TODO: Factor out form styles
+
+.d-subscribe-form {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+
+  @include d-size(900) {
+    grid-column: content-middle / content-end;
+    margin-left: var(--d-unit);
+  }
+}
+
+.d-subscribe-email, .d-subscribe-submit {
+  @extend .d-text-subheading;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: white;
+  color: inherit;
+  padding: 1em 1.5em 0.9em;
+  margin: 0;
+  // border-radius: 2px;
+  line-height: inherit;
+  // width: 100%;
+  text-align: left;
+
+  &::placeholder {
+
+  }
+}
+
+.d-subscribe-email {
+  background-color: var(--d-color-white);
+  border-top-left-radius: $d-round-radius / 2;
+  border-top-right-radius: $d-round-radius / 2;
+}
+
+.d-subscribe-submit {
+  background-color: var(--d-color-black);
+  color: var(--d-color-white);
+  cursor: pointer;
+  border-bottom-left-radius: $d-round-radius / 2;
+  border-bottom-right-radius: $d-round-radius / 2;
+  transition: $d-effect-duration background-color;
+
+  &:hover, &:active, &:focus {
+    background-color: var(--d-color-gold);
+  }
+}

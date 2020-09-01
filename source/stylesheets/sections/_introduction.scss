@@ -6,6 +6,8 @@
 .d-introduction-body {
   @extend .d-article-paragraph;
   grid-column: content-start / content-end;
+  hyphens: none;
+  -webkit-hyphens: none;
 
   @include d-size(600) {
     grid-column: content-start / content-middle;

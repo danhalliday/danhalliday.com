@@ -4,10 +4,18 @@
 
 .d-article {
   p { @extend .d-article-paragraph; }
+  ul, ol { @extend .d-article-list; }
   h2 { @extend .d-article-h1; }
   h3 { @extend .d-article-h2; }
   figure { @extend .d-article-figure; }
   img { @extend .d-article-image; }
+  blockquote { @extend .d-article-blockquote; }
+  strong { @extend .d-article-strong; }
+  hr { @extend .d-article-divider; }
+}
+
+.d-subscribe {
+  strong { @extend .d-text-strong; }
 }
 
 img {

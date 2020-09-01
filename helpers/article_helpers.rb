@@ -5,7 +5,9 @@ module ArticleHelpers
     # Wrap images’ paragraphs in figures
 
     fragment.css("img").each do |image|
-      image.parent.wrap("<figure>")
+      if image.parent.parent.name != "figure"
+        image.parent.wrap("<figure>")
+      end
     end
 
     # Group adjacent figures

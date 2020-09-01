@@ -52,12 +52,12 @@ section.d-grid#work
 
 section.d-grid#articles
   h2.d-text-heading.d-anchor-ref-container
-    | Selected Articles
+    | Selected Writing
     a.d-anchor-ref hidden="" href="#articles" Link to this section
 
   .d-cards
     - blog("articles").articles.each do |article|
-      a.d-card
+      a.d-card href=article.path
         .d-card-body
           p.d-text-subheading
             = article.date.strftime("%B %Y")

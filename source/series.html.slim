@@ -9,7 +9,7 @@ p.d-header
   h1.d-masthead-headline.d-spaced.d-effect-appear-1
     = tagname.capitalize
 
-  p All articles and projects related to #{tagname}.
+  = series_description(tagname)
 
 section.d-grid
   .d-cards

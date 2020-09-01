@@ -2,7 +2,7 @@ task test: :build
 task default: :serve
 
 task :serve do
-  system "bundle exec middleman server" or throw "Server Error"
+  system "NO_CONTRACTS=yes bundle exec middleman server" or throw "Server Error"
 end
 
 task :build do

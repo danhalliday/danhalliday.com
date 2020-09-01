@@ -7,11 +7,7 @@ set :markdown, { smartypants: true, header_offset: 1 }
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :livereload
-activate :dato, live_reload: true
-
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
+# activate :dato, live_reload: true
 
 activate :blog do |blog|
   blog.name = "projects"
@@ -48,6 +44,10 @@ proxy "_redirects", "netlify/redirects.txt", ignore: true
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  activate :autoprefixer do |prefix|
+    prefix.browsers = "last 2 versions"
+  end
+
   activate :minify_css
   activate :minify_javascript
 end

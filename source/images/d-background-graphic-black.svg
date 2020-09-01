@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
     <title>d-background-graphic-black</title>
-    <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="11.4054687%" y1="3.48984375%" x2="8.12208627e-05%" y2="74.636517%" id="linearGradient-1">
+        <linearGradient x1="12.3078988%" y1="4.28976432%" x2="8.12208627e-05%" y2="74.636517%" id="linearGradient-1">
             <stop stop-color="#0A0A0A" offset="0%"></stop>
-            <stop stop-color="#0F0F0F" offset="12.9326093%"></stop>
-            <stop stop-color="#141414" offset="37.1223813%"></stop>
-            <stop stop-color="#121212" offset="62.9030455%"></stop>
-            <stop stop-color="#0F0F0F" offset="75.855152%"></stop>
+            <stop stop-color="#141414" offset="19.5642483%"></stop>
+            <stop stop-color="#1C1C1C" offset="44.2859762%"></stop>
+            <stop stop-color="#171717" offset="61.9104193%"></stop>
+            <stop stop-color="#0F0F0F" offset="78.3199893%"></stop>
             <stop stop-color="#0D0D0D" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="12.7053737%" y1="2.63855609%" x2="7.21053694%" y2="88.8333297%" id="linearGradient-2">
+        <linearGradient x1="13.6351231%" y1="0%" x2="7.29598767%" y2="88.8333297%" id="linearGradient-2">
             <stop stop-color="#0A0A0A" offset="0%"></stop>
-            <stop stop-color="#0F0F0F" offset="12.9326093%"></stop>
-            <stop stop-color="#121212" offset="33.7267602%"></stop>
-            <stop stop-color="#121212" offset="57.2990529%"></stop>
-            <stop stop-color="#0F0F0F" offset="75.855152%"></stop>
+            <stop stop-color="#121212" offset="12.9326093%"></stop>
+            <stop stop-color="#1A1A1A" offset="32.0386494%"></stop>
+            <stop stop-color="#141414" offset="56.3394906%"></stop>
+            <stop stop-color="#0F0F0F" offset="72.2542786%"></stop>
             <stop stop-color="#0D0D0D" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
             <stop stop-color="#0A0A0A" offset="0%"></stop>
-            <stop stop-color="#1A1A1A" offset="100%"></stop>
+            <stop stop-color="#242424" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
-            <stop stop-color="#1A1A1A" offset="0%"></stop>
+            <stop stop-color="#262626" offset="0%"></stop>
             <stop stop-color="#0A0A0A" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="d-background-graphic-black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="1000" height="1000"></rect>
+        <rect fill="#0A0A0A" x="0" y="0" width="1000" height="1000"></rect>
         <rect id="Rectangle" fill="#0A0A0A" fill-rule="nonzero" x="0" y="0" width="1000" height="1000"></rect>
-        <polygon id="Path-6" fill="url(#linearGradient-1)" fill-rule="nonzero" points="1000 0 0 1000 0 0"></polygon>
-        <polygon id="Path-6" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(500.000000, 500.000000) rotate(180.000000) translate(-500.000000, -500.000000) " points="1000 5.68434189e-14 -5.68434189e-14 1000 -5.68434189e-14 5.68434189e-14"></polygon>
+        <polygon id="Path-6" fill="url(#linearGradient-1)" fill-rule="nonzero" points="1001 -1 -1 1001 -1 -1"></polygon>
+        <polygon id="Path-6" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(500.000000, 500.500000) rotate(180.000000) translate(-500.000000, -500.500000) " points="1000 -5.68434189e-14 -5.68434189e-14 1001 -5.68434189e-14 5.34216768e-14"></polygon>
         <polygon id="Path-7" fill="url(#linearGradient-3)" fill-rule="nonzero" points="500 2.27373675e-13 1000 500 1000 2.34444393e-13"></polygon>
         <polygon id="Path-8" fill="url(#linearGradient-4)" fill-rule="nonzero" points="0 500 500 1000 0 1000"></polygon>
     </g>
