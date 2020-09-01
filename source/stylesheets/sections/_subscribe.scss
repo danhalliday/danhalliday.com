@@ -60,7 +60,7 @@
 .d-subscribe-field {
   background-color: var(--d-color-white);
 
-  &:d-first {
+  &.d-first {
     border-top-left-radius: $d-round-radius / 2;
     border-top-right-radius: $d-round-radius / 2;
   }
