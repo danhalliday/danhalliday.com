@@ -14,6 +14,7 @@ html lang="en"
     = stylesheet_link_tag :images
     = stylesheet_link_tag :site
     = partial :icons
+    = yield_content(:head)
 
   body#top.d-body
     main.d-main

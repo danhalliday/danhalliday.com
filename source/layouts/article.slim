@@ -1,3 +1,6 @@
+- content_for :head do
+  = partial "opengraph/article", locals: { article: current_article }
+
 = wrap_layout :layout do
   .d-article-header
     p.d-header
@@ -29,3 +32,5 @@
           p = current_article.data.footnote
 
   = partial :subscribe
+
+= schema "schema/article", { article: current_article }

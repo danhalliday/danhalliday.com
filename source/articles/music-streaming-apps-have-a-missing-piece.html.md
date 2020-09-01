@@ -3,6 +3,7 @@ title: Music Streaming Apps Have a Missing Piece
 date: 2020-08-01
 description: In the days before the internet was fast, I was a music fan with a plan. As a teenager, I had a collection of perhaps a hundred compact discs, and assumed it would soon be two or three hundred.
 tags: music, design, development
+image: https://placehold.it/500x500
 published: false
 ---
 
