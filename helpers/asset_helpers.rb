@@ -5,6 +5,10 @@ module AssetHelpers
     "#{src}?w=1000&auto=format&q=50"
   end
 
+  def image_sharing_src(src)
+    "#{src}?w=1500&auto=format&q=80"
+  end
+
   def image_srcset(src)
     (300..5100).step(300).map { |s| "#{src}?w=#{s}&auto=format&q=25 #{s}w" }.join(", ")
   end
