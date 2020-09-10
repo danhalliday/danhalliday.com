@@ -8,7 +8,7 @@ image: https://www.datocms-assets.com/18750/1599478911-man-music-garden.jpg
 
 <span class="d-article-lede">In the days before the internet was fast</span>, I was a music fan with a plan. As a teenager, I had a collection of perhaps one hundred compact discs, and assumed it would soon be two or three. Buying music after school on the advice of peers who seemed to know what was hot, I usually listened to each album a couple of times straight through on my stereo before moving to the computer and beginning the *lossless ripping ceremony*.
 
-![Man enjoying music in a garden](https://www.datocms-assets.com/18750/1599478911-man-music-garden.jpg "Man enjoying music in a garden")
+![A man in a lush garden browses compact discs hanging by threads from the sky](https://www.datocms-assets.com/18750/1599752074-man-in-lush-garden-browses-compact-discs.jpg "A man in a lush garden browses compact discs hanging by threads from the sky")
 
 The idea of creating and curating a music collection made sense. The goal was to grow and prune it like a garden, all the while enjoying raw sound, learning about the world, swapping albums with friends, and being inspired to create art of my own. And like any good hobby, it had a certain cadence, fixed by the cost of acquisition and the time available to hear about new stuff.
 
@@ -30,7 +30,7 @@ No shortage of opinion exists on what was lost during the previous major format 
 
 Our present transition takes things to their logical end point. The art is completely accessible, the methods of discovery and engagement completely digital. In fact, discovery isn’t half bad, with all the major players offering a broad weekly lineup of preset and algorithmically generated content. A little sterile, perhaps, compared to huddling with friends around the *new music* section of a decent record store, desperately scanning for the latest Dream Theater, but novel and usable. Engagement, though, is still shallow at best.
 
-<!-- ![](https://placehold.it/5000x3750) -->
+![A woman listens to streaming music on a laptop with headphones, seeming uninterested](https://www.datocms-assets.com/18750/1599752080-woman-listens-to-stream-music-on-laptop.jpg)
 
 Likes, ratings, playlists, and sharing are all fine features, but they do not compare to *the shelf*. The immediate problem is that as the humble user of someone else’s service, you’re not in control of when these features appear and disappear, nor how they’re presented from one software release to the next. My current app of choice, Apple’s *Music*, has played around with ratings a few times, eventually moving traditional five-star rating controls out to secondary screens and bringing in new ‘love’ and ‘dislike’ buttons. Another casualty is the checkbox that then-iTunes used to show for every track, denoting whether a song would be skipped during normal playback. I used to use this feature *all the time* to customise my album playback experience, cutting out an intro skit here, or a filler track or artist interview there. It’s also still available in a submenu (bafflingly titled ‘untick selection’), but for how long? Who knows.
 
@@ -54,7 +54,7 @@ Thinking again on my old collecting and curation habits through the lens of mode
 
 You can certainly continue, or get back to, collecting physical media alongside listening online, as many have during the much-reported vinyl revival of the past few years. That’s an interesting space, especially on the business end, with some artists now charging a premium for physical products that might actually come somewhere close to paying for their labour. It’s not for me, though. I want to see the next stage in digital.
 
-<!-- ![](https://placehold.it/5000x3750) -->
+![A man and woman laugh together outside while enjoying music playing from apps on their phones](https://www.datocms-assets.com/18750/1599752085-man-and-woman-laugh-while-enjoying-music-apps.jpg "A man and woman laugh together outside while enjoying music playing from apps on their phones")
 
 I think the only way forward is for independent designers, developers, and teams to build simple, focused apps that sit on top of the major streaming services, treating the platforms as infrastructure using what we call [APIs](https://en.wikipedia.org/wiki/API). This isn’t even close to being a new idea, but I’m constantly surprised at how few novel music player apps show up when you search the app stores. Most of the results are just clones of the system music players, and don’t deliver anything new. It is notable how many really high quality *music production* apps exist, especially on mobile, but that’s a specialist area driven by its own market forces. DJ apps sit somewhere in the middle, and those that pull music in from streaming services are a great example of the general approach. While still fairly specialised, they provide exactly the kind of creative layer I’m looking to experiment with.
 
